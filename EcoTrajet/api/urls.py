@@ -14,5 +14,4 @@ urlpatterns = [
     path('login/', obtain_auth_token, name='login'),
     path('profile/', ProfileView.as_view(), name='profile'),
     path('register/', UserCreateView.as_view(), name='register'),
-
 ]
