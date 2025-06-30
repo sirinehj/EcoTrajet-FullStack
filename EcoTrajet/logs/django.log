@@ -274,3 +274,54 @@ INFO 2025-06-30 22:29:27,334 basehttp 15860 11644 "GET /static/rest_framework/fo
 INFO 2025-06-30 22:29:37,019 basehttp 15860 11644 "GET /api/trips/1/ HTTP/1.1" 200 12486
 INFO 2025-06-30 22:29:50,878 basehttp 15860 11644 "PUT /api/trips/1/ HTTP/1.1" 200 12375
 ERROR 2025-06-30 22:29:58,117 basehttp 15860 9732 "GET /reservations/ HTTP/1.1" 500 240303
+INFO 2025-06-30 23:27:50,935 autoreload 7468 16872 Watching for file changes with StatReloader
+WARNING 2025-06-30 23:27:53,163 log 7468 2704 Not Found: /
+WARNING 2025-06-30 23:27:53,165 basehttp 7468 2704 "GET / HTTP/1.1" 404 3847
+WARNING 2025-06-30 23:27:58,298 log 7468 2704 Not Found: /atrips
+WARNING 2025-06-30 23:27:58,302 basehttp 7468 2704 "GET /atrips HTTP/1.1" 404 3883
+INFO 2025-06-30 23:28:02,063 basehttp 7468 15888 "GET /trips HTTP/1.1" 301 0
+INFO 2025-06-30 23:28:02,261 basehttp 7468 18940 "GET /trips/ HTTP/1.1" 200 13264
+INFO 2025-06-30 23:28:02,422 basehttp 7468 18940 "GET /static/rest_framework/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+ERROR 2025-06-30 23:28:08,567 basehttp 7468 18940 "GET /reservations/ HTTP/1.1" 500 240303
+WARNING 2025-06-30 23:28:15,383 log 7468 15476 Not Found: /regiter
+WARNING 2025-06-30 23:28:15,386 basehttp 7468 15476 "GET /regiter HTTP/1.1" 404 3886
+INFO 2025-06-30 23:28:18,379 basehttp 7468 11300 code 400, message Bad request version ('\x00\x02\x01\x00\x00-\x00\x02\x01\x01\x00')
+ERROR 2025-06-30 23:28:18,380 basehttp 7468 11300 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-06-30 23:28:18,382 basehttp 7468 11112 code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93**\x00\x00ÿ\x01\x00\x01\x00\x00\x12\x00\x00\x00')
+ERROR 2025-06-30 23:28:18,383 basehttp 7468 11112 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-06-30 23:28:24,931 basehttp 7468 11424 code 400, message Bad request version ('Q\x06Ce')
+ERROR 2025-06-30 23:28:24,931 basehttp 7468 11424 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-06-30 23:28:24,933 basehttp 7468 20352 code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x1b\x00\x03\x02\x00\x02\x00-\x00\x02\x01\x01\x00#\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+ERROR 2025-06-30 23:28:24,933 basehttp 7468 20352 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-06-30 23:28:28,212 basehttp 7468 13644 code 400, message Bad request version ('\x00\x02\x01\x00\x00')
+ERROR 2025-06-30 23:28:28,213 basehttp 7468 13644 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-06-30 23:28:28,214 basehttp 7468 18680 code 400, message Bad request version ('\\¹\x12õ«\xadôK\x98<¡\x86\x1bB²Eá?~þçÍ)ü]r!')
+ERROR 2025-06-30 23:28:28,215 basehttp 7468 18680 You're accessing the development server over HTTPS, but it only supports HTTP.
+WARNING 2025-06-30 23:28:44,780 log 7468 17048 Not Found: /
+WARNING 2025-06-30 23:28:44,781 basehttp 7468 17048 "GET / HTTP/1.1" 404 3847
+INFO 2025-06-30 23:28:52,169 basehttp 7468 19784 "GET /api/auth/register HTTP/1.1" 301 0
+WARNING 2025-06-30 23:28:52,300 log 7468 4512 Method Not Allowed: /api/auth/register/
+WARNING 2025-06-30 23:28:52,301 basehttp 7468 4512 "GET /api/auth/register/ HTTP/1.1" 405 8900
+WARNING 2025-06-30 23:29:02,302 log 7468 11128 Not Found: /api/auth/login
+WARNING 2025-06-30 23:29:02,303 basehttp 7468 11128 "GET /api/auth/login HTTP/1.1" 404 7807
+ERROR 2025-06-30 23:29:14,096 basehttp 7468 18604 "GET /api/reservations/ HTTP/1.1" 500 240419
+INFO 2025-06-30 23:32:27,252 autoreload 7468 16872 C:\ecoTrajet\EcoTrajet\api\models.py changed, reloading.
+INFO 2025-06-30 23:32:28,021 autoreload 13216 19656 Watching for file changes with StatReloader
+INFO 2025-06-30 23:32:44,199 autoreload 13216 19656 C:\ecoTrajet\EcoTrajet\user_management\models.py changed, reloading.
+INFO 2025-06-30 23:32:44,746 autoreload 19156 11128 Watching for file changes with StatReloader
+INFO 2025-06-30 23:32:46,034 autoreload 19156 11128 C:\ecoTrajet\EcoTrajet\user_management\models.py changed, reloading.
+INFO 2025-06-30 23:32:46,616 autoreload 5972 2996 Watching for file changes with StatReloader
+ERROR 2025-06-30 23:33:01,476 basehttp 5972 9032 "GET /api/reservations/ HTTP/1.1" 500 240556
+INFO 2025-06-30 23:33:16,291 autoreload 14352 1572 Watching for file changes with StatReloader
+WARNING 2025-06-30 23:33:18,490 log 14352 2248 Not Found: /
+WARNING 2025-06-30 23:33:18,492 basehttp 14352 2248 "GET / HTTP/1.1" 404 3847
+ERROR 2025-06-30 23:33:22,506 basehttp 14352 2248 "GET /reservations/ HTTP/1.1" 500 240303
+INFO 2025-06-30 23:34:48,646 autoreload 14352 1572 C:\ecoTrajet\EcoTrajet\api\models.py changed, reloading.
+INFO 2025-06-30 23:34:49,553 autoreload 1484 6120 Watching for file changes with StatReloader
+INFO 2025-06-30 23:34:51,560 basehttp 1484 2364 "GET /reservations/ HTTP/1.1" 200 12360
+INFO 2025-06-30 23:35:08,263 basehttp 1484 18808 "POST /reservations/ HTTP/1.1" 201 10062
+INFO 2025-06-30 23:35:17,111 basehttp 1484 8820 "GET /trips/ HTTP/1.1" 200 13264
+WARNING 2025-06-30 23:35:26,980 log 1484 20256 Not Found: /trips/reservations
+WARNING 2025-06-30 23:35:26,982 basehttp 1484 20256 "GET /trips/reservations HTTP/1.1" 404 3919
+INFO 2025-06-30 23:35:41,756 basehttp 1484 5332 "GET /trips/1/reservations HTTP/1.1" 301 0
+INFO 2025-06-30 23:35:41,934 basehttp 1484 13444 "GET /trips/1/reservations/ HTTP/1.1" 200 7796

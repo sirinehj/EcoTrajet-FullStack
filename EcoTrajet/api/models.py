@@ -33,7 +33,7 @@ class Trip(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f"{self.origine} → {self.destination} ({self.temps_depart.strftime('%d/%m/%Y %H:%M')}) - {self.conducteur.username}"
+        return f"{self.origine} → {self.destination} ({self.temps_depart.strftime('%d/%m/%Y %H:%M')}) - {self.conducteur.email}"
    
     def get_absolute_url(self):
         return reverse('trip_detail', kwargs={'pk': self.pk})
@@ -65,8 +65,8 @@ class Reservation(models.Model):
     statut = models.CharField(max_length=10, choices=STATUS_CHOICES, default='PENDING')
     created_at = models.DateTimeField(auto_now_add=True)
 
-    def __str__(self):
-        return f"Reservation #{self.id}: {self.passenger.username} → {self.trip} (Status: {self.statut})"
+def __str__(self):
+    return f"Reservation #{self.id}: {self.passenger.nom} {self.passenger.prenom} → {self.trip} (Status: {self.statut})"
     
     def get_absolute_url(self):
         return reverse('reservation_detail', kwargs={'pk': self.pk})
