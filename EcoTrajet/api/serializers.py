@@ -1,7 +1,9 @@
-<<<<<<< HEAD
 from rest_framework import serializers
 from .models import Vehicule
 from .models import Rating
+from django.utils import timezone
+from rest_framework import serializers
+from .models import Trip, Reservation
 
 
 #Serializer pour les véhicules
@@ -91,12 +93,6 @@ class UserRatingStatsSerializer(serializers.Serializer):
     average_rating = serializers.FloatField()
     total_ratings = serializers.IntegerField()
     ratings_detail = serializers.ListField()
-=======
-from django.utils import timezone
-from rest_framework import serializers
-from .models import Trip, Reservation
-
-
 
 class TripListSerializer(serializers.ModelSerializer):
     class Meta:
@@ -175,4 +171,3 @@ class ReservationWriteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Reservation
         exclude = ['created_at']
->>>>>>> debbf767b0b83b7db2b5ff07af6d3ffa95fbcd32

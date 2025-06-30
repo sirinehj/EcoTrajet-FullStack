@@ -1,10 +1,8 @@
 from django.db import models
-<<<<<<< HEAD
 import uuid
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
-from EcoTrajet.apps.trips.models import Trip
-from apps.users.models import User
+
 
 #Modèle pour les véhicules 
 class Vehicule(models.Model):
@@ -48,7 +46,6 @@ class Vehicule(models.Model):
     def places_disponibles(self):  
         #Retourne le nbre de places disponible
         return self.number_of_seats
-=======
 from django.db import models
 from django.forms import ValidationError
 from user_management.models import User
@@ -63,7 +60,6 @@ class Community(models.Model):
     is_private = models.BooleanField(default=False)
     theme = models.CharField(max_length=50)
 
->>>>>>> debbf767b0b83b7db2b5ff07af6d3ffa95fbcd32
 class Trip(models.Model):
     STATUS_CHOICES = [
         ('SCHEDULED', 'Programmé'),
@@ -72,7 +68,6 @@ class Trip(models.Model):
         ('CANCELLED', 'Annulé'),
     ]
     
-<<<<<<< HEAD
     driver = models.ForeignKey(User, on_delete=models.CASCADE, related_name='trips_as_driver')
     community = models.ForeignKey(Community, on_delete=models.SET_NULL, null=True, blank=True, related_name='trips')
     departure_time = models.DateTimeField()
@@ -84,7 +79,6 @@ class Trip(models.Model):
     status = models.CharField(max_length=15, choices=STATUS_CHOICES, default='SCHEDULED')
     created_at = models.DateTimeField(auto_now_add=True)
 
-=======
     conducteur = models.ForeignKey(User, on_delete=models.CASCADE, related_name='trips_as_driver')
     communaute = models.ForeignKey(Community, on_delete=models.SET_NULL, null=True, blank=True, related_name='trips')
     temps_depart = models.DateTimeField()
@@ -116,14 +110,12 @@ class Trip(models.Model):
         self.statut = 'CANCELLED'
         self.save()
 
->>>>>>> debbf767b0b83b7db2b5ff07af6d3ffa95fbcd32
 class Reservation(models.Model):
     STATUS_CHOICES = [
         ('PENDING', 'En attente'),
         ('CONFIRMED', 'Confirmé'),
         ('CANCELLED', 'Annulé'),
     ]
-<<<<<<< HEAD
     
     passenger = models.ForeignKey(User, on_delete=models.CASCADE, related_name='reservations')
     trip = models.ForeignKey('Trip', on_delete=models.CASCADE, related_name='reservations')
@@ -207,31 +199,3 @@ class RatingManager(models.Manager):
 
 # Ajouter le manager personnalisé au modèle Rating
 Rating.add_to_class('objects', RatingManager())
-=======
-
-    passenger = models.ForeignKey(User, on_delete=models.CASCADE, related_name='reservations')
-    trip = models.ForeignKey('Trip', on_delete=models.CASCADE, related_name='reservations')
-    place_reserv = models.PositiveIntegerField(default=1)
-    statut = models.CharField(max_length=10, choices=STATUS_CHOICES, default='PENDING')
-    created_at = models.DateTimeField(auto_now_add=True)
-
-def __str__(self):
-    return f"Reservation #{self.id}: {self.passenger.nom} {self.passenger.prenom} → {self.trip} (Status: {self.statut})"
-    
-    def get_absolute_url(self):
-        return reverse('reservation_detail', kwargs={'pk': self.pk})
-    
-    def clean(self):
-        if self.place_reserv > self.trip.places_dispo:
-            raise ValidationError("Le nombre de places réservées dépasse les places disponibles !")
-        if self.place_reserv <= 0:
-            raise ValidationError("Le nombre de places réservées doit être positif !")
-        
-    def save(self, *args, **kwargs):
-        if self.statut == 'CONFIRMED' and self.pk:  # Only if status changed to CONFIRMED
-            old_reservation = Reservation.objects.get(pk=self.pk)
-            if old_reservation.statut != 'CONFIRMED':
-                self.trip.places_dispo -= self.place_reserv
-                self.trip.save()
-        super().save(*args, **kwargs)
->>>>>>> debbf767b0b83b7db2b5ff07af6d3ffa95fbcd32
