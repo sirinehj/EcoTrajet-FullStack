@@ -63,9 +63,6 @@ INSTALLED_APPS = [
     'api',
     'user_management',  # Your main user management app
     # Remove 'apps.users' if it conflicts with user_management
-    'apps.communities',
-    'apps.notifications',
-    'apps.vehicles',
 ]
 
 # Custom user model
@@ -104,17 +101,16 @@ WSGI_APPLICATION = 'EcoTrajet.wsgi.application'
 
 # Database (PostgreSQL)
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.getenv("POSTGRES_DB", "ecotrajet_db"),
-        "USER": os.getenv("POSTGRES_USER", "postgres"),
-        "PASSWORD": os.getenv("POSTGRES_PASSWORD", "password"),
-        "HOST": os.getenv("POSTGRES_HOST", "localhost"),
-        "PORT": os.getenv("POSTGRES_PORT", "5432"),
-        "CONN_MAX_AGE": 60,  # Database connection pooling
-        "OPTIONS": {
-            "sslmode": "prefer",
-        },
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ecotrajet_db',
+        'USER': 'ecotrajet_app',
+        'PASSWORD': 'EcoSecure',
+        'HOST': 'localhost',
+        'PORT': '5432',
+        'OPTIONS': {
+            'options': '-c search_path=ecotrajet,public'
+        }
     }
 }
 
@@ -155,6 +151,7 @@ REST_FRAMEWORK = {
     ],
     "DEFAULT_RENDERER_CLASSES": [
         "rest_framework.renderers.JSONRenderer",
+        "rest_framework.renderers.BrowsableAPIRenderer",
     ],
     "DEFAULT_PARSER_CLASSES": [
         "rest_framework.parsers.JSONParser",
@@ -244,7 +241,7 @@ RATELIMIT_USE_CACHE = 'default'
 # Cache configuration (recommended for rate limiting)
 CACHES = {
     'default': {
-        'BACKEND': 'django.core.cache.backends.redis.RedisCache',
+        'BACKEND': 'django_redis.cache.RedisCache',
         'LOCATION': os.getenv('REDIS_URL', 'redis://127.0.0.1:6379/1'),
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
