@@ -1,7 +1,7 @@
 from django.urls import path
 from rest_framework.authtoken.views import obtain_auth_token
-from apps.users.views import ProfileView
-from apps.users.views import ProfileView, UserCreateView
+from user_management.views import ProfileView
+from user_management.views import ProfileView, UserCreateView
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from .views import (
     TripListView,
