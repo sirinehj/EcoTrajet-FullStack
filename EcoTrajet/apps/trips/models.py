@@ -111,3 +111,4 @@ class RatingManager(models.Manager):
 
 # Ajouter le manager personnalisé au modèle Rating
 Rating.add_to_class('objects', RatingManager())
+
