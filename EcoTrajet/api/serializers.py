@@ -24,7 +24,7 @@ class VehiculeSerializer(serializers.ModelSerializer):
         return obj.places_disponibles()
     
     #Validation personnalisée pour la plaque
-    def validate_licensePlate(self, value):
+    def validate_license_plate(self, value):
         if not value or len(value) < 5:
             raise serializers.ValidationError("La plaque doit contenir au moins 5 caractères")
         return value.upper()

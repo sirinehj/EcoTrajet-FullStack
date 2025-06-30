@@ -1,9 +1,7 @@
-from django.db import models
 import uuid
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
-from EcoTrajet.apps.trips.models import Trip
-from apps.users.models import User
+
 
 #Modèle pour les véhicules 
 class Vehicule(models.Model):
@@ -87,9 +85,10 @@ class Rating(models.Model):
         unique_together = ['reviewer', 'rated_user', 'trip']
         # Index pour les requêtes fréquentes
         indexes = [
-            models.Index(fields=['rated_user', 'score'])
+            models.Index(fields=['rated_user', 'score']),
+            models.Index(fields=['trip']),
         ]
-        models.Index(fields=['trip']),
+        
         
     def __str__(self):
         return f"Note {self.score}/5 - {self.reviewer} -> {self.rated_user}"
