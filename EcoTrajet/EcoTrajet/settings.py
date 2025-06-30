@@ -45,7 +45,7 @@ REST_FRAMEWORK = {
 }
 
 SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=60),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
 }
 
@@ -63,7 +63,6 @@ INSTALLED_APPS = [
     "corsheaders",
     'apps.users',
     'apps.communities',
-    'apps.trips',
     'apps.notifications',
     'apps.vehicles',
     'rest_framework.authtoken',
