@@ -63,7 +63,6 @@ INSTALLED_APPS = [
     "corsheaders",
     'apps.users',
     'apps.communities',
-    'apps.trips',
     'apps.notifications',
     'apps.vehicles',
     'rest_framework.authtoken',

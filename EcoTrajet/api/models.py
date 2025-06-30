@@ -12,14 +12,6 @@ class Trip(models.Model):
         ('COMPLETED', 'Terminé'),
         ('CANCELLED', 'Annulé'),
     ]
-
-    class Meta:
-        ordering = ['-temps_depart']  
-        verbose_name = "Trip"          
-        verbose_name_plural = "Trips"  
-        indexes = [
-            models.Index(fields=['statut']),
-        ]
     
     conducteur = models.ForeignKey(User, on_delete=models.CASCADE, related_name='trips_as_driver')
     communaute = models.ForeignKey(Community, on_delete=models.SET_NULL, null=True, blank=True, related_name='trips')
@@ -58,11 +50,6 @@ class Reservation(models.Model):
         ('CONFIRMED', 'Confirmé'),
         ('CANCELLED', 'Annulé'),
     ]
-    
-    class Meta:
-        ordering = ['-created_at']
-        verbose_name = "Reservation"
-        verbose_name_plural = "Reservations"
 
     passenger = models.ForeignKey(User, on_delete=models.CASCADE, related_name='reservations')
     trip = models.ForeignKey('Trip', on_delete=models.CASCADE, related_name='reservations')
@@ -75,3 +62,17 @@ class Reservation(models.Model):
     
     def get_absolute_url(self):
         return reverse('reservation_detail', kwargs={'pk': self.pk})
+    
+    def clean(self):
+        if self.place_reserv > self.trip.places_dispo:
+            raise ValidationError("Le nombre de places réservées dépasse les places disponibles !")
+        if self.place_reserv <= 0:
+            raise ValidationError("Le nombre de places réservées doit être positif !")
+        
+    def save(self, *args, **kwargs):
+        if self.statut == 'CONFIRMED' and self.pk:  # Only if status changed to CONFIRMED
+            old_reservation = Reservation.objects.get(pk=self.pk)
+            if old_reservation.statut != 'CONFIRMED':
+                self.trip.places_dispo -= self.place_reserv
+                self.trip.save()
+        super().save(*args, **kwargs)
