@@ -69,6 +69,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
     'django_ratelimit',  # Added for rate limiting
     # Internal apps
@@ -77,6 +78,12 @@ INSTALLED_APPS = [
 <<<<<<< Updated upstream
 >>>>>>> Stashed changes
 =======
+>>>>>>> Stashed changes
+=======
+    # 'django_ratelimit',  # Added for rate limiting
+    # Internal apps
+    'api',
+    'user_management',  # Your main user management app
 >>>>>>> Stashed changes
 =======
     # 'django_ratelimit',  # Added for rate limiting
@@ -125,10 +132,13 @@ DATABASES = {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 =======
@@ -141,6 +151,7 @@ DATABASES = {
         "HOST": os.getenv("POSTGRES_HOST", "localhost"),
         "PORT": os.getenv("POSTGRES_PORT", "5432"),
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         "CONN_MAX_AGE": 60,  # Database connection pooling
         "OPTIONS": {
             "sslmode": "prefer",
@@ -150,10 +161,15 @@ DATABASES = {
 =======
 >>>>>>> Stashed changes
 =======
+=======
+>>>>>>> Stashed changes
         # Remove search_path option that might cause encoding issues
         "OPTIONS": {
             "client_encoding": 'UTF8',
         },
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }
 }
@@ -232,11 +248,15 @@ if not DEBUG:
 
 # Email backend
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 if DEBUG:
     EMAIL_BACKEND = os.getenv("EMAIL_BACKEND", "django.core.mail.backends.console.EmailBackend")
 else:
     EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
     
+=======
+EMAIL_BACKEND = os.getenv("EMAIL_BACKEND", "django.core.mail.backends.console.EmailBackend")
+>>>>>>> Stashed changes
 =======
 EMAIL_BACKEND = os.getenv("EMAIL_BACKEND", "django.core.mail.backends.console.EmailBackend")
 >>>>>>> Stashed changes
@@ -255,6 +275,7 @@ RATELIMIT_ENABLE = True
 RATELIMIT_USE_CACHE = 'default'
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 # Cache configuration (recommended for rate limiting)
 CACHES = {
     'default': {
@@ -266,6 +287,8 @@ CACHES = {
         'KEY_PREFIX': 'ecotrajet',
         'TIMEOUT': 300,
 =======
+=======
+>>>>>>> Stashed changes
 # In your settings.py file, update the CACHES configuration:
 
 # For local development without Redis installed
@@ -275,6 +298,9 @@ if DEBUG:
         'default': {
             'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
         }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }
     # Disable rate limiting in development
@@ -365,17 +391,24 @@ if DEBUG:
     except ImportError:
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         pass  # django_extensions not installed
 >>>>>>> Stashed changes
 =======
         pass  # django_extensions not installed
 >>>>>>> Stashed changes
 =======
+=======
+>>>>>>> Stashed changes
         pass  # django_extensions not installed
 
 # Silence specific system checks to allow running without migrations
 SILENCED_SYSTEM_CHECKS = [
     'fields.E304',  # Reverse accessor clashes
     'fields.E305',  # Reverse query name clashes
+<<<<<<< Updated upstream
+]
+>>>>>>> Stashed changes
+=======
 ]
 >>>>>>> Stashed changes
