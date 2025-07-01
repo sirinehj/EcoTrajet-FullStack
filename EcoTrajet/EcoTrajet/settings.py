@@ -67,11 +67,19 @@ INSTALLED_APPS = [
     'apps.notifications',
     'apps.vehicles',
     'rest_framework.authtoken',
+<<<<<<< Updated upstream
 
     'django_ratelimit',  # Added for rate limiting
     # Internal apps
     'api',
     'user_management',  # Your main user management app
+=======
+    # 'django_ratelimit',  # Added for rate limiting
+    # Internal apps
+    'api',
+    'user_management',  # Your main user management app
+]
+>>>>>>> Stashed changes
 
     # 'django_ratelimit',  # Added for rate limiting
     # Internal apps
@@ -116,7 +124,10 @@ WSGI_APPLICATION = 'EcoTrajet.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     "default": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": os.getenv("POSTGRES_DB", "ecotrajet_db"),
@@ -124,14 +135,20 @@ DATABASES = {
         "PASSWORD": os.getenv("POSTGRES_PASSWORD", "easycode3000"),
         "HOST": os.getenv("POSTGRES_HOST", "localhost"),
         "PORT": os.getenv("POSTGRES_PORT", "5432"),
+<<<<<<< Updated upstream
 
         "CONN_MAX_AGE": 60,  # Database connection pooling
       
+=======
+>>>>>>> Stashed changes
         # Remove search_path option that might cause encoding issues
         "OPTIONS": {
             "client_encoding": 'UTF8',
         },
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     }
 }
 
@@ -205,9 +222,13 @@ if not DEBUG:
     SECURE_HSTS_PRELOAD = True
 
 # Email backend
+<<<<<<< Updated upstream
 
 EMAIL_BACKEND = os.getenv("EMAIL_BACKEND", "django.core.mail.backends.console.EmailBackend")
 
+=======
+EMAIL_BACKEND = os.getenv("EMAIL_BACKEND", "django.core.mail.backends.console.EmailBackend")
+>>>>>>> Stashed changes
 EMAIL_HOST = os.getenv("EMAIL_HOST", "smtp.gmail.com")
 EMAIL_PORT = int(os.getenv("EMAIL_PORT", "587"))
 EMAIL_USE_TLS = os.getenv("EMAIL_USE_TLS", "True") == "True"
@@ -222,6 +243,7 @@ FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:3000")
 RATELIMIT_ENABLE = True
 RATELIMIT_USE_CACHE = 'default'
 
+<<<<<<< Updated upstream
 
 
 # Cache configuration (recommended for rate limiting)
@@ -234,6 +256,8 @@ CACHES = {
         },
         'KEY_PREFIX': 'ecotrajet',
         'TIMEOUT': 300}}
+=======
+>>>>>>> Stashed changes
 # In your settings.py file, update the CACHES configuration:
 
 # For local development without Redis installed
@@ -243,7 +267,10 @@ if DEBUG:
         'default': {
             'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
         }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     }
     # Disable rate limiting in development
     RATELIMIT_ENABLE = False
