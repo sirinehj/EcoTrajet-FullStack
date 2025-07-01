@@ -1,54 +1,9 @@
-import uuid
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.core.exceptions import ValidationError
 from user_management.models import User
 from django.urls import reverse
-
-
-#Modèle pour les véhicules 
-class Vehicule(models.Model):
-    idVehicule = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    owner = models.ForeignKey(
-        User,
-        on_delete=models.CASCADE,
-        related_name='vehicules',
-        help_text="Propriétaire du véhicule"
-    )
-    license_plate = models.CharField(
-        max_length=20,
-        unique=True,
-        help_text="Numéro de plaque d'immatriculation"
-    )
-    make = models.CharField(max_length=50, help_text="Marque du véhicule")
-    model = models.CharField(max_length=50, help_text="Modèle du véhicule")
-    couleur = models.CharField(max_length=30, help_text="Couleur du véhicule")
-    number_of_seats = models.PositiveIntegerField(
-        validators=[MinValueValidator(1), MaxValueValidator(4)]
-    )
-    is_active = models.BooleanField(
-        default=True,
-        help_text="Véhicule actif pour les trajets"
-    )
-    
-    # Champs de métadonnées
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    
-    class Meta:
-        db_table = 'vehicule'
-        verbose_name = 'vehicule'
-        verbose_name_plural = 'Véhicules'
-        ordering = ['-created_at']
-    
-
-    def __str__(self):
-        return f"{self.make} {self.model} ({self.license_plate})"
-    
-    def places_disponibles(self):  
-        #Retourne le nbre de places disponible
-        return self.number_of_seats
-
+import uuid
 
 class Community(models.Model):
     name = models.CharField(max_length=100)
@@ -66,17 +21,6 @@ class Trip(models.Model):
         ('COMPLETED', 'Terminé'),
         ('CANCELLED', 'Annulé'),
     ]
-    
-    driver = models.ForeignKey(User, on_delete=models.CASCADE, related_name='trips_as_driver')
-    community = models.ForeignKey(Community, on_delete=models.SET_NULL, null=True, blank=True, related_name='trips')
-    departure_time = models.DateTimeField()
-    arrival_time = models.DateTimeField()
-    origin = models.CharField(max_length=100)
-    destination = models.CharField(max_length=100)
-    price = models.DecimalField(max_digits=6, decimal_places=2)
-    available_seats = models.PositiveIntegerField()
-    status = models.CharField(max_length=15, choices=STATUS_CHOICES, default='SCHEDULED')
-    created_at = models.DateTimeField(auto_now_add=True)
 
     conducteur = models.ForeignKey(User, on_delete=models.CASCADE, related_name='trips_as_driver')
     communaute = models.ForeignKey(Community, on_delete=models.SET_NULL, null=True, blank=True, related_name='trips')
@@ -115,13 +59,32 @@ class Reservation(models.Model):
         ('CONFIRMED', 'Confirmé'),
         ('CANCELLED', 'Annulé'),
     ]
-    
+
     passenger = models.ForeignKey(User, on_delete=models.CASCADE, related_name='reservations')
     trip = models.ForeignKey('Trip', on_delete=models.CASCADE, related_name='reservations')
-    seats_reserved = models.PositiveIntegerField(default=1)
-    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='PENDING')
+    place_reserv = models.PositiveIntegerField(default=1)
+    statut = models.CharField(max_length=10, choices=STATUS_CHOICES, default='PENDING')
     created_at = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return f"Reservation #{self.id}: {self.passenger.nom} {self.passenger.prenom} → {self.trip} (Status: {self.statut})"
+    
+    def get_absolute_url(self):
+        return reverse('reservation_detail', kwargs={'pk': self.pk})
+    
+    def clean(self):
+        if self.place_reserv > self.trip.places_dispo:
+            raise ValidationError("Le nombre de places réservées dépasse les places disponibles !")
+        if self.place_reserv <= 0:
+            raise ValidationError("Le nombre de places réservées doit être positif !")
+        
+    def save(self, *args, **kwargs):
+        if self.statut == 'CONFIRMED' and self.pk:  # Only if status changed to CONFIRMED
+            old_reservation = Reservation.objects.get(pk=self.pk)
+            if old_reservation.statut != 'CONFIRMED':
+                self.trip.places_dispo -= self.place_reserv
+                self.trip.save()
+        super().save(*args, **kwargs)
 
 #Modèle pour les évaluations après trajets
 class Rating(models.Model):
