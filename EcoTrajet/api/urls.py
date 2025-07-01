@@ -2,6 +2,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 from django.urls import path
 from .views import main
 from rest_framework.authtoken.views import obtain_auth_token
@@ -51,6 +52,15 @@ urlpatterns = [
 >>>>>>> Stashed changes
 
 ]
+=======
+from django.urls import path
+from rest_framework.routers import DefaultRouter
+
+# Create a router
+router = DefaultRouter()
+
+urlpatterns = router.urls
+>>>>>>> Stashed changes
 =======
 from django.urls import path
 from rest_framework.routers import DefaultRouter

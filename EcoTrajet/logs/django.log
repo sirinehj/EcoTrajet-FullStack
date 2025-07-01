@@ -378,6 +378,7 @@ INFO 2025-07-01 01:22:30,345 basehttp 1264 16900 "GET /api/trips/ HTTP/1.1" 200 
 INFO 2025-07-01 01:22:46,825 basehttp 1264 18680 "GET /api/reservations/ HTTP/1.1" 200 17826
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 INFO 2025-07-01 03:06:45,525 autoreload 18236 18296 Watching for file changes with StatReloader
 INFO 2025-07-01 03:08:40,319 autoreload 18236 18296 C:\Things\STAGE\RIF\test\EcoTrajet\EcoTrajet\urls.py changed, reloading.
 INFO 2025-07-01 03:08:40,818 autoreload 17300 21268 Watching for file changes with StatReloader
@@ -408,6 +409,8 @@ INFO 2025-07-01 03:13:36,755 autoreload 12152 20288 Watching for file changes wi
 INFO 2025-07-01 03:13:40,119 autoreload 12152 20288 C:\Things\STAGE\RIF\test\EcoTrajet\api\models.py changed, reloading.
 INFO 2025-07-01 03:13:40,625 autoreload 17288 12112 Watching for file changes with StatReloader
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 INFO 2025-07-01 03:25:19,595 autoreload 20704 3444 Watching for file changes with StatReloader
@@ -446,6 +449,9 @@ INFO 2025-07-01 04:31:21,413 basehttp 16756 7832 "POST /api/auth/logout/ HTTP/1.
 INFO 2025-07-01 04:31:55,651 basehttp 16756 7832 "GET /api/auth/activity/ HTTP/1.1" 200 419
 INFO 2025-07-01 04:32:13,595 autoreload 16756 10040 C:\Things\STAGE\RIF\test\EcoTrajet\EcoTrajet\settings.py changed, reloading.
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
