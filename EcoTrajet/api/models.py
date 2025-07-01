@@ -1,8 +1,7 @@
-from django.db import models
 import uuid
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
-from django.forms import ValidationError
+from django.core.exceptions import ValidationError
 from user_management.models import User
 from django.urls import reverse
 
@@ -163,9 +162,10 @@ class Rating(models.Model):
         unique_together = ['reviewer', 'rated_user', 'trip']
         # Index pour les requêtes fréquentes
         indexes = [
-            models.Index(fields=['rated_user', 'score'])
+            models.Index(fields=['rated_user', 'score']),
+            models.Index(fields=['trip']),
         ]
-        models.Index(fields=['trip']),
+        
         
     def __str__(self):
         return f"Note {self.score}/5 - {self.reviewer} -> {self.rated_user}"
