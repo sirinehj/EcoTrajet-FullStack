@@ -681,3 +681,87 @@ INFO 2025-07-01 16:58:39,918 autoreload 10772 8212 C:\Things\STAGE\RIF\temp\EcoT
 INFO 2025-07-01 16:58:40,470 autoreload 21372 4384 Watching for file changes with StatReloader
 INFO 2025-07-01 16:59:12,026 autoreload 21372 4384 C:\Things\STAGE\RIF\temp\EcoTrajet\EcoTrajet\settings.py changed, reloading.
 INFO 2025-07-01 16:59:28,088 autoreload 21048 3204 Watching for file changes with StatReloader
+INFO 2025-07-01 17:14:16,150 autoreload 19036 21320 Watching for file changes with StatReloader
+INFO 2025-07-01 17:58:20,615 autoreload 14548 12996 Watching for file changes with StatReloader
+WARNING 2025-07-01 18:05:42,909 log 14276 19860 Unauthorized: /api/user/token/
+WARNING 2025-07-01 18:05:43,498 log 14276 19860 Bad Request: /api/user/token/
+WARNING 2025-07-01 18:05:44,109 log 14276 19860 Bad Request: /api/user/register/
+WARNING 2025-07-01 18:05:44,191 log 14276 19860 Bad Request: /api/user/register/
+WARNING 2025-07-01 18:05:44,488 log 14276 19860 Unauthorized: /api/user/profile/
+WARNING 2025-07-01 18:05:45,994 log 14276 19860 Bad Request: /api/user/password-reset/confirm/
+WARNING 2025-07-01 18:05:46,299 log 14276 19860 Bad Request: /api/user/password-reset/confirm/
+ERROR 2025-07-01 18:05:46,918 log 14276 19860 Internal Server Error: /api/user/logout/
+Traceback (most recent call last):
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Things\STAGE\RIF\temp\EcoTrajet\user_management\views.py", line 323, in post
+    token = RefreshToken(refresh_token)
+  File "C:\Users\GIGABYTE\AppData\Local\Programs\Python\Python313\Lib\unittest\mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\GIGABYTE\AppData\Local\Programs\Python\Python313\Lib\unittest\mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\GIGABYTE\AppData\Local\Programs\Python\Python313\Lib\unittest\mock.py", line 1226, in _execute_mock_call
+    raise effect
+Exception: Invalid token
+WARNING 2025-07-01 18:05:48,601 log 14276 19860 Unauthorized: /api/user/activity/
+WARNING 2025-07-01 18:09:51,384 log 22344 1488 Unauthorized: /api/user/token/
+WARNING 2025-07-01 18:09:52,002 log 22344 1488 Bad Request: /api/user/token/
+WARNING 2025-07-01 18:09:52,644 log 22344 1488 Bad Request: /api/user/register/
+WARNING 2025-07-01 18:09:52,648 log 22344 1488 Bad Request: /api/user/register/
+WARNING 2025-07-01 18:09:52,963 log 22344 1488 Unauthorized: /api/user/profile/
+WARNING 2025-07-01 18:09:54,486 log 22344 1488 Bad Request: /api/user/password-reset/confirm/
+WARNING 2025-07-01 18:09:54,785 log 22344 1488 Bad Request: /api/user/password-reset/confirm/
+ERROR 2025-07-01 18:09:55,416 log 22344 1488 Internal Server Error: /api/user/logout/
+Traceback (most recent call last):
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Things\STAGE\RIF\temp\EcoTrajet\user_management\views.py", line 323, in post
+    token = RefreshToken(refresh_token)
+  File "C:\Users\GIGABYTE\AppData\Local\Programs\Python\Python313\Lib\unittest\mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\GIGABYTE\AppData\Local\Programs\Python\Python313\Lib\unittest\mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\GIGABYTE\AppData\Local\Programs\Python\Python313\Lib\unittest\mock.py", line 1226, in _execute_mock_call
+    raise effect
+Exception: Invalid token
+WARNING 2025-07-01 18:09:56,018 log 22344 1488 Bad Request: /api/user/verify-email/NDM/invalid-token/
+WARNING 2025-07-01 18:09:56,021 log 22344 1488 Bad Request: /api/user/verify-email/invalid-uid/some-token/
+WARNING 2025-07-01 18:09:58,092 log 22344 1488 Bad Request: /api/user/change-password/
+WARNING 2025-07-01 18:09:58,096 log 22344 1488 Unauthorized: /api/user/change-password/
+WARNING 2025-07-01 18:09:58,403 log 22344 1488 Unauthorized: /api/user/activity/
