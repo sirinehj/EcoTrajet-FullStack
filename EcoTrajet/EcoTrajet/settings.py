@@ -58,14 +58,10 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt",
     "rest_framework_simplejwt.token_blacklist",
     'rest_framework.authtoken',
-    'django_ratelimit',  # Added for rate limiting
+    'django_ratelimit',
     # Internal apps
     'api',
-    'user_management',  # Your main user management app
-<<<<<<< HEAD
-=======
-    # Remove 'apps.users' if it conflicts with user_management
->>>>>>> 55808b31e5496d047d1fb9ca5d8694ae7952aa26
+    'user_management',
 ]
 
 # Custom user model

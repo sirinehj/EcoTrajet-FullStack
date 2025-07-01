@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Vehicule
+from user_management.models import Vehicule
 from .models import Rating
 from django.utils import timezone
 from rest_framework import serializers
@@ -107,7 +107,7 @@ class ReservationNestedSerializer(serializers.ModelSerializer):
 
 class TripDetailSerializer(serializers.ModelSerializer):
     conducteur = serializers.StringRelatedField()
-    reservations = ReservationNestedSerializer(many=True, read_only=True)
+    reservation = ReservationNestedSerializer(many=True, read_only=True)
 
     class Meta:
         model = Trip

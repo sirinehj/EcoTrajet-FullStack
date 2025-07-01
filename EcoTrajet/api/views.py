@@ -8,7 +8,7 @@ from django.shortcuts import get_object_or_404
 from rest_framework.permissions import IsAuthenticated
 from .models import Rating, User
 from django.db.models import Avg
-from .models import Vehicule
+from user_management.models import Vehicule
 from .serializers import (
     VehiculeSerializer, VehiculeCreateSerializer, RatingCreateSerializer, RatingSerializer, UserRatingStatsSerializer
 )

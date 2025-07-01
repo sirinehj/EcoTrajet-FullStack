@@ -376,3 +376,303 @@ WARNING 2025-07-01 01:22:07,067 log 1264 20312 Not Found: /
 WARNING 2025-07-01 01:22:07,067 basehttp 1264 20312 "GET / HTTP/1.1" 404 3847
 INFO 2025-07-01 01:22:30,345 basehttp 1264 16900 "GET /api/trips/ HTTP/1.1" 200 18124
 INFO 2025-07-01 01:22:46,825 basehttp 1264 18680 "GET /api/reservations/ HTTP/1.1" 200 17826
+INFO 2025-07-01 14:43:35,196 autoreload 13888 13632 Watching for file changes with StatReloader
+INFO 2025-07-01 14:45:36,014 autoreload 13888 13632 C:\ecoTrajet\EcoTrajet\api\models.py changed, reloading.
+INFO 2025-07-01 14:45:37,304 autoreload 8220 13456 Watching for file changes with StatReloader
+INFO 2025-07-01 14:45:58,700 autoreload 22416 21908 Watching for file changes with StatReloader
+INFO 2025-07-01 14:47:27,349 autoreload 22416 21908 C:\ecoTrajet\EcoTrajet\api\models.py changed, reloading.
+INFO 2025-07-01 14:47:28,411 autoreload 21564 11740 Watching for file changes with StatReloader
+INFO 2025-07-01 14:47:38,528 autoreload 21564 11740 C:\ecoTrajet\EcoTrajet\user_management\models.py changed, reloading.
+INFO 2025-07-01 14:47:39,080 autoreload 22416 308 Watching for file changes with StatReloader
+INFO 2025-07-01 14:48:11,091 autoreload 22416 308 C:\ecoTrajet\EcoTrajet\user_management\models.py changed, reloading.
+INFO 2025-07-01 14:48:11,808 autoreload 11956 340 Watching for file changes with StatReloader
+INFO 2025-07-01 14:48:59,472 autoreload 11956 340 C:\ecoTrajet\EcoTrajet\user_management\models.py changed, reloading.
+INFO 2025-07-01 14:49:00,175 autoreload 16924 19016 Watching for file changes with StatReloader
+INFO 2025-07-01 14:49:19,931 autoreload 16924 19016 C:\ecoTrajet\EcoTrajet\user_management\models.py changed, reloading.
+INFO 2025-07-01 14:49:20,682 autoreload 21784 18684 Watching for file changes with StatReloader
+INFO 2025-07-01 14:49:38,350 autoreload 21784 18684 C:\ecoTrajet\EcoTrajet\api\models.py changed, reloading.
+INFO 2025-07-01 14:49:38,991 autoreload 2416 5700 Watching for file changes with StatReloader
+INFO 2025-07-01 14:49:59,478 autoreload 2416 5700 C:\ecoTrajet\EcoTrajet\api\models.py changed, reloading.
+INFO 2025-07-01 14:49:59,986 autoreload 10700 21420 Watching for file changes with StatReloader
+INFO 2025-07-01 14:50:07,400 autoreload 10700 21420 C:\ecoTrajet\EcoTrajet\api\models.py changed, reloading.
+INFO 2025-07-01 14:50:07,931 autoreload 12052 13108 Watching for file changes with StatReloader
+INFO 2025-07-01 14:51:03,549 autoreload 12052 13108 C:\ecoTrajet\EcoTrajet\api\views.py changed, reloading.
+INFO 2025-07-01 14:51:04,624 autoreload 10524 8652 Watching for file changes with StatReloader
+INFO 2025-07-01 14:51:12,324 autoreload 10524 8652 C:\ecoTrajet\EcoTrajet\api\serializers.py changed, reloading.
+INFO 2025-07-01 14:51:12,830 autoreload 4528 6492 Watching for file changes with StatReloader
+INFO 2025-07-01 14:51:21,188 autoreload 15900 19788 Watching for file changes with StatReloader
+INFO 2025-07-01 14:51:24,320 basehttp 15900 21780 "GET / HTTP/1.1" 200 10485
+INFO 2025-07-01 14:51:25,084 basehttp 15900 21780 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-07-01 14:51:25,102 basehttp 15900 21780 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-07-01 14:51:25,111 basehttp 15900 21780 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-07-01 14:51:25,153 basehttp 15900 21780 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-07-01 14:51:25,190 basehttp 15900 3924 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-07-01 14:51:25,200 basehttp 15900 3924 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-07-01 14:51:25,203 basehttp 15900 10108 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-07-01 14:51:25,208 basehttp 15900 21780 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-07-01 14:51:25,217 basehttp 15900 21936 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-07-01 14:51:25,218 basehttp 15900 20956 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-07-01 14:51:25,232 basehttp 15900 21420 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-07-01 14:51:25,260 basehttp 15900 21420 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2025-07-01 14:51:25,372 log 15900 21420 Not Found: /favicon.ico
+WARNING 2025-07-01 14:51:25,373 basehttp 15900 21420 "GET /favicon.ico HTTP/1.1" 404 5545
+INFO 2025-07-01 14:51:38,190 basehttp 15900 17416 "GET / HTTP/1.1" 200 10485
+INFO 2025-07-01 14:51:40,808 basehttp 15900 17416 "OPTIONS / HTTP/1.1" 200 10889
+INFO 2025-07-01 14:51:42,614 basehttp 15900 5216 "OPTIONS / HTTP/1.1" 200 10889
+ERROR 2025-07-01 14:51:46,203 log 15900 5216 Internal Server Error: /trips/
+Traceback (most recent call last):
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: ERREUR:  la colonne api_reservation.seats_reserved n'existe pas
+LINE 1: ...ion"."passenger_id", "api_reservation"."trip_id", "api_reser...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\ecoTrajet\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\pagination.py", line 222, in paginate_queryset
+    return list(self.page)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\core\paginator.py", line 191, in __len__
+    return len(self.object_list)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\models\query.py", line 1951, in _fetch_all
+    self._prefetch_related_objects()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\models\query.py", line 1328, in _prefetch_related_objects
+    prefetch_related_objects(self._result_cache, *self._prefetch_related_lookups)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\models\query.py", line 2397, in prefetch_related_objects
+    obj_list, additional_lookups = prefetch_one_level(
+                                   ~~~~~~~~~~~~~~~~~~^
+        obj_to_fetch,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        level,
+        ^^^^^^
+    )
+    ^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\models\query.py", line 2561, in prefetch_one_level
+    ) = prefetcher.get_prefetch_querysets(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        instances, lookup.get_current_querysets(level)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 800, in get_prefetch_querysets
+    for rel_obj in queryset:
+                   ^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la colonne api_reservation.seats_reserved n'existe pas
+LINE 1: ...ion"."passenger_id", "api_reservation"."trip_id", "api_reser...
+                                                             ^
+
+ERROR 2025-07-01 14:51:46,226 basehttp 15900 5216 "GET /trips/ HTTP/1.1" 500 202364
+INFO 2025-07-01 14:53:54,189 autoreload 15900 19788 C:\ecoTrajet\EcoTrajet\api\models.py changed, reloading.
+INFO 2025-07-01 14:53:55,452 autoreload 22788 23344 Watching for file changes with StatReloader
+ERROR 2025-07-01 14:54:20,248 log 22788 18348 Internal Server Error: /trips/
+Traceback (most recent call last):
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: ERREUR:  la colonne api_reservation.status n'existe pas
+LINE 1: ...ion"."trip_id", "api_reservation"."place_reserv", "api_reser...
+                                                             ^
+HINT:  Peut-être que vous souhaitiez référencer la colonne « api_reservation.statut ».
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\ecoTrajet\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\generics.py", line 175, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\pagination.py", line 222, in paginate_queryset
+    return list(self.page)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\core\paginator.py", line 191, in __len__
+    return len(self.object_list)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\models\query.py", line 1951, in _fetch_all
+    self._prefetch_related_objects()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\models\query.py", line 1328, in _prefetch_related_objects
+    prefetch_related_objects(self._result_cache, *self._prefetch_related_lookups)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\models\query.py", line 2397, in prefetch_related_objects
+    obj_list, additional_lookups = prefetch_one_level(
+                                   ~~~~~~~~~~~~~~~~~~^
+        obj_to_fetch,
+        ^^^^^^^^^^^^^
+    ...<2 lines>...
+        level,
+        ^^^^^^
+    )
+    ^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\models\query.py", line 2561, in prefetch_one_level
+    ) = prefetcher.get_prefetch_querysets(
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        instances, lookup.get_current_querysets(level)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 800, in get_prefetch_querysets
+    for rel_obj in queryset:
+                   ^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\models\query.py", line 384, in __iter__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\ecoTrajet\env\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la colonne api_reservation.status n'existe pas
+LINE 1: ...ion"."trip_id", "api_reservation"."place_reserv", "api_reser...
+                                                             ^
+HINT:  Peut-être que vous souhaitiez référencer la colonne « api_reservation.statut ».
+
+ERROR 2025-07-01 14:54:20,274 basehttp 22788 18348 "GET /trips/ HTTP/1.1" 500 203920
+INFO 2025-07-01 14:54:42,267 autoreload 22788 23344 C:\ecoTrajet\EcoTrajet\api\models.py changed, reloading.
+INFO 2025-07-01 14:54:42,976 autoreload 19052 18684 Watching for file changes with StatReloader
+INFO 2025-07-01 14:55:45,437 autoreload 22696 19228 Watching for file changes with StatReloader
+INFO 2025-07-01 15:00:10,594 autoreload 22696 19228 C:\ecoTrajet\EcoTrajet\api\models.py changed, reloading.
+INFO 2025-07-01 15:00:11,713 autoreload 11016 3792 Watching for file changes with StatReloader
+INFO 2025-07-01 15:00:14,238 autoreload 11016 3792 C:\ecoTrajet\EcoTrajet\api\models.py changed, reloading.
+INFO 2025-07-01 15:00:14,842 autoreload 22956 18224 Watching for file changes with StatReloader
+INFO 2025-07-01 15:00:17,167 autoreload 22956 18224 C:\ecoTrajet\EcoTrajet\api\models.py changed, reloading.
+INFO 2025-07-01 15:00:17,840 autoreload 15836 18752 Watching for file changes with StatReloader
+INFO 2025-07-01 15:00:25,461 autoreload 15836 18752 C:\ecoTrajet\EcoTrajet\api\serializers.py changed, reloading.
+INFO 2025-07-01 15:00:26,085 autoreload 13388 15432 Watching for file changes with StatReloader
+INFO 2025-07-01 15:00:28,499 autoreload 13388 15432 C:\ecoTrajet\EcoTrajet\api\serializers.py changed, reloading.
+INFO 2025-07-01 15:00:29,218 autoreload 4352 4932 Watching for file changes with StatReloader
+INFO 2025-07-01 15:00:34,860 autoreload 4352 4932 C:\ecoTrajet\EcoTrajet\api\serializers.py changed, reloading.
+INFO 2025-07-01 15:00:35,539 autoreload 14628 4016 Watching for file changes with StatReloader
+INFO 2025-07-01 15:00:45,348 autoreload 14628 4016 C:\ecoTrajet\EcoTrajet\api\serializers.py changed, reloading.
+INFO 2025-07-01 15:00:45,984 autoreload 16600 7076 Watching for file changes with StatReloader
+INFO 2025-07-01 15:01:25,965 autoreload 10472 7340 Watching for file changes with StatReloader
+INFO 2025-07-01 15:01:28,114 basehttp 10472 23172 "GET / HTTP/1.1" 200 10485
+INFO 2025-07-01 15:01:31,722 basehttp 10472 23172 "GET /trips/ HTTP/1.1" 200 18687
+INFO 2025-07-01 15:01:31,858 basehttp 10472 23172 "GET /static/rest_framework/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+INFO 2025-07-01 15:02:31,930 basehttp 10472 22120 "POST /trips/ HTTP/1.1" 201 16208
+INFO 2025-07-01 15:02:39,372 basehttp 10472 21224 "GET /trips/ HTTP/1.1" 200 19062
+INFO 2025-07-01 15:02:49,932 basehttp 10472 10400 "GET /trips/?ordering=temps_depart HTTP/1.1" 200 19346
+INFO 2025-07-01 15:02:54,183 basehttp 10472 10400 "GET /trips/?ordering=-temps_depart HTTP/1.1" 200 19353
+INFO 2025-07-01 15:03:02,659 basehttp 10472 23336 "GET /trips/2 HTTP/1.1" 301 0
+INFO 2025-07-01 15:03:02,932 basehttp 10472 17484 "GET /trips/2/ HTTP/1.1" 200 17834
+INFO 2025-07-01 15:03:14,594 basehttp 10472 20956 "DELETE /trips/2/ HTTP/1.1" 200 16971
+INFO 2025-07-01 15:03:18,788 basehttp 10472 20956 "GET /trips HTTP/1.1" 301 0
+INFO 2025-07-01 15:03:18,893 basehttp 10472 18972 "GET /trips/ HTTP/1.1" 200 19062
+INFO 2025-07-01 15:03:21,980 basehttp 10472 18972 "GET /trips/ HTTP/1.1" 200 19062
+INFO 2025-07-01 15:03:31,713 basehttp 10472 18972 "GET /reservations HTTP/1.1" 301 0
+INFO 2025-07-01 15:03:31,819 basehttp 10472 9304 "GET /reservations/ HTTP/1.1" 200 18527
