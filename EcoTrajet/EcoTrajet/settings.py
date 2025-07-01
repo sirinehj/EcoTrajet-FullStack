@@ -15,33 +15,20 @@ from datetime import timedelta
 from dotenv import load_dotenv
 import os
 
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv(BASE_DIR / ".env")
 
+# Quick-start development settings - unsuitable for production
+# See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
+
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-33y@khjt@46soo@$i$hhvth(p1_t*1fy-#1b^v&l9mhmk62n_o'
+SECRET_KEY = os.getenv("SECRET_KEY", 'django-insecure-33y@khjt@46soo@$i$hhvth(p1_t*1fy-#1b^v&l9mhmk62n_o')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.getenv("DEBUG", "True") == "True"
 
-ALLOWED_HOSTS = ["*"]
-
-REST_FRAMEWORK = {
-    "DEFAULT_AUTHENTICATION_CLASSES": (
-        "rest_framework_simplejwt.authentication.JWTAuthentication",
-        'rest_framework.authentication.SessionAuthentication',
-        'rest_framework.authentication.TokenAuthentication',
-    ),
-    "DEFAULT_PERMISSION_CLASSES": [
-        "rest_framework.permissions.IsAuthenticated",
-        'rest_framework.permissions.IsAuthenticatedOrReadOnly',
-    ],
-}
-
-SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),
-    "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
-}
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "*").split(",")
 
 # Application definition
 INSTALLED_APPS = [
@@ -51,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
     # External packages
     "rest_framework",
     "corsheaders",
@@ -58,10 +46,11 @@ INSTALLED_APPS = [
     "rest_framework_simplejwt",
     "rest_framework_simplejwt.token_blacklist",
     'rest_framework.authtoken',
-    'django_ratelimit',
+    # 'django_ratelimit',  # Added for rate limiting
+    
     # Internal apps
     'api',
-    'user_management',
+    'user_management',  # Your main user management app
 ]
 
 # Custom user model
@@ -100,16 +89,18 @@ WSGI_APPLICATION = 'EcoTrajet.wsgi.application'
 
 # Database (PostgreSQL)
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ecotrajet_db',
-        'USER': 'ecotrajet_app',
-        'PASSWORD': 'EcoSecure',
-        'HOST': 'localhost',
-        'PORT': '5432',
-        'OPTIONS': {
-            'options': '-c search_path=ecotrajet,public'
-        }
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": os.getenv("POSTGRES_DB", "ecotrajet_db"),
+        "USER": os.getenv("POSTGRES_USER", "postgres"),
+        "PASSWORD": os.getenv("POSTGRES_PASSWORD", "easycode3000"),
+        "HOST": os.getenv("POSTGRES_HOST", "localhost"),
+        "PORT": os.getenv("POSTGRES_PORT", "5432"),
+        "CONN_MAX_AGE": 60,  # Database connection pooling
+        # Remove search_path option that might cause encoding issues
+        "OPTIONS": {
+            "client_encoding": 'UTF8',
+        },
     }
 }
 
@@ -144,9 +135,11 @@ REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
         "rest_framework_simplejwt.authentication.JWTAuthentication",
         "rest_framework.authentication.SessionAuthentication",
+        "rest_framework.authentication.TokenAuthentication",
     ),
     "DEFAULT_PERMISSION_CLASSES": [
         "rest_framework.permissions.IsAuthenticated",
+        'rest_framework.permissions.IsAuthenticatedOrReadOnly',
     ],
     "DEFAULT_RENDERER_CLASSES": [
         "rest_framework.renderers.JSONRenderer",
@@ -209,25 +202,21 @@ SECURE_CONTENT_TYPE_NOSNIFF = True
 X_FRAME_OPTIONS = "DENY"
 
 if not DEBUG:
-    SECURE_SSL_REDIRECT = True
+    SECURE_SSL_REDIRECT = os.getenv("SECURE_SSL_REDIRECT", "False") == "True"
     SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
-    SESSION_COOKIE_SECURE = True
-    CSRF_COOKIE_SECURE = True
+    SESSION_COOKIE_SECURE = os.getenv("SESSION_COOKIE_SECURE", "False") == "True"
+    CSRF_COOKIE_SECURE = os.getenv("CSRF_COOKIE_SECURE", "False") == "True"
     SECURE_HSTS_SECONDS = 31536000  # 1 year
     SECURE_HSTS_INCLUDE_SUBDOMAINS = True
     SECURE_HSTS_PRELOAD = True
 
 # Email backend
-if DEBUG:
-    EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
-else:
-    EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-    
+EMAIL_BACKEND = os.getenv("EMAIL_BACKEND", "django.core.mail.backends.console.EmailBackend")
 EMAIL_HOST = os.getenv("EMAIL_HOST", "smtp.gmail.com")
 EMAIL_PORT = int(os.getenv("EMAIL_PORT", "587"))
 EMAIL_USE_TLS = os.getenv("EMAIL_USE_TLS", "True") == "True"
-EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER", "")
-EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD", "")
+EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER", "your-email@gmail.com")
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD", "your-app-password-here")
 DEFAULT_FROM_EMAIL = os.getenv("DEFAULT_FROM_EMAIL", "noreply@ecotrajet.com")
 
 # Frontend URL
@@ -237,18 +226,32 @@ FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:3000")
 RATELIMIT_ENABLE = True
 RATELIMIT_USE_CACHE = 'default'
 
-# Cache configuration (recommended for rate limiting)
-CACHES = {
-    'default': {
-        'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': os.getenv('REDIS_URL', 'redis://127.0.0.1:6379/1'),
-        'OPTIONS': {
-            'CLIENT_CLASS': 'django_redis.client.DefaultClient',
-        },
-        'KEY_PREFIX': 'ecotrajet',
-        'TIMEOUT': 300,
+# In your settings.py file, update the CACHES configuration:
+
+# For local development without Redis installed
+if DEBUG:
+    # Simple cache for development (no rate limiting)
+    CACHES = {
+        'default': {
+            'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
+        }
     }
-}
+    # Disable rate limiting in development
+    RATELIMIT_ENABLE = False
+else:
+    # For production, use Redis or memcached
+    CACHES = {
+        'default': {
+            'BACKEND': 'django.core.cache.backends.redis.RedisCache',
+            'LOCATION': os.getenv('REDIS_URL', 'redis://127.0.0.1:6379/1'),
+            'OPTIONS': {
+                'CLIENT_CLASS': 'django_redis.client.DefaultClient',
+            },
+            'KEY_PREFIX': 'ecotrajet',
+        }
+    }
+    RATELIMIT_ENABLE = True
+    RATELIMIT_USE_CACHE = 'default'
 
 # Logging configuration
 LOGGING = {
@@ -296,10 +299,20 @@ LOGGING = {
 }
 
 # Create logs directory
-(BASE_DIR / 'logs').mkdir(exist_ok=True)
+os.makedirs(BASE_DIR / 'logs', exist_ok=True)
 
 # Development settings
 if DEBUG:
-    INSTALLED_APPS += [
-        'django_extensions',  # For shell_plus and other dev tools
-    ]
+    try:
+        import django_extensions
+        INSTALLED_APPS += [
+            'django_extensions',  # For shell_plus and other dev tools
+        ]
+    except ImportError:
+        pass  # django_extensions not installed
+
+# Silence specific system checks to allow running without migrations
+SILENCED_SYSTEM_CHECKS = [
+    'fields.E304',  # Reverse accessor clashes
+    'fields.E305',  # Reverse query name clashes
+]

@@ -676,3 +676,8 @@ INFO 2025-07-01 15:03:18,893 basehttp 10472 18972 "GET /trips/ HTTP/1.1" 200 190
 INFO 2025-07-01 15:03:21,980 basehttp 10472 18972 "GET /trips/ HTTP/1.1" 200 19062
 INFO 2025-07-01 15:03:31,713 basehttp 10472 18972 "GET /reservations HTTP/1.1" 301 0
 INFO 2025-07-01 15:03:31,819 basehttp 10472 9304 "GET /reservations/ HTTP/1.1" 200 18527
+INFO 2025-07-01 16:55:51,938 autoreload 10772 8212 Watching for file changes with StatReloader
+INFO 2025-07-01 16:58:39,918 autoreload 10772 8212 C:\Things\STAGE\RIF\temp\EcoTrajet\EcoTrajet\settings.py changed, reloading.
+INFO 2025-07-01 16:58:40,470 autoreload 21372 4384 Watching for file changes with StatReloader
+INFO 2025-07-01 16:59:12,026 autoreload 21372 4384 C:\Things\STAGE\RIF\temp\EcoTrajet\EcoTrajet\settings.py changed, reloading.
+INFO 2025-07-01 16:59:28,088 autoreload 21048 3204 Watching for file changes with StatReloader
