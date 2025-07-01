@@ -2,7 +2,8 @@
 from rest_framework import viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
-from rest_framework import status
+from rest_framework import generics, permissions, status
+from .models import Trip, Reservation
 from django.shortcuts import get_object_or_404
 from rest_framework.permissions import IsAuthenticated
 from .models import Rating, User
@@ -161,16 +162,11 @@ class RatingViewSet(viewsets.ModelViewSet):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-from django.shortcuts import render
-from rest_framework import generics, permissions, status
-from rest_framework.response import Response
-from django.utils import timezone
-from .models import Trip, Reservation
+
 from .serializers import (
     TripListSerializer,
     TripDetailSerializer,
     TripWriteSerializer,
-    TripNestedSerializer,
     ReservationListSerializer,
     ReservationDetailSerializer,
     ReservationWriteSerializer,

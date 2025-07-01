@@ -2,6 +2,9 @@ from django.db import models
 import uuid
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
+from django.forms import ValidationError
+from user_management.models import User
+from django.urls import reverse
 
 
 #Modèle pour les véhicules 
@@ -46,10 +49,7 @@ class Vehicule(models.Model):
     def places_disponibles(self):  
         #Retourne le nbre de places disponible
         return self.number_of_seats
-from django.db import models
-from django.forms import ValidationError
-from user_management.models import User
-from django.urls import reverse
+
 
 class Community(models.Model):
     name = models.CharField(max_length=100)
