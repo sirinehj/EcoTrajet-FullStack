@@ -1,8 +1,72 @@
-# EcoTrajet - Plateforme de Transport
+# EcoTrajet - Plateforme de Transport durable
 
 ## 📋 Présentation
 
 EcoTrajet est une plateforme innovante de transport collaboratif qui permet aux utilisateurs de créer et participer à des communautés locales pour optimiser leurs déplacements quotidiens. Notre solution vise à faciliter le covoiturage et à créer des liens sociaux autour de la mobilité durable.
+
+## 👥 Notre Équipe
+
+| Membre | Rôle | Responsabilités |
+|--------|------|-----------------|
+| Sirine Hjaij | Chef de Projet & Développeuse | • Setup initial du projet<br>• Gestion des trajets<br>• Gestion des reservations |
+| Hayder Chakroun | Développeur Backend | • Configuration de la base de données<br>• Système d'authentification<br>• Sécurité des données |
+| Ahmed Ben Said | Développeur Full-Stack | • Développement interface utilisateur<br>• Système de notifications |
+| Yassine Gomriani | Développeur Backend | • Gestion des communautés<br>• Système de membership |
+| Hanoune Camara | Développeur Backend | • Système d'évaluation (Rating)<br>• Gestion des véhicules|
+| Yassine Ali | Développeur Backend | • Gestion des profils utilisateurs<br>• API des utilisateurs|
+
+### 📊 Répartition des Tâches
+
+#### Sirine Hjaij
+- [x] Initialisation du projet et structure
+- [x] Système de gestion des trajets
+- [x] Système de gestion des reservations
+- [x] Documentation technique
+
+#### Hayder Chakroun
+- [x] Mise en place de la base de données PostgreSQL
+- [x] Implémentation du système d'authentification
+- [x] Sécurisation des endpoints API
+
+#### Ahmed Ben Said
+- [x] Développement de l'interface utilisateur React
+- [x] Système de notifications en temps réel
+
+#### Yassine Gomriani
+- [x] Création et gestion des communautés
+- [x] Système d'adhésion aux communautés
+- [x] Tableau de bord communautaire
+
+#### Hanoune Camara
+- [x] Système d'évaluation des utilisateurs
+- [x] Gestion des véhicules
+
+#### Yassine Ali
+- [x] Gestion des profils utilisateurs
+- [x] API de gestion des utilisateurs
+
+### 🔄 Workflow de l'Équipe
+
+Notre équipe suit une méthodologie de développement collaborative :
+
+#### 📅 Organisation Quotidienne
+- **Daily Meetings sur Google Meet**
+  - Point quotidien sur l'avancement des tâches
+  - Prise de décisions collectives
+  - Résolution des conflits techniques
+  - Synchronisation entre les membres de l'équipe
+
+#### 👨‍💻 Processus de Développement
+- Revue de code via pull requests
+- Documentation continue
+- Tests unitaires et d'intégration
+- Résolution collaborative des problèmes techniques
+
+#### 🛠 Outils de Collaboration
+- Google Meet pour les réunions quotidiennes
+- GitHub pour la gestion du code source
+- WhatsApp pour la communication rapide
+- Git pour le versioning
 
 ## 🚀 Fonctionnalités Principales
 
@@ -38,32 +102,32 @@ EcoTrajet est une plateforme innovante de transport collaboratif qui permet aux 
 ### Structure des Dossiers
 ```
 EcoTrajet/
-├── **backend/** (Django + DRF)
+├── backend/ (Django + DRF)
 │   ├── EcoTrajet/               # Main Django project
 │   │   ├── settings.py          # Global settings
 │   │   ├── urls.py              # Root URL routing
 │   │   └── ...
 │   │
-│   ├── **api/**                 # Core API logic
+│   ├── api/                     # Core API logic
 │   │   ├── models/              # Shared models (e.g., Travel, Routes)
 │   │   ├── serializers.py
 │   │   ├── views.py
 │   │   └── urls.py
 │   │
-│   └── **user_management/**     # Auth & user handling
+│   └── user_management/         # Auth & user handling
 │       ├── models.py            # Custom User model
 │       ├── serializers.py       # Auth serializers
 │       ├── views.py             # Login/Register/Profile
 │       ├── urls.py              # auth/ routes
 │       └── tests/
 │
-└── **frontend/** (React)
+└── frontend/ (React)
     ├── public/                  # Static files
     ├── src/
-    │   ├── **auth/**            # Auth components (Login/Register)
-    │   ├── **api/**             # Axios/API calls
-    │   ├── **pages/**           # Routes (Dashboard, Profile)
-    │   ├── App.js               # Main router
+    │   ├── auth/               # Auth components (Login/Register)
+    │   ├── api/                # Axios/API calls
+    │   ├── pages/              # Routes (Dashboard, Profile)
+    │   ├── App.js              # Main router
     │   └── ...
     └── package.json
 ```
