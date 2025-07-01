@@ -72,7 +72,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     class Meta:
         verbose_name = 'user'
         verbose_name_plural = 'users'
-        
+
 
 class Vehicule(models.Model):
     idVehicule = models.AutoField(primary_key=True)

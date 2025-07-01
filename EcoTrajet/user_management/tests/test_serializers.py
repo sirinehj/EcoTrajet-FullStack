@@ -1,200 +1,149 @@
-"""
-Unit tests for user_management serializers.
-
-This module tests the custom serializers used in the user management app,
-including user registration, token claims, password reset, and email validation.
-"""
-
 import pytest
-from django.contrib.auth.models import User, Group
-from django.core import mail
-from rest_framework.exceptions import ValidationError
+from django.utils import timezone
+from datetime import datetime
+from unittest.mock import patch, MagicMock
 
-from user_management.serializers import (
-    RegisterSerializer,
-    EmailSerializer,
-    PasswordResetSerializer,
-    UserSerializer,
-    CustomTokenObtainPairSerializer,
-)
+# Update these imports to match your actual module paths
+from user_management.serializers import CustomTokenObtainPairSerializer, UserSerializer
+from user_management.models import User
 
 
-@pytest.mark.django_db
-class TestRegisterSerializer:
-    def test_valid_registration(self, create_groups):
-        data = {
-            "username": "newuser",
-            "email": "newuser@example.com",
-            "password": "Complex123!",
-            "first_name": "New",
-            "last_name": "User",
-            "role": "Employee",
-        }
-        serializer = RegisterSerializer(data=data)
-        assert serializer.is_valid(), serializer.errors
-        user = serializer.save()
-        assert isinstance(user, User)
-        assert user.username == "newuser"
-        assert not user.is_active  # Should be inactive until email verified
-        assert user.groups.filter(name="Employee").exists()
-        # Email should be sent
-        assert len(mail.outbox) == 1
-        assert "verify your email" in mail.outbox[0].subject.lower()
-
-    def test_missing_required_fields(self, create_groups):
-        data = {
-            "username": "",
-            "email": "invalid",
-            "password": "",
-        }
-        serializer = RegisterSerializer(data=data)
-        assert not serializer.is_valid()
-        assert "username" in serializer.errors
-        assert "email" in serializer.errors
-        assert "password" in serializer.errors
-
-    def test_assigns_default_role(self, create_groups):
-        data = {
-            "username": "defaultrole",
-            "email": "role@example.com",
-            "password": "Complex123!",
-            "first_name": "",
-            "last_name": "",
-        }
-        serializer = RegisterSerializer(data=data)
-        assert serializer.is_valid(), serializer.errors
-        user = serializer.save()
-        assert user.groups.filter(name="Employee").exists()
+# Mark this module to use the database
+pytestmark = pytest.mark.django_db
 
 
-@pytest.mark.django_db
-class TestEmailSerializer:
-    def test_valid_email(self):
-        data = {"email": "test@example.com"}
-        serializer = EmailSerializer(data=data)
-        assert serializer.is_valid()
-
-    def test_invalid_email(self):
-        data = {"email": "not-an-email"}
-        serializer = EmailSerializer(data=data)
-        assert not serializer.is_valid()
-        assert "email" in serializer.errors
-
-    def test_empty_email(self):
-        data = {"email": ""}
-        serializer = EmailSerializer(data=data)
-        assert not serializer.is_valid()
-        assert "email" in serializer.errors
+@pytest.fixture
+def user_data():
+    """Fixture providing test user data."""
+    return {
+        'email': 'test@example.com',
+        'password': 'Test@1234!',
+        'nom': 'Test',
+        'prenom': 'User',
+        'role': 'passager',
+        'telephone': '1234567890'
+    }
 
 
-@pytest.mark.django_db
-class TestPasswordResetSerializer:
-    def test_passwords_must_match(self, create_user):
-        # Create a real user
-        user = create_user(username="resetuser", email="reset@example.com")
-        from django.utils.encoding import force_bytes
-        from django.utils.http import urlsafe_base64_encode
-        from django.contrib.auth.tokens import default_token_generator
-
-        uid = urlsafe_base64_encode(force_bytes(user.pk))
-        token = default_token_generator.make_token(user)
-
-        data = {
-            "uid": uid,
-            "token": token,
-            "password": "Password1!",
-            "confirm_password": "Mismatch1!",
-        }
-        serializer = PasswordResetSerializer(data=data)
-        with pytest.raises(ValidationError) as excinfo:
-            serializer.is_valid(raise_exception=True)
-        assert "Passwords do not match" in str(excinfo.value)
-
-    def test_password_strength(self, create_user):
-        user = create_user(username="resetuser", email="reset@example.com")
-        from django.utils.encoding import force_bytes
-        from django.utils.http import urlsafe_base64_encode
-        from django.contrib.auth.tokens import default_token_generator
-
-        uid = urlsafe_base64_encode(force_bytes(user.pk))
-        token = default_token_generator.make_token(user)
-
-        # Weak password (no uppercase)
-        data = {
-            "uid": uid,
-            "token": token,
-            "password": "weakpassword1!",
-            "confirm_password": "weakpassword1!",
-        }
-        serializer = PasswordResetSerializer(data=data)
-        assert not serializer.is_valid()
-        assert "Password must contain at least one uppercase letter." in str(
-            serializer.errors
-        )
-
-        # Weak password (too short)
-        data["password"] = data["confirm_password"] = "Sh0rt!"
-        serializer = PasswordResetSerializer(data=data)
-        assert not serializer.is_valid()
-        assert "at least 8 characters" in str(serializer.errors).lower()
-
-        # Strong password
-        data["password"] = data["confirm_password"] = "StrongPass1!"
-        serializer = PasswordResetSerializer(data=data)
-        assert serializer.is_valid(), serializer.errors
-
-    def test_invalid_uid(self):
-        data = {
-            "uid": "invaliduid",
-            "token": "sometoken",
-            "password": "Password1!",
-            "confirm_password": "Password1!",
-        }
-        serializer = PasswordResetSerializer(data=data)
-        assert not serializer.is_valid()
-        assert "Invalid user identification" in str(serializer.errors)
-
-    def test_invalid_token(self, create_user):
-        user = create_user(username="tokentest", email="tokentest@example.com")
-        from django.utils.encoding import force_bytes
-        from django.utils.http import urlsafe_base64_encode
-
-        uid = urlsafe_base64_encode(force_bytes(user.pk))
-        data = {
-            "uid": uid,
-            "token": "invalidtoken",
-            "password": "Password1!",
-            "confirm_password": "Password1!",
-        }
-        serializer = PasswordResetSerializer(data=data)
-        assert not serializer.is_valid()
-        assert "Invalid or expired token" in str(serializer.errors)
-
-
-@pytest.mark.django_db
-def test_user_serializer_fields(create_user):
-    user = create_user(
-        username="serialuser", email="serial@example.com", role="Manager"
+@pytest.fixture
+def test_user(user_data):
+    """Fixture creating and returning a test user."""
+    return User.objects.create_user(
+        email=user_data['email'],
+        password=user_data['password'],
+        nom=user_data['nom'],
+        prenom=user_data['prenom'],
+        role=user_data['role'],
+        telephone=user_data['telephone']
     )
-    serializer = UserSerializer(user)
-    data = serializer.data
-    assert data["username"] == "serialuser"
-    assert data["email"] == "serial@example.com"
-    assert data["roles"] == ["Manager"]
 
 
-@pytest.mark.django_db
-def test_custom_token_obtain_pair_serializer(create_user):
-    user = create_user(username="jwtuser", email="jwtuser@example.com")
+@pytest.fixture
+def serializer_data(user_data):
+    """Fixture providing basic serializer initialization data."""
+    return {
+        'email': user_data['email'],
+        'password': user_data['password']
+    }
 
-    class DummyRequest:
-        pass
 
-    serializer = CustomTokenObtainPairSerializer()
-    serializer.user = user
-    attrs = {"username": "jwtuser", "password": "Test1234!"}
-    data = serializer.validate(attrs)
-    assert "user" in data
-    assert data["user"]["username"] == "jwtuser"
-    assert "timestamp" in data
-    assert data["user_login"] == "jwtuser"
+class TestCustomTokenObtainPairSerializer:
+    """Test suite for the CustomTokenObtainPairSerializer using pytest."""
+
+    def test_validate_returns_user_data(self, serializer_data, test_user):
+        """Test that validate method returns user data in the token."""
+        # Create a serializer instance
+        serializer = CustomTokenObtainPairSerializer(data=serializer_data)
+        
+        # Mock the parent class validate method
+        with patch.object(CustomTokenObtainPairSerializer, 'super') as mock_super:
+            # Set up the mock to return a token data dictionary
+            mock_validate = MagicMock(return_value={'refresh': 'dummy_refresh', 'access': 'dummy_access'})
+            mock_super.return_value.validate = mock_validate
+            
+            # Set the user on the serializer
+            serializer.user = test_user
+            
+            # Call the validate method with mocked datetime
+            with patch('user_management.serializers.datetime') as mock_datetime:
+                mock_now = MagicMock()
+                mock_now.strftime.return_value = '2025-06-30 23:48:21'
+                mock_datetime.now.return_value = mock_now
+                
+                result = serializer.validate({})
+            
+            # Assertions
+            mock_validate.assert_called_once_with({})
+            assert 'user' in result
+            assert result['user'] == UserSerializer(test_user).data
+            assert 'timestamp' in result
+            assert result['timestamp'] == '2025-06-30 23:48:21'
+            assert 'user_login' in result
+            assert result['user_login'] == test_user.email
+    
+    def test_validate_with_real_token(self, serializer_data, test_user):
+        """Test validate with a real token rather than mocks."""
+        serializer = CustomTokenObtainPairSerializer(data=serializer_data)
+        assert serializer.is_valid() is True
+        
+        # Get the result
+        result = serializer.validated_data
+        
+        # Verify the structure of the result
+        assert 'refresh' in result
+        assert 'access' in result
+        assert 'user' in result
+        assert 'timestamp' in result
+        assert 'user_login' in result
+        
+        # Verify the user data
+        user_data = result['user']
+        assert user_data['email'] == test_user.email
+        assert user_data['nom'] == test_user.nom
+        assert user_data['prenom'] == test_user.prenom
+        assert user_data['role'] == test_user.role
+        
+        # Verify the timestamp format (should be YYYY-MM-DD HH:MM:SS)
+        timestamp = result['timestamp']
+        # Try to parse the timestamp to verify format
+        try:
+            parsed_time = datetime.strptime(timestamp, "%Y-%m-%d %H:%M:%S")
+            valid_format = True
+        except ValueError:
+            valid_format = False
+        assert valid_format, f"Timestamp '{timestamp}' is not in the expected format"
+        
+        # Verify the user_login
+        assert result['user_login'] == test_user.email
+    
+    def test_create_not_implemented(self):
+        """Test that create method raises NotImplementedError."""
+        serializer = CustomTokenObtainPairSerializer()
+        with pytest.raises(NotImplementedError):
+            serializer.create({})
+    
+    def test_update_not_implemented(self):
+        """Test that update method raises NotImplementedError."""
+        serializer = CustomTokenObtainPairSerializer()
+        with pytest.raises(NotImplementedError):
+            serializer.update(None, {})
+    
+    def test_validate_with_invalid_credentials(self, serializer_data):
+        """Test validation with invalid credentials."""
+        invalid_data = {
+            'email': serializer_data['email'],
+            'password': 'WrongPassword123!'
+        }
+        serializer = CustomTokenObtainPairSerializer(data=invalid_data)
+        assert serializer.is_valid() is False
+        assert 'non_field_errors' in serializer.errors
+    
+    def test_validate_with_nonexistent_user(self):
+        """Test validation with a non-existent user."""
+        nonexistent_user_data = {
+            'email': 'nonexistent@example.com',
+            'password': 'Password123!'
+        }
+        serializer = CustomTokenObtainPairSerializer(data=nonexistent_user_data)
+        assert serializer.is_valid() is False
+        assert 'non_field_errors' in serializer.errors

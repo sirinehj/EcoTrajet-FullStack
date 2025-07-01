@@ -62,10 +62,6 @@ INSTALLED_APPS = [
     # Internal apps
     'api',
     'user_management',  # Your main user management app
-    # Remove 'apps.users' if it conflicts with user_management
-    'apps.communities',
-    'apps.notifications',
-    'apps.vehicles',
 ]
 
 # Custom user model
