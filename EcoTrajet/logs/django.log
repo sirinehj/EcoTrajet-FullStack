@@ -676,3 +676,10 @@ INFO 2025-07-01 15:03:18,893 basehttp 10472 18972 "GET /trips/ HTTP/1.1" 200 190
 INFO 2025-07-01 15:03:21,980 basehttp 10472 18972 "GET /trips/ HTTP/1.1" 200 19062
 INFO 2025-07-01 15:03:31,713 basehttp 10472 18972 "GET /reservations HTTP/1.1" 301 0
 INFO 2025-07-01 15:03:31,819 basehttp 10472 9304 "GET /reservations/ HTTP/1.1" 200 18527
+INFO 2025-07-01 15:05:56,355 autoreload 23036 23292 Watching for file changes with StatReloader
+WARNING 2025-07-01 15:13:50,453 log 11664 20268 Bad Request: /user/token/
+WARNING 2025-07-01 15:13:50,553 log 11664 20268 Bad Request: /user/register/
+WARNING 2025-07-01 15:13:50,620 log 11664 20268 Bad Request: /user/register/
+WARNING 2025-07-01 15:13:50,691 log 11664 20268 Unauthorized: /user/profile/
+WARNING 2025-07-01 15:13:50,827 log 11664 20268 Unauthorized: /user/logout/
+WARNING 2025-07-01 15:13:50,882 log 11664 20268 Bad Request: /user/verify-email/invalid-uid/some-token/
