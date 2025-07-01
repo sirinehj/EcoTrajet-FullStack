@@ -1,50 +1,90 @@
-import uuid
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
+from django.core.exceptions import ValidationError
+from user_management.models import User
+from django.urls import reverse
+import uuid
 
+class Community(models.Model):
+    name = models.CharField(max_length=100)
+    description = models.TextField()
+    zone_geo = models.CharField(max_length=100)
+    admin = models.ForeignKey(User, on_delete=models.CASCADE, related_name='admin_of')
+    date_creation = models.DateTimeField(auto_now_add=True)
+    is_private = models.BooleanField(default=False)
+    theme = models.CharField(max_length=50)
 
-#Modèle pour les véhicules 
-class Vehicule(models.Model):
-    idVehicule = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    owner = models.ForeignKey(
-        User,
-        on_delete=models.CASCADE,
-        related_name='vehicules',
-        help_text="Propriétaire du véhicule"
-    )
-    license_plate = models.CharField(
-        max_length=20,
-        unique=True,
-        help_text="Numéro de plaque d'immatriculation"
-    )
-    make = models.CharField(max_length=50, help_text="Marque du véhicule")
-    model = models.CharField(max_length=50, help_text="Modèle du véhicule")
-    couleur = models.CharField(max_length=30, help_text="Couleur du véhicule")
-    number_of_seats = models.PositiveIntegerField(
-        validators=[MinValueValidator(1), MaxValueValidator(4)]
-    )
-    is_active = models.BooleanField(
-        default=True,
-        help_text="Véhicule actif pour les trajets"
-    )
-    
-    # Champs de métadonnées
+class Trip(models.Model):
+    STATUS_CHOICES = [
+        ('SCHEDULED', 'Programmé'),
+        ('IN_PROGRESS', 'En cours'),
+        ('COMPLETED', 'Terminé'),
+        ('CANCELLED', 'Annulé'),
+    ]
+
+    conducteur = models.ForeignKey(User, on_delete=models.CASCADE, related_name='trips_as_driver')
+    communaute = models.ForeignKey(Community, on_delete=models.SET_NULL, null=True, blank=True, related_name='trips')
+    temps_depart = models.DateTimeField()
+    temps_arrive = models.DateTimeField()
+    origine = models.CharField(max_length=100)
+    destination = models.CharField(max_length=100)
+    prix = models.DecimalField(max_digits=6, decimal_places=2)
+    places_dispo = models.PositiveIntegerField()
+    statut = models.CharField(max_length=15, choices=STATUS_CHOICES, default='SCHEDULED')
     created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    
-    class Meta:
-        db_table = 'vehicule'
-        verbose_name = 'vehicule'
-        verbose_name_plural = 'Véhicules'
-        ordering = ['-created_at']
-    
 
     def __str__(self):
-        return f"{self.make} {self.model} ({self.license_plate})"
+        return f"{self.origine} → {self.destination} ({self.temps_depart.strftime('%d/%m/%Y %H:%M')}) - {self.conducteur.email}"
+   
+    def get_absolute_url(self):
+        return reverse('trip_detail', kwargs={'pk': self.pk})
     
-    def places_disponibles(self):  
-        #Retourne le nbre de places disponible
-        return self.number_of_seats
+    def clean(self):
+        if self.places_dispo < 0:
+            raise ValidationError("Le nombre de places disponibles ne peut pas être négatif !")
+    
+        if self.temps_arrive <= self.temps_depart:
+            raise ValidationError("L'heure d'arrivée doit être après l'heure de départ !")
+
+    def is_fully_booked(self):
+        return self.places_dispo == 0
+
+    def cancel(self):
+        self.statut = 'CANCELLED'
+        self.save()
+
+class Reservation(models.Model):
+    STATUS_CHOICES = [
+        ('PENDING', 'En attente'),
+        ('CONFIRMED', 'Confirmé'),
+        ('CANCELLED', 'Annulé'),
+    ]
+
+    passenger = models.ForeignKey(User, on_delete=models.CASCADE, related_name='reservations')
+    trip = models.ForeignKey('Trip', on_delete=models.CASCADE, related_name='reservations')
+    place_reserv = models.PositiveIntegerField(default=1)
+    statut = models.CharField(max_length=10, choices=STATUS_CHOICES, default='PENDING')
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Reservation #{self.id}: {self.passenger.nom} {self.passenger.prenom} → {self.trip} (Status: {self.statut})"
+    
+    def get_absolute_url(self):
+        return reverse('reservation_detail', kwargs={'pk': self.pk})
+    
+    def clean(self):
+        if self.place_reserv > self.trip.places_dispo:
+            raise ValidationError("Le nombre de places réservées dépasse les places disponibles !")
+        if self.place_reserv <= 0:
+            raise ValidationError("Le nombre de places réservées doit être positif !")
+        
+    def save(self, *args, **kwargs):
+        if self.statut == 'CONFIRMED' and self.pk:  # Only if status changed to CONFIRMED
+            old_reservation = Reservation.objects.get(pk=self.pk)
+            if old_reservation.statut != 'CONFIRMED':
+                self.trip.places_dispo -= self.place_reserv
+                self.trip.save()
+        super().save(*args, **kwargs)
 
 #Modèle pour les évaluations après trajets
 class Rating(models.Model):

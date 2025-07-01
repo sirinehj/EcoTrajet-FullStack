@@ -10,6 +10,7 @@ import pytest
 from django.contrib.auth.models import AnonymousUser, Group
 from rest_framework.test import APIRequestFactory
 from rest_framework.views import APIView
+from rest_framework import permissions 
 
 from user_management.permissions import (
     IsAdmin,

@@ -76,7 +76,7 @@ def create_user(create_groups):
         first_name="",
         last_name="",
     ):
-        user = User.objects.create_user(
+        user = User.objects.create(
             username=username,
             email=email,
             password=password,
