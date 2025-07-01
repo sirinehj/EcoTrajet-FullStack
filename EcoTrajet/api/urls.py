@@ -15,8 +15,6 @@ from .views import (
     ReservationDetailView,
     TripReservationsView
 )
-router = DefaultRouter()
-from apps.users.views import ProfileView
 from apps.users.views import ProfileView, UserCreateView
 
 router = DefaultRouter()
@@ -24,9 +22,12 @@ router.register(r'vehicules', VehiculeViewSet)
 router.register(r'ratings', RatingViewSet)
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path('api/', include(router.urls)),
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('login/', obtain_auth_token, name='api-login'),
+    path('profile/', ProfileView.as_view(), name='api-profile'),
+    path('register/', UserCreateView.as_view(), name='api-register'),
 
     path('login/', obtain_auth_token, name='login'),
     
@@ -39,9 +40,4 @@ urlpatterns = [
     path('reservations/<int:pk>/', ReservationDetailView.as_view(), name='reservation-detail'),
     # Trip&Reservation
 
-
-    path('login/', obtain_auth_token, name='api-login'),
-    path('profile/', ProfileView.as_view(), name='api-profile'),
-    path('register/', UserCreateView.as_view(), name='api-register'),
-    path('api/', include(router.urls)),
 ]
