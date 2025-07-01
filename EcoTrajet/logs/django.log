@@ -325,3 +325,54 @@ WARNING 2025-06-30 23:35:26,980 log 1484 20256 Not Found: /trips/reservations
 WARNING 2025-06-30 23:35:26,982 basehttp 1484 20256 "GET /trips/reservations HTTP/1.1" 404 3919
 INFO 2025-06-30 23:35:41,756 basehttp 1484 5332 "GET /trips/1/reservations HTTP/1.1" 301 0
 INFO 2025-06-30 23:35:41,934 basehttp 1484 13444 "GET /trips/1/reservations/ HTTP/1.1" 200 7796
+WARNING 2025-07-01 01:16:39,680 log 18892 1708 Bad Request: /api/auth/token/
+WARNING 2025-07-01 01:16:39,789 log 18892 1708 Unauthorized: /api/auth/token/refresh/
+WARNING 2025-07-01 01:16:39,814 log 18892 1708 Unauthorized: /api/auth/logout/
+WARNING 2025-07-01 01:16:39,837 log 18892 1708 Unauthorized: /api/auth/profile/
+WARNING 2025-07-01 01:16:39,922 log 18892 1708 Bad Request: /api/auth/register/
+WARNING 2025-07-01 01:16:40,006 log 18892 1708 Bad Request: /api/auth/verify-email/invalid-uid/some-token/
+WARNING 2025-07-01 01:16:40,014 log 18892 1708 Bad Request: /api/auth/verify-email/OTk5OTk5/some-token/
+WARNING 2025-07-01 01:16:40,162 log 18892 1708 Bad Request: /api/auth/password-reset/
+WARNING 2025-07-01 01:16:40,260 log 18892 1708 Bad Request: /api/auth/password-reset/confirm/
+WARNING 2025-07-01 01:16:40,266 log 18892 1708 Bad Request: /api/auth/password-reset/
+WARNING 2025-07-01 01:16:40,271 log 18892 1708 Bad Request: /api/auth/password-reset/confirm/
+WARNING 2025-07-01 01:16:40,481 log 18892 1708 Unauthorized: /api/auth/profile/
+WARNING 2025-07-01 01:16:40,578 log 18892 1708 Unauthorized: /api/auth/change-password/
+WARNING 2025-07-01 01:16:40,603 log 18892 1708 Unauthorized: /api/auth/activity/
+WARNING 2025-07-01 01:16:40,622 log 18892 1708 Bad Request: /api/auth/register/
+WARNING 2025-07-01 01:16:40,639 log 18892 1708 Bad Request: /api/auth/register/
+WARNING 2025-07-01 01:16:40,683 log 18892 1708 Bad Request: /api/auth/register/
+WARNING 2025-07-01 01:16:40,693 log 18892 1708 Bad Request: /api/auth/register/
+WARNING 2025-07-01 01:16:40,726 log 18892 1708 Bad Request: /api/auth/register/
+WARNING 2025-07-01 01:16:40,733 log 18892 1708 Bad Request: /api/auth/register/
+WARNING 2025-07-01 01:16:40,744 log 18892 1708 Bad Request: /api/auth/register/
+WARNING 2025-07-01 01:16:40,752 log 18892 1708 Bad Request: /api/auth/register/
+WARNING 2025-07-01 01:16:40,761 log 18892 1708 Bad Request: /api/auth/register/
+WARNING 2025-07-01 01:16:40,784 log 18892 1708 Forbidden: /api/auth/register/
+WARNING 2025-07-01 01:16:40,901 log 18892 1708 Forbidden: /api/auth/register/
+WARNING 2025-07-01 01:16:40,902 log 18892 1708 Forbidden: /api/auth/register/
+WARNING 2025-07-01 01:16:40,903 log 18892 1708 Forbidden: /api/auth/register/
+WARNING 2025-07-01 01:16:40,904 log 18892 1708 Forbidden: /api/auth/register/
+WARNING 2025-07-01 01:16:40,904 log 18892 1708 Forbidden: /api/auth/register/
+WARNING 2025-07-01 01:16:40,906 log 18892 1708 Forbidden: /api/auth/register/
+WARNING 2025-07-01 01:16:40,907 log 18892 1708 Forbidden: /api/auth/register/
+WARNING 2025-07-01 01:16:40,908 log 18892 1708 Forbidden: /api/auth/register/
+WARNING 2025-07-01 01:16:40,913 log 18892 1708 Forbidden: /api/auth/register/
+WARNING 2025-07-01 01:16:40,915 log 18892 1708 Forbidden: /api/auth/register/
+WARNING 2025-07-01 01:16:40,916 log 18892 1708 Forbidden: /api/auth/register/
+WARNING 2025-07-01 01:16:40,917 log 18892 1708 Forbidden: /api/auth/register/
+WARNING 2025-07-01 01:16:40,918 log 18892 1708 Forbidden: /api/auth/register/
+WARNING 2025-07-01 01:16:40,919 log 18892 1708 Forbidden: /api/auth/register/
+WARNING 2025-07-01 01:16:40,920 log 18892 1708 Forbidden: /api/auth/register/
+WARNING 2025-07-01 01:16:41,405 log 18892 1708 Bad Request: /api/auth/token/
+WARNING 2025-07-01 01:16:42,177 log 18892 1708 Bad Request: /api/auth/token/
+WARNING 2025-07-01 01:16:42,238 log 18892 1708 Forbidden: /api/auth/register/
+WARNING 2025-07-01 01:16:42,306 log 18892 1708 Forbidden: /api/auth/register/
+WARNING 2025-07-01 01:16:42,345 log 18892 1708 Unauthorized: /api/auth/profile/
+WARNING 2025-07-01 01:16:42,486 log 18892 1708 Unauthorized: /api/auth/logout/
+WARNING 2025-07-01 01:16:42,536 log 18892 1708 Bad Request: /api/auth/verify-email/invalid-uid/some-token/
+INFO 2025-07-01 01:22:04,677 autoreload 1264 9656 Watching for file changes with StatReloader
+WARNING 2025-07-01 01:22:07,067 log 1264 20312 Not Found: /
+WARNING 2025-07-01 01:22:07,067 basehttp 1264 20312 "GET / HTTP/1.1" 404 3847
+INFO 2025-07-01 01:22:30,345 basehttp 1264 16900 "GET /api/trips/ HTTP/1.1" 200 18124
+INFO 2025-07-01 01:22:46,825 basehttp 1264 18680 "GET /api/reservations/ HTTP/1.1" 200 17826
