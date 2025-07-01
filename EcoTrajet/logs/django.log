@@ -371,3 +371,8 @@ WARNING 2025-07-01 01:16:42,306 log 18892 1708 Forbidden: /api/auth/register/
 WARNING 2025-07-01 01:16:42,345 log 18892 1708 Unauthorized: /api/auth/profile/
 WARNING 2025-07-01 01:16:42,486 log 18892 1708 Unauthorized: /api/auth/logout/
 WARNING 2025-07-01 01:16:42,536 log 18892 1708 Bad Request: /api/auth/verify-email/invalid-uid/some-token/
+INFO 2025-07-01 01:22:04,677 autoreload 1264 9656 Watching for file changes with StatReloader
+WARNING 2025-07-01 01:22:07,067 log 1264 20312 Not Found: /
+WARNING 2025-07-01 01:22:07,067 basehttp 1264 20312 "GET / HTTP/1.1" 404 3847
+INFO 2025-07-01 01:22:30,345 basehttp 1264 16900 "GET /api/trips/ HTTP/1.1" 200 18124
+INFO 2025-07-01 01:22:46,825 basehttp 1264 18680 "GET /api/reservations/ HTTP/1.1" 200 17826
