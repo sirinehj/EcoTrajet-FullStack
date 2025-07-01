@@ -49,6 +49,8 @@ from .serializers import (
     UserSerializer,
     CustomTokenObtainPairSerializer,
 )
+from django.contrib.auth import get_user_model
+User = get_user_model()
 
 
 @method_decorator(

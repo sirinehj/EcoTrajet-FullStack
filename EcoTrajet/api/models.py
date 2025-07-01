@@ -86,6 +86,7 @@ class Reservation(models.Model):
                 self.trip.save()
         super().save(*args, **kwargs)
 
+
 #Modèle pour les évaluations après trajets
 class Rating(models.Model):
     idRate = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
