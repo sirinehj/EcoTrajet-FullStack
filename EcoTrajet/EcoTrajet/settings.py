@@ -67,44 +67,17 @@ INSTALLED_APPS = [
     'apps.notifications',
     'apps.vehicles',
     'rest_framework.authtoken',
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
+
     'django_ratelimit',  # Added for rate limiting
     # Internal apps
     'api',
     'user_management',  # Your main user management app
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
+
     # 'django_ratelimit',  # Added for rate limiting
     # Internal apps
     'api',
     'user_management',  # Your main user management app
->>>>>>> Stashed changes
-=======
-    # 'django_ratelimit',  # Added for rate limiting
-    # Internal apps
-    'api',
-    'user_management',  # Your main user management app
->>>>>>> Stashed changes
-=======
-    # 'django_ratelimit',  # Added for rate limiting
-    # Internal apps
-    'api',
-    'user_management',  # Your main user management app
->>>>>>> Stashed changes
-=======
-    # 'django_ratelimit',  # Added for rate limiting
-    # Internal apps
-    'api',
-    'user_management',  # Your main user management app
->>>>>>> Stashed changes
+
 ]
 AUTH_USER_MODEL = 'users.User'
 
@@ -143,26 +116,7 @@ WSGI_APPLICATION = 'EcoTrajet.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
     "default": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": os.getenv("POSTGRES_DB", "ecotrajet_db"),
@@ -170,39 +124,14 @@ DATABASES = {
         "PASSWORD": os.getenv("POSTGRES_PASSWORD", "easycode3000"),
         "HOST": os.getenv("POSTGRES_HOST", "localhost"),
         "PORT": os.getenv("POSTGRES_PORT", "5432"),
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
         "CONN_MAX_AGE": 60,  # Database connection pooling
-        "OPTIONS": {
-            "sslmode": "prefer",
-        },
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+      
         # Remove search_path option that might cause encoding issues
         "OPTIONS": {
             "client_encoding": 'UTF8',
         },
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
     }
 }
 
@@ -247,10 +176,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-<<<<<<< Updated upstream
-CORS_ALLOW_ALL_ORIGINS = True
-CORS_ALLOWS_CREDENTIALS = True
-=======
+
 
 # CORS settings
 CORS_ALLOW_ALL_ORIGINS = DEBUG  # Only allow all origins in debug mode
@@ -279,27 +205,9 @@ if not DEBUG:
     SECURE_HSTS_PRELOAD = True
 
 # Email backend
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-if DEBUG:
-    EMAIL_BACKEND = os.getenv("EMAIL_BACKEND", "django.core.mail.backends.console.EmailBackend")
-else:
-    EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-    
-=======
+
 EMAIL_BACKEND = os.getenv("EMAIL_BACKEND", "django.core.mail.backends.console.EmailBackend")
->>>>>>> Stashed changes
-=======
-EMAIL_BACKEND = os.getenv("EMAIL_BACKEND", "django.core.mail.backends.console.EmailBackend")
->>>>>>> Stashed changes
-=======
-EMAIL_BACKEND = os.getenv("EMAIL_BACKEND", "django.core.mail.backends.console.EmailBackend")
->>>>>>> Stashed changes
-=======
-EMAIL_BACKEND = os.getenv("EMAIL_BACKEND", "django.core.mail.backends.console.EmailBackend")
->>>>>>> Stashed changes
+
 EMAIL_HOST = os.getenv("EMAIL_HOST", "smtp.gmail.com")
 EMAIL_PORT = int(os.getenv("EMAIL_PORT", "587"))
 EMAIL_USE_TLS = os.getenv("EMAIL_USE_TLS", "True") == "True"
@@ -314,10 +222,8 @@ FRONTEND_URL = os.getenv("FRONTEND_URL", "http://localhost:3000")
 RATELIMIT_ENABLE = True
 RATELIMIT_USE_CACHE = 'default'
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
+
 # Cache configuration (recommended for rate limiting)
 CACHES = {
     'default': {
@@ -327,14 +233,7 @@ CACHES = {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
         },
         'KEY_PREFIX': 'ecotrajet',
-        'TIMEOUT': 300,
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+        'TIMEOUT': 300}}
 # In your settings.py file, update the CACHES configuration:
 
 # For local development without Redis installed
@@ -344,16 +243,7 @@ if DEBUG:
         'default': {
             'BACKEND': 'django.core.cache.backends.dummy.DummyCache',
         }
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
     }
     # Disable rate limiting in development
     RATELIMIT_ENABLE = False
@@ -441,40 +331,5 @@ if DEBUG:
             'django_extensions',  # For shell_plus and other dev tools
         ]
     except ImportError:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        pass  # django_extensions not installed
->>>>>>> Stashed changes
-=======
-        pass  # django_extensions not installed
->>>>>>> Stashed changes
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
         pass  # django_extensions not installed
 
-# Silence specific system checks to allow running without migrations
-SILENCED_SYSTEM_CHECKS = [
-    'fields.E304',  # Reverse accessor clashes
-    'fields.E305',  # Reverse query name clashes
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-]
->>>>>>> Stashed changes
-=======
-]
->>>>>>> Stashed changes
-=======
-]
->>>>>>> Stashed changes
-=======
-]
->>>>>>> Stashed changes

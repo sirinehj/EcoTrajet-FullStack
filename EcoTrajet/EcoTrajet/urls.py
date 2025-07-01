@@ -20,45 +20,10 @@ from django.urls import path, include
 from rest_framework.authtoken.views import obtain_auth_token
 
 urlpatterns = [
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    path('admin/', admin.site.urls),
-    path('', include('api.urls')),
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    path('api/auth/', include('rest_framework.urls')),
-=======
-    path('api/', include('api.urls')), 
-    path('api/auth/', include('user_management.urls')),
->>>>>>> Stashed changes
-=======
-    path('api/', include('api.urls')), 
-    path('api/auth/', include('user_management.urls')),
->>>>>>> Stashed changes
-=======
+
     # path('admin/', admin.site.urls),
     # path('', include('api.urls')),
     path('api/', include('api.urls')), 
     path('api/auth/', include('user_management.urls')),
->>>>>>> Stashed changes
-=======
-    # path('admin/', admin.site.urls),
-    # path('', include('api.urls')),
-    path('api/', include('api.urls')), 
-    path('api/auth/', include('user_management.urls')),
->>>>>>> Stashed changes
-=======
-    # path('admin/', admin.site.urls),
-    # path('', include('api.urls')),
-    path('api/', include('api.urls')), 
-    path('api/auth/', include('user_management.urls')),
->>>>>>> Stashed changes
-=======
-    # path('admin/', admin.site.urls),
-    # path('', include('api.urls')),
-    path('api/', include('api.urls')), 
-    path('api/auth/', include('user_management.urls')),
->>>>>>> Stashed changes
+
 ]
