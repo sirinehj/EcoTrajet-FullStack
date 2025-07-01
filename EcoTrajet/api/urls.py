@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 from django.urls import path
 from .views import main
 from rest_framework.authtoken.views import obtain_auth_token
@@ -11,6 +12,8 @@ urlpatterns = [
     path('profile/', ProfileView.as_view(), name='api-profile'),
     path('register/', UserCreateView.as_view(), name='api-register'),
 =======
+=======
+>>>>>>> Stashed changes
 from django.urls import include, path
 from rest_framework.authtoken.views import obtain_auth_token
 

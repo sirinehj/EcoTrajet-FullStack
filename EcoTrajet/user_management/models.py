@@ -104,5 +104,9 @@ class User(AbstractBaseUser, PermissionsMixin):
 #     is_active = models.BooleanField(default=True)
 
 #     def __str__(self):
+<<<<<<< Updated upstream
+#         return f"{self.make} {self.model} ({self.license_plate})"
+>>>>>>> Stashed changes
+=======
 #         return f"{self.make} {self.model} ({self.license_plate})"
 >>>>>>> Stashed changes

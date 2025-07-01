@@ -204,5 +204,4 @@ class RatingManager(models.Manager):
         return self.filter(rated_user=user).count()
 
 # Ajouter le manager personnalisé au modèle Rating
-Rating.objects = RatingManager()
->>>>>>> Stashed changes
+Rating.add_to_class('objects', RatingManager())

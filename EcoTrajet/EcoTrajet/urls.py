@@ -23,7 +23,12 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('api.urls')),
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     path('api/auth/', include('rest_framework.urls')),
+=======
+    path('api/', include('api.urls')), 
+    path('api/auth/', include('user_management.urls')),
+>>>>>>> Stashed changes
 =======
     path('api/', include('api.urls')), 
     path('api/auth/', include('user_management.urls')),

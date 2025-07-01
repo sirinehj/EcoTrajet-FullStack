@@ -73,6 +73,9 @@ INSTALLED_APPS = [
     # Internal apps
     'api',
     'user_management',  # Your main user management app
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 ]
 AUTH_USER_MODEL = 'users.User'
@@ -113,10 +116,13 @@ WSGI_APPLICATION = 'EcoTrajet.wsgi.application'
 
 DATABASES = {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
 =======
+=======
+>>>>>>> Stashed changes
     "default": {
         "ENGINE": "django.db.backends.postgresql",
         "NAME": os.getenv("POSTGRES_DB", "ecotrajet_db"),
@@ -128,6 +134,9 @@ DATABASES = {
         "OPTIONS": {
             "sslmode": "prefer",
         },
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }
 }
@@ -293,5 +302,9 @@ if DEBUG:
             'django_extensions',  # For shell_plus and other dev tools
         ]
     except ImportError:
+<<<<<<< Updated upstream
+        pass  # django_extensions not installed
+>>>>>>> Stashed changes
+=======
         pass  # django_extensions not installed
 >>>>>>> Stashed changes
