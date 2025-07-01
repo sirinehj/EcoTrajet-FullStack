@@ -44,5 +44,4 @@ urlpatterns = [
     path('profile/', ProfileView.as_view(), name='api-profile'),
     path('register/', UserCreateView.as_view(), name='api-register'),
     path('api/', include(router.urls)),
-
 ]
