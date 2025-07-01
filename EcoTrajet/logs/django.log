@@ -376,6 +376,7 @@ WARNING 2025-07-01 01:22:07,067 log 1264 20312 Not Found: /
 WARNING 2025-07-01 01:22:07,067 basehttp 1264 20312 "GET / HTTP/1.1" 404 3847
 INFO 2025-07-01 01:22:30,345 basehttp 1264 16900 "GET /api/trips/ HTTP/1.1" 200 18124
 INFO 2025-07-01 01:22:46,825 basehttp 1264 18680 "GET /api/reservations/ HTTP/1.1" 200 17826
+<<<<<<< Updated upstream
 INFO 2025-07-01 03:06:45,525 autoreload 18236 18296 Watching for file changes with StatReloader
 INFO 2025-07-01 03:08:40,319 autoreload 18236 18296 C:\Things\STAGE\RIF\test\EcoTrajet\EcoTrajet\urls.py changed, reloading.
 INFO 2025-07-01 03:08:40,818 autoreload 17300 21268 Watching for file changes with StatReloader
@@ -405,3 +406,40 @@ INFO 2025-07-01 03:13:36,256 autoreload 1852 20812 C:\Things\STAGE\RIF\test\EcoT
 INFO 2025-07-01 03:13:36,755 autoreload 12152 20288 Watching for file changes with StatReloader
 INFO 2025-07-01 03:13:40,119 autoreload 12152 20288 C:\Things\STAGE\RIF\test\EcoTrajet\api\models.py changed, reloading.
 INFO 2025-07-01 03:13:40,625 autoreload 17288 12112 Watching for file changes with StatReloader
+=======
+INFO 2025-07-01 03:25:19,595 autoreload 20704 3444 Watching for file changes with StatReloader
+INFO 2025-07-01 03:25:49,730 autoreload 20704 3444 C:\Things\STAGE\RIF\test\EcoTrajet\EcoTrajet\urls.py changed, reloading.
+INFO 2025-07-01 03:25:50,227 autoreload 4312 13828 Watching for file changes with StatReloader
+INFO 2025-07-01 03:28:00,072 autoreload 4312 13828 C:\Things\STAGE\RIF\test\EcoTrajet\EcoTrajet\settings.py changed, reloading.
+INFO 2025-07-01 03:30:13,133 autoreload 15464 21744 Watching for file changes with StatReloader
+INFO 2025-07-01 03:34:35,808 autoreload 14784 19452 Watching for file changes with StatReloader
+INFO 2025-07-01 03:36:02,067 autoreload 14784 19452 C:\Things\STAGE\RIF\test\EcoTrajet\EcoTrajet\settings.py changed, reloading.
+INFO 2025-07-01 03:36:02,555 autoreload 7948 17664 Watching for file changes with StatReloader
+INFO 2025-07-01 03:36:04,854 autoreload 7948 17664 C:\Things\STAGE\RIF\test\EcoTrajet\EcoTrajet\settings.py changed, reloading.
+INFO 2025-07-01 03:36:15,036 autoreload 7732 12740 Watching for file changes with StatReloader
+INFO 2025-07-01 03:36:56,758 autoreload 7732 12740 C:\Things\STAGE\RIF\test\EcoTrajet\EcoTrajet\settings.py changed, reloading.
+INFO 2025-07-01 03:36:57,268 autoreload 20876 21196 Watching for file changes with StatReloader
+INFO 2025-07-01 03:37:01,698 autoreload 9572 13060 Watching for file changes with StatReloader
+INFO 2025-07-01 03:57:57,120 autoreload 9572 13060 C:\Things\STAGE\RIF\test\EcoTrajet\EcoTrajet\urls.py changed, reloading.
+INFO 2025-07-01 03:57:57,908 autoreload 14656 8108 Watching for file changes with StatReloader
+INFO 2025-07-01 03:59:00,388 autoreload 14656 8108 C:\Things\STAGE\RIF\test\EcoTrajet\api\urls.py changed, reloading.
+INFO 2025-07-01 03:59:00,902 autoreload 14444 22336 Watching for file changes with StatReloader
+INFO 2025-07-01 03:59:08,161 autoreload 20572 21028 Watching for file changes with StatReloader
+INFO 2025-07-01 04:17:59,010 autoreload 16756 10040 Watching for file changes with StatReloader
+INFO 2025-07-01 04:22:07,710 basehttp 16756 3264 "POST /api/auth/register/ HTTP/1.1" 200 685
+WARNING 2025-07-01 04:22:36,735 log 16756 3264 Unauthorized: /api/auth/token/
+WARNING 2025-07-01 04:22:36,735 basehttp 16756 3264 "POST /api/auth/token/ HTTP/1.1" 401 63
+INFO 2025-07-01 04:24:56,047 basehttp 16756 2856 "GET /api/auth/verify-email/MQ/cs8usu-0b422d6fc00605f6950593a9d937e0cf/ HTTP/1.1" 200 136
+INFO 2025-07-01 04:25:01,555 basehttp 16756 2856 "POST /api/auth/token/ HTTP/1.1" 200 684
+INFO 2025-07-01 04:25:44,615 basehttp 16756 2856 "GET /api/auth/profile/ HTTP/1.1" 200 193
+INFO 2025-07-01 04:26:52,511 basehttp 16756 13032 "POST /api/auth/change-password/ HTTP/1.1" 200 154
+INFO 2025-07-01 04:27:25,220 basehttp 16756 13032 "POST /api/auth/password-reset/ HTTP/1.1" 200 105
+WARNING 2025-07-01 04:28:39,057 log 16756 13032 Bad Request: /api/auth/verify-email/MQ/cs8usu-0b422d6fc00605f6950593a9d937e0cf/
+WARNING 2025-07-01 04:28:39,058 basehttp 16756 13032 "GET /api/auth/verify-email/MQ/cs8usu-0b422d6fc00605f6950593a9d937e0cf/ HTTP/1.1" 400 95
+WARNING 2025-07-01 04:28:57,351 log 16756 13032 Not Found: /reset-password/MQ/cs8v1p-3fdb686d3560ff1cafada9a57cf7e25d/
+WARNING 2025-07-01 04:28:57,352 basehttp 16756 13032 "GET /reset-password/MQ/cs8v1p-3fdb686d3560ff1cafada9a57cf7e25d/ HTTP/1.1" 404 2502
+INFO 2025-07-01 04:30:34,706 basehttp 16756 7832 "POST /api/auth/token/refresh/ HTTP/1.1" 200 483
+INFO 2025-07-01 04:31:21,413 basehttp 16756 7832 "POST /api/auth/logout/ HTTP/1.1" 200 97
+INFO 2025-07-01 04:31:55,651 basehttp 16756 7832 "GET /api/auth/activity/ HTTP/1.1" 200 419
+INFO 2025-07-01 04:32:13,595 autoreload 16756 10040 C:\Things\STAGE\RIF\test\EcoTrajet\EcoTrajet\settings.py changed, reloading.
+>>>>>>> Stashed changes

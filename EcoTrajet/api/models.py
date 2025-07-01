@@ -15,7 +15,11 @@ class Vehicule(models.Model):
     owner = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
+<<<<<<< Updated upstream
         related_name='api_vehicules',  # Changed from 'vehicules' to avoid conflict
+=======
+        related_name='api_vehicules',  # FIXED: changed from 'vehicules'
+>>>>>>> Stashed changes
         help_text="Propriétaire du véhicule"
     )
     license_plate = models.CharField(
@@ -71,6 +75,7 @@ class Trip(models.Model):
         ('CANCELLED', 'Annulé'),
     ]
     
+<<<<<<< Updated upstream
     # English fields with corrected related_name
     driver = models.ForeignKey(User, on_delete=models.CASCADE, related_name='english_trips_as_driver')
     community = models.ForeignKey(Community, on_delete=models.SET_NULL, null=True, blank=True, related_name='english_trips')
@@ -89,11 +94,58 @@ class Trip(models.Model):
     temps_arrive = models.DateTimeField()
     origine = models.CharField(max_length=100)
     destination_fr = models.CharField(max_length=100)  # Renamed to avoid conflict with English field
+=======
+    # English fields - make them all nullable initially
+    driver = models.ForeignKey(
+        User, 
+        on_delete=models.CASCADE, 
+        related_name='english_driver_trips',
+        null=True,
+        blank=True
+    )
+    
+    community = models.ForeignKey(
+        Community, 
+        on_delete=models.SET_NULL, 
+        null=True, 
+        blank=True, 
+        related_name='english_community_trips'
+    )
+    
+    departure_time = models.DateTimeField(null=True, blank=True)
+    arrival_time = models.DateTimeField(null=True, blank=True)
+    origin = models.CharField(max_length=100, null=True, blank=True)
+    destination = models.CharField(max_length=100, null=True, blank=True)
+    price = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    available_seats = models.PositiveIntegerField(null=True, blank=True)
+    status = models.CharField(max_length=15, choices=STATUS_CHOICES, default='SCHEDULED')
+    
+    # French fields - these should already be in your model
+    conducteur = models.ForeignKey(
+        User, 
+        on_delete=models.CASCADE, 
+        related_name='french_driver_trips'
+    )
+    
+    communaute = models.ForeignKey(
+        Community, 
+        on_delete=models.SET_NULL, 
+        null=True, 
+        blank=True, 
+        related_name='french_community_trips'
+    )
+    
+    temps_depart = models.DateTimeField()
+    temps_arrive = models.DateTimeField()
+    origine = models.CharField(max_length=100)
+    destination_fr = models.CharField(max_length=100)
+>>>>>>> Stashed changes
     prix = models.DecimalField(max_digits=6, decimal_places=2)
     places_dispo = models.PositiveIntegerField()
     statut = models.CharField(max_length=15, choices=STATUS_CHOICES, default='SCHEDULED')
     created_at = models.DateTimeField(auto_now_add=True)
 
+<<<<<<< Updated upstream
     def __str__(self):
         return f"{self.origine} → {self.destination_fr} ({self.temps_depart.strftime('%d/%m/%Y %H:%M')}) - {self.conducteur.email}"
    
@@ -115,6 +167,9 @@ class Trip(models.Model):
         self.save()
 
 
+=======
+    # Rest of the model remains the same...
+>>>>>>> Stashed changes
 class Reservation(models.Model):
     STATUS_CHOICES = [
         ('PENDING', 'En attente'),
@@ -203,5 +258,5 @@ class RatingManager(models.Manager):
     def count_for_user(self, user):
         return self.filter(rated_user=user).count()
 
-# Ajouter le manager personnalisé au modèle Rating
-Rating.add_to_class('objects', RatingManager())
+# FIXED: proper way to set the manager
+Rating.objects = RatingManager()
