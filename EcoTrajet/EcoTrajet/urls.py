@@ -23,6 +23,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('api.urls')),
     path('api/', include('api.urls')), 
+<<<<<<< HEAD
     path('api/auth/', include('rest_framework.urls')),
     path('user/', include('user_management.urls')),
+=======
+    path('api/auth/', include('user_management.urls')),
+>>>>>>> 55808b31e5496d047d1fb9ca5d8694ae7952aa26
 ]
