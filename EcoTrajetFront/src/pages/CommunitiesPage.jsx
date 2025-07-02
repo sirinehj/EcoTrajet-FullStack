@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Plus, Search, Filter, Building2, GraduationCap, Mountain, Users, Car, X, MapPin, Star } from 'lucide-react';
+import TransportCoNavbar from '../components/TransportCoNavbar';
 
 const CommunitiesPage = () => {
   const [selectedCommunity, setSelectedCommunity] = useState(null);
@@ -26,7 +27,7 @@ const CommunitiesPage = () => {
       location: "Paris, Île-de-France",
       createdDate: "15 janvier 2024",
       membersList: [
-        { id: 1, name: "Amed Ben Said", username: "@chafcha123", avatar: "AB", rating: 4.8, trips: 23 },
+        { id: 1, name: "Amed Ben Said", username: "@test123", avatar: "AB", rating: 4.8, trips: 23 },
         { id: 2, name: "Amed Ben Said", username: "@test", avatar: "AB", rating: 4.8, trips: 23 }
       ],
       tripsList: [
@@ -76,6 +77,11 @@ const CommunitiesPage = () => {
     }
   ]);
 
+  const handleLogout = () => {
+    // Handle logout logic here
+    console.log('Logout clicked');
+  };
+
   const handleJoinCommunity = (community) => {
     // Add to joined communities
     const newJoinedCommunity = {
@@ -85,7 +91,7 @@ const CommunitiesPage = () => {
       location: "Paris, Île-de-France",
       createdDate: "15 janvier 2024",
       membersList: [
-        { id: 1, name: "Amed Ben Said", username: "@chafcha123", avatar: "AB", rating: 4.8, trips: 23 },
+        { id: 1, name: "Amed Ben Said", username: "@test", avatar: "AB", rating: 4.8, trips: 23 },
         { id: 2, name: "Amed Ben Said", username: "@test", avatar: "AB", rating: 4.8, trips: 23 }
       ],
       tripsList: [
@@ -167,7 +173,7 @@ const CommunitiesPage = () => {
           year: 'numeric' 
         }),
         membersList: [
-          { id: 1, name: "Amed Ben Said", username: "@chafcha123", avatar: "AB", rating: 4.8, trips: 0 }
+          { id: 1, name: "Amed Ben Said", username: "@test123", avatar: "AB", rating: 4.8, trips: 0 }
         ],
         tripsList: []
       };
@@ -182,13 +188,18 @@ const CommunitiesPage = () => {
     setShowCreateModal(false);
     setNewCommunity({ name: '', type: '', location: '', description: '' });
   };
-
   return (
+    <div>
+            <TransportCoNavbar onLogout={handleLogout} />
+          
+
+
     <div className="min-h-screen bg-gray-50 p-6">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="flex justify-between items-start mb-8">
           <div>
+              <br />  <br />  <br />
             <h1 className="text-3xl font-bold text-gray-900 mb-2">Communautés</h1>
             <p className="text-gray-600">Découvrez et rejoignez des groupes de transport</p>
           </div>
@@ -639,6 +650,7 @@ const CommunitiesPage = () => {
         )}
       </div>
     </div>
+        </div>
   );
 };
 
