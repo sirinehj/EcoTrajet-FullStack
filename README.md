@@ -1,7 +1,9 @@
 # EcoTrajet - Plateforme de Transport durable
 
 ## 📋 Présentation
-
+<p align="center">
+  <img src="./assets/logo.jpeg" alt="EcoTrajet Logo" width="200"/>
+</p>
 EcoTrajet est une plateforme innovante de transport collaboratif qui permet aux utilisateurs de créer et participer à des communautés locales pour optimiser leurs déplacements quotidiens. Notre solution vise à faciliter le covoiturage et à créer des liens sociaux autour de la mobilité durable.
 
 ## 👥 Notre Équipe
@@ -15,6 +17,7 @@ EcoTrajet est une plateforme innovante de transport collaboratif qui permet aux 
 | Hanoune Camara | Développeur Backend | • Système d'évaluation (Rating)<br>• Gestion des véhicules|
 | Yassine Ali | Développeur Backend | • Gestion des profils utilisateurs<br>• API des utilisateurs|
 
+## 📋 Diagramme de classe
 ![Diagramme de classe](./assets/diagclasse.jpeg)
 
 
