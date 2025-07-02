@@ -27,7 +27,7 @@ class VehiculeSerializer(serializers.ModelSerializer):
         return obj.places_disponibles()
     
     #Validation personnalisée pour la plaque
-    def validate_licensePlate(self, value):
+    def validate_license_plate(self, value):
         if not value or len(value) < 5:
             raise serializers.ValidationError("La plaque doit contenir au moins 5 caractères")
         return value.upper()
@@ -95,10 +95,19 @@ class UserRatingStatsSerializer(serializers.Serializer):
     ratings_detail = serializers.ListField()
 
 class TripListSerializer(serializers.ModelSerializer):
+    conducteur = serializers.SerializerMethodField()
     class Meta:
         model = Trip
-        fields = ['id', 'origine', 'destination', 'temps_depart', 'prix', 'places_dispo', 'statut']
+        fields = ['id', 'conducteur', 'temps_depart', 'temps_arrive', 'origine', 'destination', 'prix', 'places_dispo']
 
+    def get_conducteur(self, obj):
+        return {
+            'id': obj.conducteur.idUser,
+            'prenom': obj.conducteur.prenom,
+            'nom': obj.conducteur.nom,
+            'email': obj.conducteur.email
+        }
+    
 class ReservationNestedSerializer(serializers.ModelSerializer):
     class Meta:
         model = Reservation

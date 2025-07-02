@@ -1,8 +1,9 @@
-from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
 from django.db import models
 from django.conf import settings
 from django.core.validators import MinValueValidator, MaxValueValidator
 import uuid
+from django.contrib.auth.models import User, AbstractBaseUser, PermissionsMixin, BaseUserManager
+
 
 class UserLoginAttempt(models.Model):
     """
@@ -13,6 +14,12 @@ class UserLoginAttempt(models.Model):
     ip_address = models.GenericIPAddressField(null=True, blank=True)
     success = models.BooleanField(default=False)
     timestamp = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ["-timestamp"]
+
+    def __str__(self):
+        return f"{self.username} @ {self.timestamp}: {'Success' if self.success else 'Fail'}"
 
     class Meta:
         ordering = ["-timestamp"]
@@ -117,3 +124,8 @@ class Vehicule(models.Model):
     def places_disponibles(self):  
         #Retourne le nbre de places disponible
         return self.number_of_seats
+        """
+        Model metadata options.
+        """
+
+        ordering = ["-timestamp"]  # Most recent attempts first

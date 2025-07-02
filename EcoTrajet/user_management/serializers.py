@@ -1,33 +1,29 @@
-"""
-Serializers for user management authentication system.
-"""
-import re
-from datetime import datetime, timezone
-
-from django.conf import settings
-from django.contrib.auth.tokens import default_token_generator
-from django.core.mail import send_mail
-from django.utils.encoding import force_bytes, force_str
-from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
-
+from django.contrib.auth.models import User, Group
 from rest_framework import serializers
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
+from datetime import datetime, timezone
+from django.utils.encoding import force_bytes, force_str
+from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
+from django.contrib.auth.tokens import default_token_generator
+from django.conf import settings
+from django.core.mail import send_mail
+import re
 
-from user_management.models import User, UserLoginAttempt
+from user_management.models import UserLoginAttempt
 
 
 class UserSerializer(serializers.ModelSerializer):
-    """Serializer for User model."""
-    
+    roles = serializers.SerializerMethodField()
+
     class Meta:
-        """Meta configuration for UserSerializer."""
         model = User
-        fields = ("idUser", "email", "nom", "prenom", "role", "telephone", "is_active")
+        fields = ("id", "username", "email", "first_name", "last_name", "roles")
+
+    def get_roles(self, obj):
+        return [group.name for group in obj.groups.all()]
 
 
 class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
-    """Custom JWT token serializer with additional user data."""
-    
     def validate(self, attrs):
         data = super().validate(attrs)
 
@@ -36,7 +32,7 @@ class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
 
         # Add timestamp in the specified format
         data["timestamp"] = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
-        data["user_login"] = self.user.email
+        data["user_login"] = self.user.username
 
         return data
 
@@ -48,26 +44,20 @@ class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
 
 
 class RegisterSerializer(serializers.ModelSerializer):
-    """Serializer for user registration."""
-    
     password = serializers.CharField(write_only=True, required=True)
     role = serializers.ChoiceField(
-        choices=[
-            ('passager', 'Passager'),
-            ('conducteur', 'Conducteur'),
-            ('admin', 'Admin'),
-        ],
+        choices=["Admin", "Manager", "Employee", "Auditor"],
         write_only=True,
         required=False,
-        default='passager',
+        default="Employee",
     )
 
     class Meta:
-        """Meta configuration for RegisterSerializer."""
         model = User
-        fields = ("email", "password", "nom", "prenom", "role", "telephone")
+        fields = ("username", "email", "password", "first_name", "last_name", "role")
         extra_kwargs = {"email": {"required": True}}
 
+    # In RegisterSerializer class:
     def validate_password(self, value):
         """
         Validate password complexity.
@@ -99,6 +89,7 @@ class RegisterSerializer(serializers.ModelSerializer):
 
         return value
 
+    # In RegisterSerializer class:
     def validate_email(self, value):
         """
         Check if email already exists.
@@ -108,34 +99,34 @@ class RegisterSerializer(serializers.ModelSerializer):
         return value
 
     def create(self, validated_data):
-        # Extract role before creating user
-        role = validated_data.pop('role', 'passager')
-        
-        # Create user with your custom User model
+        # Set user as inactive until email is verified
         user = User.objects.create_user(
+            username=validated_data["username"],
             email=validated_data["email"],
             password=validated_data["password"],
-            nom=validated_data.get("nom", ""),
-            prenom=validated_data.get("prenom", ""),
-            telephone=validated_data.get("telephone", ""),
-            role=role,
+            first_name=validated_data.get("first_name", ""),
+            last_name=validated_data.get("last_name", ""),
             is_active=False,  # User inactive until verified
         )
+
+        # Assign role
+        role = validated_data.pop("role", "Employee")
+        group = Group.objects.get(name=role)
+        user.groups.add(group)
 
         # Generate verification token
         uid = urlsafe_base64_encode(force_bytes(user.pk))
         token = default_token_generator.make_token(user)
 
-        # Send verification email (only if settings are configured)
-        if hasattr(settings, 'FRONTEND_URL') and hasattr(settings, 'DEFAULT_FROM_EMAIL'):
-            verification_link = f"{settings.FRONTEND_URL}/verify-email/{uid}/{token}/"
-            send_mail(
-                "Verify Your Email",
-                f"Click the link to verify your email: {verification_link}",
-                settings.DEFAULT_FROM_EMAIL,
-                [user.email],
-                fail_silently=False,
-            )
+        # Send verification email
+        verification_link = f"{settings.FRONTEND_URL}/verify-email/{uid}/{token}/"
+        send_mail(
+            "Verify Your Email",
+            f"Click the link to verify your email: {verification_link}",
+            settings.DEFAULT_FROM_EMAIL,
+            [user.email],
+            fail_silently=False,
+        )
 
         return user
 
@@ -143,15 +134,32 @@ class RegisterSerializer(serializers.ModelSerializer):
 class EmailSerializer(serializers.Serializer):
     """
     Serializer for handling email-based operations like password reset requests.
+
+    This serializer validates that the provided email is correctly formatted.
+    It is used in the password reset flow to collect the user's email address
+    before sending a reset link.
     """
+
     email = serializers.EmailField(required=True)
 
     def validate_email(self, value):
         """
         Validate that the email is properly formatted.
+
+        Note: We don't validate if the email exists in the database here,
+        as this would leak information about registered users.
+
+        Args:
+            value: The email to validate
+
+        Returns:
+            str: The validated email
         """
+        # You could add custom email validation here if needed
+        # For example, domain-specific rules or blocking certain domains
         return value
 
+    # Need to add these to EmailSerializer:
     def create(self, validated_data):
         pass
 
@@ -162,6 +170,15 @@ class EmailSerializer(serializers.Serializer):
 class PasswordResetSerializer(serializers.Serializer):
     """
     Serializer for handling password reset operations.
+
+    This serializer collects and validates:
+    - uid: Base64 encoded user ID
+    - token: Password reset token
+    - password: New password
+    - confirm_password: Password confirmation
+
+    It ensures the new password meets the system's security requirements
+    and that the confirmation matches.
     """
 
     def __init__(self, *args, **kwargs):
@@ -180,7 +197,17 @@ class PasswordResetSerializer(serializers.Serializer):
     def validate(self, attrs):
         """
         Validate that the passwords match.
+
+        Args:
+            data: The serializer data containing both passwords
+
+        Returns:
+            dict: The validated data
+
+        Raises:
+            ValidationError: If passwords don't match
         """
+        # Check that passwords match
         if attrs["password"] != attrs["confirm_password"]:
             raise serializers.ValidationError(
                 {"confirm_password": ["Passwords do not match."]}
@@ -190,26 +217,48 @@ class PasswordResetSerializer(serializers.Serializer):
     def validate_password(self, value):
         """
         Validate the password strength.
+
+        Ensures the password meets security requirements:
+        - At least 8 characters long
+        - Contains at least one uppercase letter
+        - Contains at least one lowercase letter
+        - Contains at least one digit
+        - Contains at least one special character
+
+        Args:
+            value: The password to validate
+
+        Returns:
+            str: The validated password
+
+        Raises:
+            ValidationError: If password doesn't meet requirements
         """
+        # Check password length
         if len(value) < 8:
             raise serializers.ValidationError(
                 "Password must be at least 8 characters long."
             )
 
+        # Check for uppercase letter
         if not any(char.isupper() for char in value):
             raise serializers.ValidationError(
                 "Password must contain at least one uppercase letter."
             )
 
+        # Check for lowercase letter
         if not any(char.islower() for char in value):
             raise serializers.ValidationError(
                 "Password must contain at least one lowercase letter."
             )
 
+        # Check for digit
         if not any(char.isdigit() for char in value):
             raise serializers.ValidationError(
                 "Password must contain at least one number."
             )
+
+        # Check for special character
 
         if not re.search(r'[!@#$%^&*(),.?":{}|<>]', value):
             raise serializers.ValidationError(
@@ -221,6 +270,15 @@ class PasswordResetSerializer(serializers.Serializer):
     def validate_uid(self, value):
         """
         Validate that the UID can be decoded.
+
+        Args:
+            value: The encoded UID
+
+        Returns:
+            str: The validated UID
+
+        Raises:
+            ValidationError: If UID is invalid
         """
         try:
             uid = force_str(urlsafe_base64_decode(value))
@@ -232,8 +290,21 @@ class PasswordResetSerializer(serializers.Serializer):
     def validate_token(self, value):
         """
         Validate the password reset token.
+
+        Note: This requires validate_uid to be called first,
+        which happens automatically in DRF's validation flow.
+
+        Args:
+            value: The token to validate
+
+        Returns:
+            str: The validated token
+
+        Raises:
+            ValidationError: If token is invalid
         """
         if not hasattr(self, "user"):
+            # This shouldn't happen as validate_uid should be called first
             raise serializers.ValidationError("Invalid validation order.")
 
         is_valid = default_token_generator.check_token(self.user, value)
@@ -241,6 +312,7 @@ class PasswordResetSerializer(serializers.Serializer):
             raise serializers.ValidationError("Invalid or expired token.")
         return value
 
+    # Need to add these to PasswordResetSerializer:
     def create(self, validated_data):
         pass
 
@@ -248,6 +320,7 @@ class PasswordResetSerializer(serializers.Serializer):
         pass
 
 
+# Add these serializers to your existing serializers.py file
 def validate_password_strength(password):
     """
     Validate password strength requirements.
@@ -287,10 +360,11 @@ def validate_password_strength(password):
 class PasswordChangeSerializer(serializers.Serializer):
     """
     Serializer for handling password change requests.
-    
+
     Validates old password correctness, new password strength,
     and that confirmation password matches.
     """
+
     old_password = serializers.CharField(
         required=True, style={"input_type": "password"}
     )
@@ -309,16 +383,19 @@ class PasswordChangeSerializer(serializers.Serializer):
         return value
 
     def validate(self, attrs):
+        # Check if passwords match
         if attrs["new_password"] != attrs["confirm_password"]:
             raise serializers.ValidationError(
                 {"confirm_password": "New passwords don't match."}
             )
 
+        # Check if new password is same as old password
         if attrs["new_password"] == attrs["old_password"]:
             raise serializers.ValidationError(
                 {"new_password": "New password must be different from old password."}
             )
 
+        # Validate password strength
         validate_password_strength(attrs["new_password"])
 
         return attrs
@@ -337,11 +414,6 @@ class PasswordChangeSerializer(serializers.Serializer):
 
 
 class UserLoginAttemptSerializer(serializers.ModelSerializer):
-    """Serializer for UserLoginAttempt model."""
-    
     class Meta:
-        """Meta configuration for UserLoginAttemptSerializer."""
         model = UserLoginAttempt
         fields = ["username", "ip_address", "timestamp", "success"]
-        # Note: 'username' field in UserLoginAttempt model stores the email address
-        # since email is the USERNAME_FIELD in the custom User model

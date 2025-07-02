@@ -5,6 +5,7 @@ from user_management.models import User
 from django.urls import reverse
 import uuid
 
+
 class Community(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
@@ -86,6 +87,7 @@ class Reservation(models.Model):
                 self.trip.save()
         super().save(*args, **kwargs)
 
+
 #Modèle pour les évaluations après trajets
 class Rating(models.Model):
     idRate = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
@@ -162,3 +164,4 @@ class RatingManager(models.Manager):
 
 # Ajouter le manager personnalisé au modèle Rating
 Rating.add_to_class('objects', RatingManager())
+
