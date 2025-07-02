@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { User, Mail, Phone, Calendar, Route, CheckCircle, Users, Star, ArrowRight, Car, MapPin, Clock } from 'lucide-react';
+import TransportCoNavbar from '../components/TransportCoNavbar';
 
 export default function MonProfil() {
   const [activeTab, setActiveTab] = useState('informations');
@@ -103,6 +104,12 @@ export default function MonProfil() {
     averageRating: userRatings.length > 0 
       ? (userRatings.reduce((sum, rating) => sum + rating.Score, 0) / userRatings.length).toFixed(1)
       : null
+  };
+
+  const handleLogout = () => {
+    // Handle logout logic here
+    // You might want to redirect to login page or clear user data
+    console.log('Logout clicked');
   };
 
   const tabs = [
@@ -351,47 +358,50 @@ export default function MonProfil() {
   );
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <div className="bg-white shadow-sm border-b">
-        <div className="max-w-7xl mx-auto px-4 py-6">
-          <div className="flex justify-between items-center">
-            <h1 className="text-3xl font-bold text-gray-900">Mon Profil</h1>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-colors">
-              <User size={20} />
-              Modifier le profil
-            </button>
+    <div>
+      <TransportCoNavbar onLogout={handleLogout} />
+      <div className="min-h-screen bg-gray-50 pt-16">
+        {/* Header */}
+        <div className="bg-white shadow-sm border-b">
+          <div className="max-w-7xl mx-auto px-4 py-6">
+            <div className="flex justify-between items-center">
+              <h1 className="text-3xl font-bold text-gray-900">Mon Profil</h1>
+              <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-colors">
+                <User size={20} />
+                Modifier le profil
+              </button>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Tabs */}
-      <div className="max-w-7xl mx-auto px-4 py-6">
-        <div className="flex space-x-0 mb-6">
-          {tabs.map((tab) => (
-            <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              className={`px-6 py-3 text-sm font-medium transition-colors ${
-                activeTab === tab.id
-                  ? 'bg-white text-gray-900 border-b-2 border-blue-600'
-                  : 'text-gray-600 hover:text-gray-900 bg-gray-100'
-              } ${
-                tab.id === 'informations' ? 'rounded-tl-lg' : ''
-              } ${
-                tab.id === 'activite' ? 'rounded-tr-lg' : ''
-              }`}
-            >
-              {tab.label}
-            </button>
-          ))}
-        </div>
+        {/* Tabs */}
+        <div className="max-w-7xl mx-auto px-4 py-6">
+          <div className="flex space-x-0 mb-6">
+            {tabs.map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={`px-6 py-3 text-sm font-medium transition-colors ${
+                  activeTab === tab.id
+                    ? 'bg-white text-gray-900 border-b-2 border-blue-600'
+                    : 'text-gray-600 hover:text-gray-900 bg-gray-100'
+                } ${
+                  tab.id === 'informations' ? 'rounded-tl-lg' : ''
+                } ${
+                  tab.id === 'activite' ? 'rounded-tr-lg' : ''
+                }`}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
 
-        {/* Content */}
-        <div className="min-h-96">
-          {activeTab === 'informations' && renderInformations()}
-          {activeTab === 'statistiques' && renderStatistiques()}
-          {activeTab === 'activite' && renderActivite()}
+          {/* Content */}
+          <div className="min-h-96">
+            {activeTab === 'informations' && renderInformations()}
+            {activeTab === 'statistiques' && renderStatistiques()}
+            {activeTab === 'activite' && renderActivite()}
+          </div>
         </div>
       </div>
     </div>

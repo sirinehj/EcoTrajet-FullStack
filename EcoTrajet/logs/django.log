@@ -854,6 +854,93 @@ WARNING 2025-07-01 23:59:01,065 log 22040 2528 Not Found: /vehicules
 WARNING 2025-07-01 23:59:01,066 basehttp 22040 2528 "GET /vehicules HTTP/1.1" 404 5174
 WARNING 2025-07-01 23:59:04,353 log 22040 2528 Not Found: /vehicules
 WARNING 2025-07-01 23:59:04,354 basehttp 22040 2528 "GET /vehicules HTTP/1.1" 404 5174
+<<<<<<< HEAD
+INFO 2025-07-02 09:47:38,037 autoreload 9304 12300 Watching for file changes with StatReloader
+WARNING 2025-07-02 09:47:44,657 log 9304 7724 Not Found: /
+WARNING 2025-07-02 09:47:44,658 basehttp 9304 7724 "GET / HTTP/1.1" 404 5129
+WARNING 2025-07-02 09:47:47,052 log 9304 7724 Not Found: /favicon.ico
+WARNING 2025-07-02 09:47:47,052 basehttp 9304 7724 "GET /favicon.ico HTTP/1.1" 404 5180
+WARNING 2025-07-02 09:47:57,508 log 9304 7724 Method Not Allowed: /login/
+WARNING 2025-07-02 09:47:57,508 basehttp 9304 7724 "GET /login/ HTTP/1.1" 405 40
+WARNING 2025-07-02 09:48:31,129 log 9304 7724 Method Not Allowed: /token/
+WARNING 2025-07-02 09:48:31,130 basehttp 9304 7724 "GET /token/ HTTP/1.1" 405 12411
+INFO 2025-07-02 09:48:31,285 basehttp 9304 8128 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-07-02 09:48:31,285 basehttp 9304 6928 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-07-02 09:48:31,289 basehttp 9304 7724 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-07-02 09:48:31,294 basehttp 9304 15636 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-07-02 09:48:31,305 basehttp 9304 2340 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-07-02 09:48:31,316 basehttp 9304 6928 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-07-02 09:48:31,319 basehttp 9304 2340 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-07-02 09:48:31,326 basehttp 9304 15636 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-07-02 09:48:31,330 basehttp 9304 6928 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-07-02 09:48:31,332 basehttp 9304 7724 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-07-02 09:48:31,337 basehttp 9304 8128 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-07-02 09:48:31,354 basehttp 9304 20584 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-07-02 09:48:53,081 basehttp 9304 20584 "GET /admin HTTP/1.1" 301 0
+INFO 2025-07-02 09:48:53,094 basehttp 9304 8128 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-07-02 09:48:53,187 basehttp 9304 8128 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4170
+INFO 2025-07-02 09:48:53,286 basehttp 9304 7724 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-07-02 09:48:53,286 basehttp 9304 2340 "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-07-02 09:48:53,287 basehttp 9304 15636 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-07-02 09:48:53,288 basehttp 9304 8128 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2025-07-02 09:48:53,288 basehttp 9304 4972 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2025-07-02 09:48:53,293 basehttp 9304 6928 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-07-02 09:48:53,454 basehttp 9304 6928 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-07-02 09:49:00,217 basehttp 9304 6928 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-07-02 09:49:00,290 basehttp 9304 6928 "GET /admin/ HTTP/1.1" 200 8474
+INFO 2025-07-02 09:49:00,316 basehttp 9304 6928 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-07-02 09:49:00,348 basehttp 9304 6928 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-07-02 09:49:00,349 basehttp 9304 4972 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-07-02 09:49:15,170 basehttp 9304 4972 "GET /admin/auth/group/ HTTP/1.1" 200 9668
+INFO 2025-07-02 09:49:15,211 basehttp 9304 4972 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-07-02 09:49:15,218 basehttp 9304 15636 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-07-02 09:49:15,228 basehttp 9304 2340 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-07-02 09:49:15,230 basehttp 9304 7724 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-07-02 09:49:15,251 basehttp 9304 15636 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-07-02 09:49:15,251 basehttp 9304 4972 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-07-02 09:49:15,262 basehttp 9304 2340 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-07-02 09:49:15,272 basehttp 9304 4972 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-07-02 09:49:15,281 basehttp 9304 8128 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-07-02 09:49:15,310 basehttp 9304 6928 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-02 09:49:15,343 basehttp 9304 6928 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-07-02 09:49:15,356 basehttp 9304 7724 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-07-02 09:49:15,689 basehttp 9304 7724 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-07-02 09:49:17,673 basehttp 9304 7724 "GET /admin/authtoken/tokenproxy/ HTTP/1.1" 200 9740
+INFO 2025-07-02 09:49:18,932 basehttp 9304 7724 "GET /admin/token_blacklist/blacklistedtoken/ HTTP/1.1" 200 9766
+INFO 2025-07-02 09:49:19,001 basehttp 9304 7724 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-02 09:49:19,630 basehttp 9304 7724 "GET /admin/token_blacklist/outstandingtoken/ HTTP/1.1" 200 9584
+INFO 2025-07-02 09:49:20,596 basehttp 9304 7724 "GET /admin/token_blacklist/blacklistedtoken/ HTTP/1.1" 200 9766
+INFO 2025-07-02 09:49:22,229 basehttp 9304 7724 "GET /admin/ HTTP/1.1" 200 8474
+WARNING 2025-07-02 09:50:40,315 log 9304 7724 Not Found: /api/users/
+WARNING 2025-07-02 09:50:40,315 basehttp 9304 7724 "GET /api/users/ HTTP/1.1" 404 12720
+WARNING 2025-07-02 09:51:42,000 log 9304 9280 Not Found: /api/token/
+WARNING 2025-07-02 09:51:42,000 basehttp 9304 9280 "POST /api/token/ HTTP/1.1" 404 12721
+WARNING 2025-07-02 09:51:50,530 log 9304 9280 Bad Request: /token/
+WARNING 2025-07-02 09:51:50,531 basehttp 9304 9280 "POST /token/ HTTP/1.1" 400 37
+WARNING 2025-07-02 09:52:26,266 log 9304 9280 Bad Request: /token/
+WARNING 2025-07-02 09:52:26,266 basehttp 9304 9280 "POST /token/ HTTP/1.1" 400 82
+INFO 2025-07-02 09:52:33,847 basehttp 9304 9280 "POST /token/ HTTP/1.1" 200 483
+WARNING 2025-07-02 10:11:57,266 log 9304 16256 Not Found: /user/register/\n
+WARNING 2025-07-02 10:11:57,267 basehttp 9304 16256 "POST /user/register/%0A HTTP/1.1" 404 7798
+WARNING 2025-07-02 10:12:08,162 log 9304 16256 Not Found: /register/\n
+WARNING 2025-07-02 10:12:08,163 basehttp 9304 16256 "POST /register/%0A HTTP/1.1" 404 5180
+WARNING 2025-07-02 10:14:14,220 log 9304 4428 Not Found: /api/register/\n
+WARNING 2025-07-02 10:14:14,220 basehttp 9304 4428 "POST /api/register/%0A HTTP/1.1" 404 12735
+WARNING 2025-07-02 10:14:22,540 log 9304 4428 Not Found: /register/\n
+WARNING 2025-07-02 10:14:22,541 basehttp 9304 4428 "POST /register/%0A HTTP/1.1" 404 5180
+WARNING 2025-07-02 10:16:30,870 log 9304 8976 Not Found: /user/register/\n
+WARNING 2025-07-02 10:16:30,870 basehttp 9304 8976 "POST /user/register/%0A HTTP/1.1" 404 7798
+ERROR 2025-07-02 10:18:07,485 log 9304 13036 Internal Server Error: /user/register
+Traceback (most recent call last):
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+=======
 INFO 2025-07-02 00:39:19,097 autoreload 2724 19192 Watching for file changes with StatReloader
 WARNING 2025-07-02 00:39:21,563 log 2724 12608 Not Found: /
 WARNING 2025-07-02 00:39:21,565 basehttp 2724 12608 "GET / HTTP/1.1" 404 5129
@@ -1198,10 +1285,283 @@ Traceback (most recent call last):
     return self.response_redirect_class(self.get_full_path_with_slash(request))
                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
   File "C:\ecoTrajet\env\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+>>>>>>> 00b67ec617997534273aabf14dce2ce4a8cf5ed1
     raise RuntimeError(
     ...<9 lines>...
     )
 RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/user/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+<<<<<<< HEAD
+ERROR 2025-07-02 10:18:07,487 basehttp 9304 13036 "POST /user/register HTTP/1.1" 500 71423
+ERROR 2025-07-02 10:18:52,037 log 9304 17972 Internal Server Error: /user/register/
+Traceback (most recent call last):
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django_ratelimit\decorators.py", line 27, in _wrapped
+    return fn(request, *args, **kw)
+  File "C:\Users\abens\Desktop\New folder (2)\EcoTrajet-FullStack\EcoTrajet\user_management\views.py", line 123, in post
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 497, in to_internal_value
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 380, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 1080, in get_fields
+    info = model_meta.get_field_info(model)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\utils\model_meta.py", line 39, in get_field_info
+    forward_relations = _get_forward_relationships(opts)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\utils\model_meta.py", line 96, in _get_forward_relationships
+    not field.remote_field.through._meta.auto_created
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '_meta'
+ERROR 2025-07-02 10:18:52,043 basehttp 9304 17972 "POST /user/register/ HTTP/1.1" 500 144743
+ERROR 2025-07-02 10:19:12,178 log 9304 17972 Internal Server Error: /user/register/
+Traceback (most recent call last):
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django_ratelimit\decorators.py", line 27, in _wrapped
+    return fn(request, *args, **kw)
+  File "C:\Users\abens\Desktop\New folder (2)\EcoTrajet-FullStack\EcoTrajet\user_management\views.py", line 123, in post
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 497, in to_internal_value
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 380, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 1080, in get_fields
+    info = model_meta.get_field_info(model)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\utils\model_meta.py", line 39, in get_field_info
+    forward_relations = _get_forward_relationships(opts)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\utils\model_meta.py", line 96, in _get_forward_relationships
+    not field.remote_field.through._meta.auto_created
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '_meta'
+ERROR 2025-07-02 10:19:12,182 basehttp 9304 17972 "POST /user/register/ HTTP/1.1" 500 144743
+ERROR 2025-07-02 10:23:24,900 log 9304 20268 Internal Server Error: /user/register/
+Traceback (most recent call last):
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django_ratelimit\decorators.py", line 27, in _wrapped
+    return fn(request, *args, **kw)
+  File "C:\Users\abens\Desktop\New folder (2)\EcoTrajet-FullStack\EcoTrajet\user_management\views.py", line 123, in post
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 497, in to_internal_value
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 380, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 1080, in get_fields
+    info = model_meta.get_field_info(model)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\utils\model_meta.py", line 39, in get_field_info
+    forward_relations = _get_forward_relationships(opts)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\utils\model_meta.py", line 96, in _get_forward_relationships
+    not field.remote_field.through._meta.auto_created
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '_meta'
+ERROR 2025-07-02 10:23:24,903 basehttp 9304 20268 "POST /user/register/ HTTP/1.1" 500 144669
+INFO 2025-07-02 10:25:55,477 autoreload 9304 12300 C:\Users\abens\Desktop\New folder (2)\EcoTrajet-FullStack\EcoTrajet\user_management\serializers.py changed, reloading.
+INFO 2025-07-02 10:25:56,382 autoreload 3512 9380 Watching for file changes with StatReloader
+INFO 2025-07-02 10:28:36,108 autoreload 3512 9380 C:\Users\abens\Desktop\New folder (2)\EcoTrajet-FullStack\EcoTrajet\user_management\serializers.py changed, reloading.
+INFO 2025-07-02 10:28:36,718 autoreload 2496 1100 Watching for file changes with StatReloader
+ERROR 2025-07-02 10:35:58,769 log 2496 8964 Internal Server Error: /user/register/
+Traceback (most recent call last):
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django_ratelimit\decorators.py", line 27, in _wrapped
+    return fn(request, *args, **kw)
+  File "C:\Users\abens\Desktop\New folder (2)\EcoTrajet-FullStack\EcoTrajet\user_management\views.py", line 123, in post
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 497, in to_internal_value
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 380, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 1080, in get_fields
+    info = model_meta.get_field_info(model)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\utils\model_meta.py", line 39, in get_field_info
+    forward_relations = _get_forward_relationships(opts)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\utils\model_meta.py", line 96, in _get_forward_relationships
+    not field.remote_field.through._meta.auto_created
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '_meta'
+ERROR 2025-07-02 10:35:58,776 basehttp 2496 8964 "POST /user/register/ HTTP/1.1" 500 144669
+ERROR 2025-07-02 10:36:07,134 log 2496 8964 Internal Server Error: /user/register/
+Traceback (most recent call last):
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django_ratelimit\decorators.py", line 27, in _wrapped
+    return fn(request, *args, **kw)
+  File "C:\Users\abens\Desktop\New folder (2)\EcoTrajet-FullStack\EcoTrajet\user_management\views.py", line 123, in post
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 497, in to_internal_value
+    for field in fields:
+                 ^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 380, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\serializers.py", line 1080, in get_fields
+    info = model_meta.get_field_info(model)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\utils\model_meta.py", line 39, in get_field_info
+    forward_relations = _get_forward_relationships(opts)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\utils\model_meta.py", line 96, in _get_forward_relationships
+    not field.remote_field.through._meta.auto_created
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '_meta'
+ERROR 2025-07-02 10:36:07,139 basehttp 2496 8964 "POST /user/register/ HTTP/1.1" 500 144669
+=======
 ERROR 2025-07-02 04:44:16,125 basehttp 10492 11840 "POST /user/register HTTP/1.1" 500 76630
 INFO 2025-07-02 14:00:06,529 autoreload 20084 14792 Watching for file changes with StatReloader
 WARNING 2025-07-02 14:00:08,515 log 20084 10892 Not Found: /
@@ -1373,3 +1733,4 @@ INFO 2025-07-02 14:26:09,716 basehttp 2212 16884 "GET /trips/?status=SCHEDULED H
 INFO 2025-07-02 14:26:42,495 basehttp 2212 5892 "GET /trips/?status=SCHEDULED HTTP/1.1" 200 758
 INFO 2025-07-02 14:27:05,309 autoreload 2212 1972 C:\ecoTrajet\EcoTrajet\EcoTrajet\settings.py changed, reloading.
 INFO 2025-07-02 14:27:06,356 autoreload 19976 4768 Watching for file changes with StatReloader
+>>>>>>> 00b67ec617997534273aabf14dce2ce4a8cf5ed1
