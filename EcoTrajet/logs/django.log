@@ -44,27 +44,27 @@ WARNING 2025-06-30 21:33:39,203 log 15036 8808 Not Found: /
 WARNING 2025-06-30 21:33:39,204 basehttp 15036 8808 "GET / HTTP/1.1" 404 4381
 INFO 2025-06-30 21:33:46,897 basehttp 15036 8692 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06')
 ERROR 2025-06-30 21:33:46,898 basehttp 15036 8692 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:33:46,900 basehttp 15036 19472 code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sjj\x00\x00\x00+\x00\x07\x06**\x03\x04\x03\x03\x00')
+INFO 2025-06-30 21:33:46,900 basehttp 15036 19472 code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03ï¿½+ï¿½/ï¿½,ï¿½0Ì©Ì¨ï¿½\x13ï¿½\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sjj\x00\x00\x00+\x00\x07\x06**\x03\x04\x03\x03\x00')
 ERROR 2025-06-30 21:33:46,902 basehttp 15036 19472 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:33:54,397 basehttp 15036 5892 code 400, message Bad request version ('a¦@t\x94~x')
+INFO 2025-06-30 21:33:54,397 basehttp 15036 5892 code 400, message Bad request version ('aï¿½@t\x94~x')
 ERROR 2025-06-30 21:33:54,399 basehttp 15036 5892 You're accessing the development server over HTTPS, but it only supports HTTP.
 INFO 2025-06-30 21:33:54,401 basehttp 15036 14972 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06')
 ERROR 2025-06-30 21:33:54,401 basehttp 15036 14972 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:33:58,065 basehttp 15036 10692 code 400, message Bad request version ('ä_Ü#¼\x94É\x97')
+INFO 2025-06-30 21:33:58,065 basehttp 15036 10692 code 400, message Bad request version ('ï¿½_ï¿½#ï¿½\x94ï¿½\x97')
 ERROR 2025-06-30 21:33:58,080 basehttp 15036 10692 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:33:58,082 basehttp 15036 8660 code 400, message Bad request version ('9dX\x10Ë@')
+INFO 2025-06-30 21:33:58,082 basehttp 15036 8660 code 400, message Bad request version ('9dX\x10ï¿½@')
 ERROR 2025-06-30 21:33:58,082 basehttp 15036 8660 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:34:04,786 basehttp 15036 9208 code 400, message Bad request syntax ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03oú]P¹êÌïÞúOfÉ#DÐ\x8e')
+INFO 2025-06-30 21:34:04,786 basehttp 15036 9208 code 400, message Bad request syntax ('\x16\x03\x01\x07\x00\x01\x00\x06ï¿½\x03\x03oï¿½]Pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ofï¿½#Dï¿½\x8e')
 ERROR 2025-06-30 21:34:04,786 basehttp 15036 9208 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:34:04,789 basehttp 15036 21204 code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S\x8a\x8a\x00\x00\x00')
+INFO 2025-06-30 21:34:04,789 basehttp 15036 21204 code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03ï¿½+ï¿½/ï¿½,ï¿½0Ì©Ì¨ï¿½\x13ï¿½\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S\x8a\x8a\x00\x00\x00')
 ERROR 2025-06-30 21:34:04,789 basehttp 15036 21204 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:34:06,901 basehttp 15036 18252 code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06SÊÊ\x00\x00\x00')
+INFO 2025-06-30 21:34:06,901 basehttp 15036 18252 code 400, message Bad request version ('ï¿½ï¿½\x13\x01\x13\x02\x13\x03ï¿½+ï¿½/ï¿½,ï¿½0Ì©Ì¨ï¿½\x13ï¿½\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Sï¿½ï¿½\x00\x00\x00')
 ERROR 2025-06-30 21:34:06,901 basehttp 15036 18252 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:34:06,903 basehttp 15036 7724 code 400, message Bad request syntax ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03Q}\x92s\x03ÂÇðjlà\x8d')
+INFO 2025-06-30 21:34:06,903 basehttp 15036 7724 code 400, message Bad request syntax ('\x16\x03\x01\x06ï¿½\x01\x00\x06ï¿½\x03\x03Q}\x92s\x03ï¿½ï¿½ï¿½jlï¿½\x8d')
 ERROR 2025-06-30 21:34:06,903 basehttp 15036 7724 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:34:08,562 basehttp 15036 5148 code 400, message Bad request version ('Ü\x87«\x86´¬¯¤bs5#é')
+INFO 2025-06-30 21:34:08,562 basehttp 15036 5148 code 400, message Bad request version ('ï¿½\x87ï¿½\x86ï¿½ï¿½ï¿½ï¿½bs5#ï¿½')
 ERROR 2025-06-30 21:34:08,563 basehttp 15036 5148 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:34:08,565 basehttp 15036 14276 code 400, message Bad request version ('¾')
+INFO 2025-06-30 21:34:08,565 basehttp 15036 14276 code 400, message Bad request version ('ï¿½')
 ERROR 2025-06-30 21:34:08,565 basehttp 15036 14276 You're accessing the development server over HTTPS, but it only supports HTTP.
 INFO 2025-06-30 21:34:17,743 basehttp 15036 2996 "GET /admin/ HTTP/1.1" 302 0
 INFO 2025-06-30 21:34:17,893 basehttp 15036 2996 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4170
@@ -116,9 +116,9 @@ INFO 2025-06-30 21:40:58,521 autoreload 15648 17232 C:\ecoTrajet\EcoTrajet\api\u
 INFO 2025-06-30 21:40:59,299 autoreload 19216 13956 Watching for file changes with StatReloader
 WARNING 2025-06-30 21:41:20,168 log 19216 18084 Not Found: /api/auth/token/
 WARNING 2025-06-30 21:41:20,169 basehttp 19216 18084 "GET /api/auth/token/ HTTP/1.1" 404 6878
-INFO 2025-06-30 21:41:28,681 basehttp 19216 20184 code 400, message Bad request version ('\x9aÌ~úçáº.PîÙ<DôäíZV\x9abj´')
+INFO 2025-06-30 21:41:28,681 basehttp 19216 20184 code 400, message Bad request version ('\x9aï¿½~ï¿½ï¿½ï¿½.Pï¿½ï¿½<Dï¿½ï¿½ï¿½ZV\x9abjï¿½')
 ERROR 2025-06-30 21:41:28,683 basehttp 19216 20184 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:41:28,685 basehttp 19216 21008 code 400, message Bad request version ('Ø¶%-Æ¾=\x9a/ÒD')
+INFO 2025-06-30 21:41:28,685 basehttp 19216 21008 code 400, message Bad request version ('Ø¶%-Æ¾=\x9a/ï¿½D')
 ERROR 2025-06-30 21:41:28,685 basehttp 19216 21008 You're accessing the development server over HTTPS, but it only supports HTTP.
 WARNING 2025-06-30 21:41:33,175 log 19216 12268 Not Found: /
 WARNING 2025-06-30 21:41:33,176 basehttp 19216 12268 "GET / HTTP/1.1" 404 3847
@@ -131,13 +131,13 @@ INFO 2025-06-30 21:42:46,210 autoreload 18520 17556 C:\ecoTrajet\EcoTrajet\EcoTr
 INFO 2025-06-30 21:42:46,846 autoreload 3784 20712 Watching for file changes with StatReloader
 WARNING 2025-06-30 21:42:48,962 log 3784 19668 Not Found: /
 WARNING 2025-06-30 21:42:48,963 basehttp 3784 19668 "GET / HTTP/1.1" 404 3847
-INFO 2025-06-30 21:42:54,826 basehttp 3784 19812 code 400, message Bad request syntax ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03£²áx½UDÕ')
+INFO 2025-06-30 21:42:54,826 basehttp 3784 19812 code 400, message Bad request syntax ('\x16\x03\x01\x07\x00\x01\x00\x06ï¿½\x03\x03ï¿½ï¿½ï¿½xï¿½UDï¿½')
 ERROR 2025-06-30 21:42:54,828 basehttp 3784 19812 You're accessing the development server over HTTPS, but it only supports HTTP.
 INFO 2025-06-30 21:42:54,830 basehttp 3784 13464 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06')
 ERROR 2025-06-30 21:42:54,831 basehttp 3784 13464 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:42:56,534 basehttp 3784 4660 code 400, message Bad request version ('êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sÊÊ\x00\x00\x00-\x00\x02\x01\x01\x00\x1b\x00\x03\x02\x00\x02DÍ\x00\x05\x00\x03\x02h2\x00')
+INFO 2025-06-30 21:42:56,534 basehttp 3784 4660 code 400, message Bad request version ('ï¿½ï¿½\x13\x01\x13\x02\x13\x03ï¿½+ï¿½/ï¿½,ï¿½0Ì©Ì¨ï¿½\x13ï¿½\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sï¿½ï¿½\x00\x00\x00-\x00\x02\x01\x01\x00\x1b\x00\x03\x02\x00\x02Dï¿½\x00\x05\x00\x03\x02h2\x00')
 ERROR 2025-06-30 21:42:56,534 basehttp 3784 4660 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:42:56,537 basehttp 3784 3176 code 400, message Bad request version ('0Ö\x94óÖ\x9f\x7fVP\x0fw\x9e`!EA')
+INFO 2025-06-30 21:42:56,537 basehttp 3784 3176 code 400, message Bad request version ('0ï¿½\x94ï¿½ï¿½\x9f\x7fVP\x0fw\x9e`!EA')
 ERROR 2025-06-30 21:42:56,537 basehttp 3784 3176 You're accessing the development server over HTTPS, but it only supports HTTP.
 WARNING 2025-06-30 21:43:11,880 log 3784 20880 Method Not Allowed: /api/auth/token/
 WARNING 2025-06-30 21:43:11,892 basehttp 3784 20880 "GET /api/auth/token/ HTTP/1.1" 405 40
@@ -182,7 +182,7 @@ Traceback (most recent call last):
            ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\ecoTrajet\env\Lib\site-packages\django_redis\client\default.py", line 224, in set
     raise ConnectionInterrupted(connection=client) from e
-django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to 127.0.0.1:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to 127.0.0.1:6379. Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e.
 
 During handling of the above exception, another exception occurred:
 
@@ -240,7 +240,7 @@ Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
   File "C:\ecoTrajet\env\Lib\site-packages\redis\connection.py", line 391, in connect_check_health
     raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e.
 ERROR 2025-06-30 21:56:17,128 basehttp 18004 13672 "POST /api/auth/token/ HTTP/1.1" 500 178675
 INFO 2025-06-30 21:56:17,129 basehttp 18004 13672 - Broken pipe from ('127.0.0.1', 51650)
 INFO 2025-06-30 22:11:48,317 autoreload 8744 4184 Watching for file changes with StatReloader
@@ -287,15 +287,15 @@ WARNING 2025-06-30 23:28:15,383 log 7468 15476 Not Found: /regiter
 WARNING 2025-06-30 23:28:15,386 basehttp 7468 15476 "GET /regiter HTTP/1.1" 404 3886
 INFO 2025-06-30 23:28:18,379 basehttp 7468 11300 code 400, message Bad request version ('\x00\x02\x01\x00\x00-\x00\x02\x01\x01\x00')
 ERROR 2025-06-30 23:28:18,380 basehttp 7468 11300 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 23:28:18,382 basehttp 7468 11112 code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93**\x00\x00ÿ\x01\x00\x01\x00\x00\x12\x00\x00\x00')
+INFO 2025-06-30 23:28:18,382 basehttp 7468 11112 code 400, message Bad request version ('ï¿½ï¿½\x13\x01\x13\x02\x13\x03ï¿½+ï¿½/ï¿½,ï¿½0Ì©Ì¨ï¿½\x13ï¿½\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93**\x00\x00ï¿½\x01\x00\x01\x00\x00\x12\x00\x00\x00')
 ERROR 2025-06-30 23:28:18,383 basehttp 7468 11112 You're accessing the development server over HTTPS, but it only supports HTTP.
 INFO 2025-06-30 23:28:24,931 basehttp 7468 11424 code 400, message Bad request version ('Q\x06Ce')
 ERROR 2025-06-30 23:28:24,931 basehttp 7468 11424 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 23:28:24,933 basehttp 7468 20352 code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x1b\x00\x03\x02\x00\x02\x00-\x00\x02\x01\x01\x00#\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+INFO 2025-06-30 23:28:24,933 basehttp 7468 20352 code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x1b\x00\x03\x02\x00\x02\x00-\x00\x02\x01\x01\x00#\x00\x00\x00\x17\x00\x00ï¿½\x01\x00\x01\x00\x00')
 ERROR 2025-06-30 23:28:24,933 basehttp 7468 20352 You're accessing the development server over HTTPS, but it only supports HTTP.
 INFO 2025-06-30 23:28:28,212 basehttp 7468 13644 code 400, message Bad request version ('\x00\x02\x01\x00\x00')
 ERROR 2025-06-30 23:28:28,213 basehttp 7468 13644 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 23:28:28,214 basehttp 7468 18680 code 400, message Bad request version ('\\¹\x12õ«\xadôK\x98<¡\x86\x1bB²Eá?~þçÍ)ü]r!')
+INFO 2025-06-30 23:28:28,214 basehttp 7468 18680 code 400, message Bad request version ('\\ï¿½\x12ï¿½ï¿½\xadï¿½K\x98<ï¿½\x86\x1bBï¿½Eï¿½?~ï¿½ï¿½ï¿½)ï¿½]r!')
 ERROR 2025-06-30 23:28:28,215 basehttp 7468 18680 You're accessing the development server over HTTPS, but it only supports HTTP.
 WARNING 2025-06-30 23:28:44,780 log 7468 17048 Not Found: /
 WARNING 2025-06-30 23:28:44,781 basehttp 7468 17048 "GET / HTTP/1.1" 404 3847
@@ -539,7 +539,7 @@ Traceback (most recent call last):
 psycopg2.errors.UndefinedColumn: ERREUR:  la colonne api_reservation.status n'existe pas
 LINE 1: ...ion"."trip_id", "api_reservation"."place_reserv", "api_reser...
                                                              ^
-HINT:  Peut-être que vous souhaitiez référencer la colonne « api_reservation.statut ».
+HINT:  Peut-ï¿½tre que vous souhaitiez rï¿½fï¿½rencer la colonne ï¿½ api_reservation.statut ï¿½.
 
 
 The above exception was the direct cause of the following exception:
@@ -640,7 +640,7 @@ Traceback (most recent call last):
 django.db.utils.ProgrammingError: ERREUR:  la colonne api_reservation.status n'existe pas
 LINE 1: ...ion"."trip_id", "api_reservation"."place_reserv", "api_reser...
                                                              ^
-HINT:  Peut-être que vous souhaitiez référencer la colonne « api_reservation.statut ».
+HINT:  Peut-ï¿½tre que vous souhaitiez rï¿½fï¿½rencer la colonne ï¿½ api_reservation.statut ï¿½.
 
 ERROR 2025-07-01 14:54:20,274 basehttp 22788 18348 "GET /trips/ HTTP/1.1" 500 203920
 INFO 2025-07-01 14:54:42,267 autoreload 22788 23344 C:\ecoTrajet\EcoTrajet\api\models.py changed, reloading.
@@ -676,6 +676,97 @@ INFO 2025-07-01 15:03:18,893 basehttp 10472 18972 "GET /trips/ HTTP/1.1" 200 190
 INFO 2025-07-01 15:03:21,980 basehttp 10472 18972 "GET /trips/ HTTP/1.1" 200 19062
 INFO 2025-07-01 15:03:31,713 basehttp 10472 18972 "GET /reservations HTTP/1.1" 301 0
 INFO 2025-07-01 15:03:31,819 basehttp 10472 9304 "GET /reservations/ HTTP/1.1" 200 18527
+<<<<<<< HEAD
+INFO 2025-07-01 16:55:51,938 autoreload 10772 8212 Watching for file changes with StatReloader
+INFO 2025-07-01 16:58:39,918 autoreload 10772 8212 C:\Things\STAGE\RIF\temp\EcoTrajet\EcoTrajet\settings.py changed, reloading.
+INFO 2025-07-01 16:58:40,470 autoreload 21372 4384 Watching for file changes with StatReloader
+INFO 2025-07-01 16:59:12,026 autoreload 21372 4384 C:\Things\STAGE\RIF\temp\EcoTrajet\EcoTrajet\settings.py changed, reloading.
+INFO 2025-07-01 16:59:28,088 autoreload 21048 3204 Watching for file changes with StatReloader
+INFO 2025-07-01 17:14:16,150 autoreload 19036 21320 Watching for file changes with StatReloader
+INFO 2025-07-01 17:58:20,615 autoreload 14548 12996 Watching for file changes with StatReloader
+WARNING 2025-07-01 18:05:42,909 log 14276 19860 Unauthorized: /api/user/token/
+WARNING 2025-07-01 18:05:43,498 log 14276 19860 Bad Request: /api/user/token/
+WARNING 2025-07-01 18:05:44,109 log 14276 19860 Bad Request: /api/user/register/
+WARNING 2025-07-01 18:05:44,191 log 14276 19860 Bad Request: /api/user/register/
+WARNING 2025-07-01 18:05:44,488 log 14276 19860 Unauthorized: /api/user/profile/
+WARNING 2025-07-01 18:05:45,994 log 14276 19860 Bad Request: /api/user/password-reset/confirm/
+WARNING 2025-07-01 18:05:46,299 log 14276 19860 Bad Request: /api/user/password-reset/confirm/
+ERROR 2025-07-01 18:05:46,918 log 14276 19860 Internal Server Error: /api/user/logout/
+Traceback (most recent call last):
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Things\STAGE\RIF\temp\EcoTrajet\user_management\views.py", line 323, in post
+    token = RefreshToken(refresh_token)
+  File "C:\Users\GIGABYTE\AppData\Local\Programs\Python\Python313\Lib\unittest\mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\GIGABYTE\AppData\Local\Programs\Python\Python313\Lib\unittest\mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\GIGABYTE\AppData\Local\Programs\Python\Python313\Lib\unittest\mock.py", line 1226, in _execute_mock_call
+    raise effect
+Exception: Invalid token
+WARNING 2025-07-01 18:05:48,601 log 14276 19860 Unauthorized: /api/user/activity/
+WARNING 2025-07-01 18:09:51,384 log 22344 1488 Unauthorized: /api/user/token/
+WARNING 2025-07-01 18:09:52,002 log 22344 1488 Bad Request: /api/user/token/
+WARNING 2025-07-01 18:09:52,644 log 22344 1488 Bad Request: /api/user/register/
+WARNING 2025-07-01 18:09:52,648 log 22344 1488 Bad Request: /api/user/register/
+WARNING 2025-07-01 18:09:52,963 log 22344 1488 Unauthorized: /api/user/profile/
+WARNING 2025-07-01 18:09:54,486 log 22344 1488 Bad Request: /api/user/password-reset/confirm/
+WARNING 2025-07-01 18:09:54,785 log 22344 1488 Bad Request: /api/user/password-reset/confirm/
+ERROR 2025-07-01 18:09:55,416 log 22344 1488 Internal Server Error: /api/user/logout/
+Traceback (most recent call last):
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\Things\STAGE\RIF\test\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\Things\STAGE\RIF\temp\EcoTrajet\user_management\views.py", line 323, in post
+    token = RefreshToken(refresh_token)
+  File "C:\Users\GIGABYTE\AppData\Local\Programs\Python\Python313\Lib\unittest\mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\GIGABYTE\AppData\Local\Programs\Python\Python313\Lib\unittest\mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\GIGABYTE\AppData\Local\Programs\Python\Python313\Lib\unittest\mock.py", line 1226, in _execute_mock_call
+    raise effect
+Exception: Invalid token
+WARNING 2025-07-01 18:09:56,018 log 22344 1488 Bad Request: /api/user/verify-email/NDM/invalid-token/
+WARNING 2025-07-01 18:09:56,021 log 22344 1488 Bad Request: /api/user/verify-email/invalid-uid/some-token/
+WARNING 2025-07-01 18:09:58,092 log 22344 1488 Bad Request: /api/user/change-password/
+WARNING 2025-07-01 18:09:58,096 log 22344 1488 Unauthorized: /api/user/change-password/
+WARNING 2025-07-01 18:09:58,403 log 22344 1488 Unauthorized: /api/user/activity/
+=======
 INFO 2025-07-01 15:05:56,355 autoreload 23036 23292 Watching for file changes with StatReloader
 WARNING 2025-07-01 15:13:50,453 log 11664 20268 Bad Request: /user/token/
 WARNING 2025-07-01 15:13:50,553 log 11664 20268 Bad Request: /user/register/
@@ -713,17 +804,17 @@ INFO 2025-07-01 23:45:55,478 autoreload 16600 22620 Watching for file changes wi
 INFO 2025-07-01 23:46:04,718 autoreload 12408 21196 Watching for file changes with StatReloader
 WARNING 2025-07-01 23:46:09,012 log 12408 23340 Not Found: /
 WARNING 2025-07-01 23:46:09,015 basehttp 12408 23340 "GET / HTTP/1.1" 404 5129
-INFO 2025-07-01 23:46:14,682 basehttp 12408 22964 code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93\x8a\x8a\x00\x00\x00#\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06')
+INFO 2025-07-01 23:46:14,682 basehttp 12408 22964 code 400, message Bad request version ('ï¿½ï¿½\x13\x01\x13\x02\x13\x03ï¿½+ï¿½/ï¿½,ï¿½0Ì©Ì¨ï¿½\x13ï¿½\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93\x8a\x8a\x00\x00\x00#\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06')
 ERROR 2025-07-01 23:46:14,689 basehttp 12408 22964 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-07-01 23:46:14,706 basehttp 12408 23684 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03w/e\x07\x04')
+INFO 2025-07-01 23:46:14,706 basehttp 12408 23684 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06ï¿½\x01\x00\x06ï¿½\x03\x03w/e\x07\x04')
 ERROR 2025-07-01 23:46:14,706 basehttp 12408 23684 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-07-01 23:46:22,234 basehttp 12408 19772 code 400, message Bad request version ('}\x18xàL\x18ìÇÂ¼\x80àÙ8ïH¦MpMJ\x89\x84,9£ÚðDê1¨dý+õ\x81Àü§\x12(')
+INFO 2025-07-01 23:46:22,234 basehttp 12408 19772 code 400, message Bad request version ('}\x18xï¿½L\x18ï¿½ï¿½Â¼\x80ï¿½ï¿½8ï¿½Hï¿½MpMJ\x89\x84,9ï¿½ï¿½ï¿½Dï¿½1ï¿½dï¿½+ï¿½\x81ï¿½ï¿½ï¿½\x12(')
 ERROR 2025-07-01 23:46:22,236 basehttp 12408 19772 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-07-01 23:46:22,239 basehttp 12408 11280 code 400, message Bad request version ('\x01\x1aÚ')
+INFO 2025-07-01 23:46:22,239 basehttp 12408 11280 code 400, message Bad request version ('\x01\x1aï¿½')
 ERROR 2025-07-01 23:46:22,239 basehttp 12408 11280 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-07-01 23:46:24,592 basehttp 12408 22432 code 400, message Bad request version ('î')
+INFO 2025-07-01 23:46:24,592 basehttp 12408 22432 code 400, message Bad request version ('ï¿½')
 ERROR 2025-07-01 23:46:24,592 basehttp 12408 22432 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-07-01 23:46:24,594 basehttp 12408 4352 code 400, message Bad request version ('ë')
+INFO 2025-07-01 23:46:24,594 basehttp 12408 4352 code 400, message Bad request version ('ï¿½')
 ERROR 2025-07-01 23:46:24,595 basehttp 12408 4352 You're accessing the development server over HTTPS, but it only supports HTTP.
 INFO 2025-07-01 23:52:56,563 autoreload 10604 22964 Watching for file changes with StatReloader
 WARNING 2025-07-01 23:52:59,296 log 10604 3692 Not Found: /
@@ -763,6 +854,7 @@ WARNING 2025-07-01 23:59:01,065 log 22040 2528 Not Found: /vehicules
 WARNING 2025-07-01 23:59:01,066 basehttp 22040 2528 "GET /vehicules HTTP/1.1" 404 5174
 WARNING 2025-07-01 23:59:04,353 log 22040 2528 Not Found: /vehicules
 WARNING 2025-07-01 23:59:04,354 basehttp 22040 2528 "GET /vehicules HTTP/1.1" 404 5174
+<<<<<<< HEAD
 INFO 2025-07-02 09:47:38,037 autoreload 9304 12300 Watching for file changes with StatReloader
 WARNING 2025-07-02 09:47:44,657 log 9304 7724 Not Found: /
 WARNING 2025-07-02 09:47:44,658 basehttp 9304 7724 "GET / HTTP/1.1" 404 5129
@@ -848,10 +940,357 @@ Traceback (most recent call last):
     return self.response_redirect_class(self.get_full_path_with_slash(request))
                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
   File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+=======
+INFO 2025-07-02 00:39:19,097 autoreload 2724 19192 Watching for file changes with StatReloader
+WARNING 2025-07-02 00:39:21,563 log 2724 12608 Not Found: /
+WARNING 2025-07-02 00:39:21,565 basehttp 2724 12608 "GET / HTTP/1.1" 404 5129
+INFO 2025-07-02 00:39:25,220 basehttp 2724 12608 "GET /trips/ HTTP/1.1" 200 19345
+INFO 2025-07-02 02:12:00,900 autoreload 11284 23348 Watching for file changes with StatReloader
+WARNING 2025-07-02 02:12:04,293 log 11284 5712 Not Found: /
+WARNING 2025-07-02 02:12:04,305 basehttp 11284 5712 "GET / HTTP/1.1" 404 4619
+WARNING 2025-07-02 02:12:04,642 log 11284 5712 Not Found: /favicon.ico
+WARNING 2025-07-02 02:12:04,644 basehttp 11284 5712 "GET /favicon.ico HTTP/1.1" 404 4670
+INFO 2025-07-02 02:12:09,158 basehttp 11284 5712 "GET /trips/ HTTP/1.1" 200 19345
+INFO 2025-07-02 02:12:29,600 basehttp 11284 5504 "GET /token HTTP/1.1" 301 0
+WARNING 2025-07-02 02:12:29,677 log 11284 16364 Method Not Allowed: /token/
+WARNING 2025-07-02 02:12:29,685 basehttp 11284 16364 "GET /token/ HTTP/1.1" 405 12411
+INFO 2025-07-02 02:12:34,395 basehttp 11284 6388 "POST /token/ HTTP/1.1" 200 12855
+INFO 2025-07-02 02:12:44,750 basehttp 11284 12936 "GET /admin HTTP/1.1" 301 0
+INFO 2025-07-02 02:12:45,002 basehttp 11284 23272 "GET /admin/ HTTP/1.1" 200 8468
+INFO 2025-07-02 02:12:45,281 basehttp 11284 23272 "GET /static/admin/css/base.css HTTP/1.1" 200 22120
+INFO 2025-07-02 02:12:45,320 basehttp 11284 13280 "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-07-02 02:12:45,341 basehttp 11284 16672 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-07-02 02:12:45,347 basehttp 11284 23416 "GET /static/admin/css/responsive.css HTTP/1.1" 200 16565
+INFO 2025-07-02 02:12:45,348 basehttp 11284 20052 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2808
+INFO 2025-07-02 02:12:45,354 basehttp 11284 19852 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-07-02 02:12:45,391 basehttp 11284 19852 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2025-07-02 02:12:45,398 basehttp 11284 20052 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2025-07-02 02:12:45,411 basehttp 11284 19852 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-07-02 02:12:50,737 basehttp 11284 19852 "GET /admin/authtoken/tokenproxy/ HTTP/1.1" 200 9734
+INFO 2025-07-02 02:12:50,843 basehttp 11284 19852 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-07-02 02:12:50,863 basehttp 11284 20052 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-07-02 02:12:50,878 basehttp 11284 13280 "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-07-02 02:12:50,891 basehttp 11284 20052 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-07-02 02:12:50,896 basehttp 11284 16672 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9777
+INFO 2025-07-02 02:12:50,897 basehttp 11284 23416 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-07-02 02:12:50,902 basehttp 11284 23272 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-07-02 02:12:50,928 basehttp 11284 20052 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-07-02 02:12:51,159 basehttp 11284 19852 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2025-07-02 02:12:51,180 basehttp 11284 19852 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-07-02 02:12:51,229 basehttp 11284 13280 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-07-02 02:12:51,284 basehttp 11284 13280 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2025-07-02 02:12:53,503 basehttp 11284 20964 "GET /admin/auth/group/ HTTP/1.1" 200 9662
+INFO 2025-07-02 02:12:53,714 basehttp 11284 20964 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-07-02 02:12:55,391 basehttp 11284 20964 "GET /admin/authtoken/tokenproxy/ HTTP/1.1" 200 9734
+INFO 2025-07-02 02:13:24,840 basehttp 11284 1600 "GET /admin/auth/group/ HTTP/1.1" 200 9662
+INFO 2025-07-02 02:13:26,255 basehttp 11284 1600 "GET /admin/authtoken/tokenproxy/ HTTP/1.1" 200 9734
+INFO 2025-07-02 02:13:27,525 basehttp 11284 1600 "GET /admin/ HTTP/1.1" 200 8468
+WARNING 2025-07-02 02:13:31,274 log 11284 1600 Method Not Allowed: /token/
+WARNING 2025-07-02 02:13:31,281 basehttp 11284 1600 "GET /token/ HTTP/1.1" 405 12411
+INFO 2025-07-02 02:13:57,736 basehttp 11284 19792 "GET /reservations/ HTTP/1.1" 200 19168
+INFO 2025-07-02 02:47:14,817 autoreload 11068 23128 Watching for file changes with StatReloader
+WARNING 2025-07-02 02:47:29,847 log 11068 17484 Not Found: /
+WARNING 2025-07-02 02:47:29,853 basehttp 11068 17484 "GET / HTTP/1.1" 404 4619
+INFO 2025-07-02 02:47:34,462 basehttp 11068 19132 "GET /trips/ HTTP/1.1" 200 19345
+WARNING 2025-07-02 02:54:57,152 log 11068 16648 Not Found: /api/trips/
+WARNING 2025-07-02 02:54:57,162 basehttp 11068 16648 "GET /api/trips/ HTTP/1.1" 404 12210
+WARNING 2025-07-02 02:54:57,344 log 11068 16648 Not Found: /favicon.ico
+WARNING 2025-07-02 02:54:57,345 basehttp 11068 16648 "GET /favicon.ico HTTP/1.1" 404 4670
+INFO 2025-07-02 02:55:02,266 basehttp 11068 1936 "GET /trips/ HTTP/1.1" 200 13784
+INFO 2025-07-02 02:55:02,470 basehttp 11068 20344 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-07-02 02:55:02,473 basehttp 11068 1936 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-07-02 02:55:02,476 basehttp 11068 20344 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-07-02 02:55:02,477 basehttp 11068 1936 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-07-02 02:55:02,488 basehttp 11068 20344 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-07-02 02:55:02,503 basehttp 11068 1936 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-07-02 02:55:02,506 basehttp 11068 20344 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-07-02 02:55:02,520 basehttp 11068 1936 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-07-02 02:55:02,528 basehttp 11068 1936 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-07-02 02:55:02,536 basehttp 11068 20344 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-07-02 02:55:02,584 basehttp 11068 20344 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-07-02 02:55:02,602 basehttp 11068 1936 "GET /static/rest_framework/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+INFO 2025-07-02 02:55:02,604 basehttp 11068 20344 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+WARNING 2025-07-02 03:01:59,028 log 11068 10712 Not Found: /register
+WARNING 2025-07-02 03:01:59,034 basehttp 11068 10712 "GET /register HTTP/1.1" 404 4661
+INFO 2025-07-02 03:07:31,235 basehttp 11068 23060 "GET /user/register HTTP/1.1" 301 0
+ERROR 2025-07-02 03:07:31,590 log 11068 22824 Internal Server Error: /user/register/
+Traceback (most recent call last):
+  File "C:\ecoTrajet\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\ecoTrajet\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\renderers.py", line 731, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\renderers.py", line 662, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\renderers.py", line 569, in get_raw_data_form
+    data = serializer.data.copy()
+           ^^^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\serializers.py", line 255, in data
+    self._data = self.get_initial()
+                 ~~~~~~~~~~~~~~~~^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\serializers.py", line 423, in get_initial
+    for field in self.fields.values()
+                 ^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ~~~~~~~~~^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ~~~~~~~~~~~~~~~^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\serializers.py", line 1080, in get_fields
+    info = model_meta.get_field_info(model)
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\utils\model_meta.py", line 39, in get_field_info
+    forward_relations = _get_forward_relationships(opts)
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\utils\model_meta.py", line 96, in _get_forward_relationships
+    not field.remote_field.through._meta.auto_created
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '_meta'
+ERROR 2025-07-02 03:07:31,617 basehttp 11068 22824 "GET /user/register/ HTTP/1.1" 500 130044
+INFO 2025-07-02 03:17:30,248 basehttp 11068 8568 "GET /trips/ HTTP/1.1" 200 13784
+INFO 2025-07-02 03:19:44,882 autoreload 18300 19728 Watching for file changes with StatReloader
+WARNING 2025-07-02 03:21:24,031 log 18300 17804 Not Found: /
+WARNING 2025-07-02 03:21:24,037 basehttp 18300 17804 "GET / HTTP/1.1" 404 4619
+INFO 2025-07-02 03:21:27,520 basehttp 18300 17804 "GET /trips/ HTTP/1.1" 200 19345
+INFO 2025-07-02 03:23:36,296 basehttp 18300 23424 "GET /trips/ HTTP/1.1" 200 470
+WARNING 2025-07-02 03:30:08,329 log 18300 3116 Not Found: /
+WARNING 2025-07-02 03:30:08,337 basehttp 18300 3116 "GET / HTTP/1.1" 404 4619
+WARNING 2025-07-02 03:30:12,894 log 18300 3116 Not Found: /toekn
+WARNING 2025-07-02 03:30:12,897 basehttp 18300 3116 "GET /toekn HTTP/1.1" 404 4652
+WARNING 2025-07-02 03:30:16,677 log 18300 11700 Method Not Allowed: /token/
+WARNING 2025-07-02 03:30:16,678 basehttp 18300 11700 "GET /token/ HTTP/1.1" 405 12411
+INFO 2025-07-02 03:31:14,448 basehttp 18300 12300 "GET /token HTTP/1.1" 301 0
+WARNING 2025-07-02 03:31:14,475 log 18300 13620 Method Not Allowed: /token/
+WARNING 2025-07-02 03:31:14,476 basehttp 18300 13620 "GET /token/ HTTP/1.1" 405 40
+ERROR 2025-07-02 03:31:22,568 log 18300 13620 Internal Server Error: /token
+Traceback (most recent call last):
+  File "C:\ecoTrajet\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\utils\deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/token/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2025-07-02 03:31:22,595 basehttp 18300 13620 "POST /token HTTP/1.1" 500 75877
+ERROR 2025-07-02 03:31:27,270 log 18300 14636 Internal Server Error: /token
+Traceback (most recent call last):
+  File "C:\ecoTrajet\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\utils\deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via PATCH, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PATCH data. Change your form to point to 127.0.0.1:8000/token/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2025-07-02 03:31:27,276 basehttp 18300 14636 "PATCH /token HTTP/1.1" 500 75892
+ERROR 2025-07-02 03:31:31,398 log 18300 9324 Internal Server Error: /token
+Traceback (most recent call last):
+  File "C:\ecoTrajet\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\utils\deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 127.0.0.1:8000/token/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2025-07-02 03:31:31,403 basehttp 18300 9324 "PUT /token HTTP/1.1" 500 75862
+INFO 2025-07-02 03:31:35,958 basehttp 18300 16716 "GET /token HTTP/1.1" 301 0
+WARNING 2025-07-02 03:31:35,970 log 18300 1084 Method Not Allowed: /token/
+WARNING 2025-07-02 03:31:35,972 basehttp 18300 1084 "GET /token/ HTTP/1.1" 405 40
+WARNING 2025-07-02 03:33:41,337 log 18300 6676 Not Found: /trip
+WARNING 2025-07-02 03:33:41,339 basehttp 18300 6676 "GET /trip HTTP/1.1" 404 4649
+INFO 2025-07-02 03:33:54,766 autoreload 23408 22636 Watching for file changes with StatReloader
+WARNING 2025-07-02 03:34:02,551 log 23408 10200 Not Found: /trip
+WARNING 2025-07-02 03:34:02,553 basehttp 23408 10200 "GET /trip HTTP/1.1" 404 4649
+WARNING 2025-07-02 03:34:07,635 log 23408 10200 Not Found: /trip
+WARNING 2025-07-02 03:34:07,638 basehttp 23408 10200 "POST /trip HTTP/1.1" 404 4650
+INFO 2025-07-02 03:34:16,503 basehttp 23408 2768 "GET /trips/ HTTP/1.1" 200 19345
+ERROR 2025-07-02 03:34:21,309 log 23408 10200 Internal Server Error: /trips
+Traceback (most recent call last):
+  File "C:\ecoTrajet\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\utils\deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/trips/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2025-07-02 03:34:21,316 basehttp 23408 10200 "POST /trips HTTP/1.1" 500 75877
+ERROR 2025-07-02 03:34:24,270 log 23408 8540 Internal Server Error: /trips
+Traceback (most recent call last):
+  File "C:\ecoTrajet\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\utils\deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/trips/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2025-07-02 03:34:24,274 basehttp 23408 8540 "POST /trips HTTP/1.1" 500 75877
+INFO 2025-07-02 03:34:27,786 basehttp 23408 11760 "GET /trips HTTP/1.1" 301 0
+INFO 2025-07-02 03:34:27,893 basehttp 23408 19208 "GET /trips/ HTTP/1.1" 200 470
+INFO 2025-07-02 03:34:45,651 basehttp 23408 19208 "GET /token HTTP/1.1" 301 0
+WARNING 2025-07-02 03:34:45,675 log 23408 14440 Method Not Allowed: /token/
+WARNING 2025-07-02 03:34:45,676 basehttp 23408 14440 "GET /token/ HTTP/1.1" 405 40
+INFO 2025-07-02 04:37:07,094 basehttp 23408 1496 "GET /user/register HTTP/1.1" 301 0
+WARNING 2025-07-02 04:37:07,128 log 23408 8444 Method Not Allowed: /user/register/
+WARNING 2025-07-02 04:37:07,130 basehttp 23408 8444 "GET /user/register/ HTTP/1.1" 405 40
+INFO 2025-07-02 04:37:19,751 basehttp 23408 8444 "GET /reservations HTTP/1.1" 301 0
+WARNING 2025-07-02 04:37:19,760 log 23408 16020 Unauthorized: /reservations/
+WARNING 2025-07-02 04:37:19,761 basehttp 23408 16020 "GET /reservations/ HTTP/1.1" 401 58
+INFO 2025-07-02 04:37:41,160 basehttp 23408 16020 "GET /reservations HTTP/1.1" 301 0
+WARNING 2025-07-02 04:37:41,168 log 23408 17368 Unauthorized: /reservations/
+WARNING 2025-07-02 04:37:41,169 basehttp 23408 17368 "GET /reservations/ HTTP/1.1" 401 58
+INFO 2025-07-02 04:37:48,474 autoreload 10492 14428 Watching for file changes with StatReloader
+INFO 2025-07-02 04:37:52,722 basehttp 10492 11948 "GET /reservations HTTP/1.1" 301 0
+WARNING 2025-07-02 04:37:52,730 log 10492 9464 Unauthorized: /reservations/
+WARNING 2025-07-02 04:37:52,731 basehttp 10492 9464 "GET /reservations/ HTTP/1.1" 401 58
+WARNING 2025-07-02 04:37:57,524 log 10492 10620 Not Found: /
+WARNING 2025-07-02 04:37:57,525 basehttp 10492 10620 "GET / HTTP/1.1" 404 4619
+WARNING 2025-07-02 04:37:59,467 log 10492 10620 Not Found: /
+WARNING 2025-07-02 04:37:59,468 basehttp 10492 10620 "GET / HTTP/1.1" 404 4619
+WARNING 2025-07-02 04:37:59,825 log 10492 10620 Not Found: /
+WARNING 2025-07-02 04:37:59,844 basehttp 10492 10620 "GET / HTTP/1.1" 404 4619
+INFO 2025-07-02 04:38:04,280 basehttp 10492 15640 "GET /reservations HTTP/1.1" 301 0
+INFO 2025-07-02 04:38:04,542 basehttp 10492 9380 "GET /reservations/ HTTP/1.1" 200 19168
+WARNING 2025-07-02 04:38:12,714 log 10492 9464 Unauthorized: /reservations/
+WARNING 2025-07-02 04:38:12,715 basehttp 10492 9464 "GET /reservations/ HTTP/1.1" 401 58
+WARNING 2025-07-02 04:38:43,455 log 10492 9464 Unauthorized: /reservations/
+WARNING 2025-07-02 04:38:43,456 basehttp 10492 9464 "POST /reservations/ HTTP/1.1" 401 58
+WARNING 2025-07-02 04:38:55,209 log 10492 9464 Unauthorized: /reservations/
+WARNING 2025-07-02 04:38:55,211 basehttp 10492 9464 "HEAD /reservations/ HTTP/1.1" 401 0
+WARNING 2025-07-02 04:38:59,978 log 10492 9464 Unauthorized: /reservations/
+WARNING 2025-07-02 04:38:59,979 basehttp 10492 9464 "OPTIONS /reservations/ HTTP/1.1" 401 58
+WARNING 2025-07-02 04:39:06,536 log 10492 9464 Unauthorized: /reservations/
+WARNING 2025-07-02 04:39:06,538 basehttp 10492 9464 "POST /reservations/ HTTP/1.1" 401 58
+WARNING 2025-07-02 04:39:15,346 log 10492 9464 Unauthorized: /reservations/
+WARNING 2025-07-02 04:39:15,347 basehttp 10492 9464 "GET /reservations/ HTTP/1.1" 401 58
+INFO 2025-07-02 04:39:22,473 basehttp 10492 9464 "GET /trips HTTP/1.1" 301 0
+INFO 2025-07-02 04:39:22,617 basehttp 10492 2300 "GET /trips/ HTTP/1.1" 200 470
+INFO 2025-07-02 04:39:41,044 basehttp 10492 2300 "GET /reservations HTTP/1.1" 301 0
+WARNING 2025-07-02 04:39:41,049 log 10492 20248 Unauthorized: /reservations/
+WARNING 2025-07-02 04:39:41,050 basehttp 10492 20248 "GET /reservations/ HTTP/1.1" 401 58
+WARNING 2025-07-02 04:39:45,486 log 10492 20248 Not Found: /api/reservations
+WARNING 2025-07-02 04:39:45,487 basehttp 10492 20248 "GET /api/reservations HTTP/1.1" 404 12228
+WARNING 2025-07-02 04:40:00,427 log 10492 19864 Not Found: /api/reservations
+WARNING 2025-07-02 04:40:00,428 basehttp 10492 19864 "GET /api/reservations HTTP/1.1" 404 12228
+INFO 2025-07-02 04:40:10,171 basehttp 10492 11164 "GET /trips/ HTTP/1.1" 200 19345
+INFO 2025-07-02 04:40:17,864 basehttp 10492 12600 "GET /reservations/ HTTP/1.1" 200 19168
+INFO 2025-07-02 04:40:32,783 basehttp 10492 20248 "GET /admin HTTP/1.1" 301 0
+INFO 2025-07-02 04:40:32,801 basehttp 10492 12520 "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-07-02 04:40:32,845 basehttp 10492 12520 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4170
+WARNING 2025-07-02 04:40:40,361 log 10492 12520 Not Found: /reser
+WARNING 2025-07-02 04:40:40,363 basehttp 10492 12520 "GET /reser HTTP/1.1" 404 4652
+WARNING 2025-07-02 04:40:44,326 log 10492 12520 Unauthorized: /reservations/
+WARNING 2025-07-02 04:40:44,328 basehttp 10492 12520 "GET /reservations/ HTTP/1.1" 401 58
+INFO 2025-07-02 04:41:56,874 basehttp 10492 10484 "GET //api/auth/login/ HTTP/1.1" 200 2697
+WARNING 2025-07-02 04:42:24,670 log 10492 10484 Not Found: /api/auth/register
+WARNING 2025-07-02 04:42:24,672 basehttp 10492 10484 "GET //api/auth/register HTTP/1.1" 404 12605
+INFO 2025-07-02 04:42:46,014 basehttp 10492 10484 "GET //api/auth/login HTTP/1.1" 301 0
+INFO 2025-07-02 04:42:46,024 basehttp 10492 22664 "GET /api/auth/login/ HTTP/1.1" 200 2697
+ERROR 2025-07-02 04:43:04,080 log 10492 22664 Internal Server Error: /api/auth/login
+Traceback (most recent call last):
+  File "C:\ecoTrajet\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\utils\deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/api/auth/login/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2025-07-02 04:43:04,101 basehttp 10492 22664 "POST //api/auth/login HTTP/1.1" 500 76646
+ERROR 2025-07-02 04:43:13,398 log 10492 2300 Internal Server Error: /token
+Traceback (most recent call last):
+  File "C:\ecoTrajet\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\utils\deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/token/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2025-07-02 04:43:13,403 basehttp 10492 2300 "POST /token HTTP/1.1" 500 76502
+ERROR 2025-07-02 04:43:16,173 log 10492 8000 Internal Server Error: /token
+Traceback (most recent call last):
+  File "C:\ecoTrajet\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\utils\deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/token/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2025-07-02 04:43:16,178 basehttp 10492 8000 "POST /token HTTP/1.1" 500 76502
+WARNING 2025-07-02 04:43:25,092 log 10492 20372 Not Found: /api/token
+WARNING 2025-07-02 04:43:25,093 basehttp 10492 20372 "POST /api/token HTTP/1.1" 404 12208
+WARNING 2025-07-02 04:43:30,962 log 10492 20372 Not Found: /api/token
+WARNING 2025-07-02 04:43:30,963 basehttp 10492 20372 "GET /api/token HTTP/1.1" 404 12207
+INFO 2025-07-02 04:43:35,623 basehttp 10492 20372 "GET /token HTTP/1.1" 301 0
+WARNING 2025-07-02 04:43:35,634 log 10492 11840 Method Not Allowed: /token/
+WARNING 2025-07-02 04:43:35,636 basehttp 10492 11840 "GET /token/ HTTP/1.1" 405 40
+WARNING 2025-07-02 04:43:53,517 log 10492 11840 Not Found: /api/auth
+WARNING 2025-07-02 04:43:53,518 basehttp 10492 11840 "GET /api/auth HTTP/1.1" 404 12204
+WARNING 2025-07-02 04:44:06,525 log 10492 11840 Not Found: /user/login
+WARNING 2025-07-02 04:44:06,527 basehttp 10492 11840 "GET /user/login HTTP/1.1" 404 7270
+WARNING 2025-07-02 04:44:11,506 log 10492 11840 Not Found: /user/login
+WARNING 2025-07-02 04:44:11,507 basehttp 10492 11840 "POST /user/login HTTP/1.1" 404 7271
+ERROR 2025-07-02 04:44:16,121 log 10492 11840 Internal Server Error: /user/register
+Traceback (most recent call last):
+  File "C:\ecoTrajet\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\utils\deprecation.py", line 122, in __call__
+    response = self.process_response(request, response)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\middleware\common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+>>>>>>> 00b67ec617997534273aabf14dce2ce4a8cf5ed1
     raise RuntimeError(
     ...<9 lines>...
     )
 RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/user/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+<<<<<<< HEAD
 ERROR 2025-07-02 10:18:07,487 basehttp 9304 13036 "POST /user/register HTTP/1.1" 500 71423
 ERROR 2025-07-02 10:18:52,037 log 9304 17972 Internal Server Error: /user/register/
 Traceback (most recent call last):
@@ -1122,3 +1561,176 @@ Traceback (most recent call last):
         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'NoneType' object has no attribute '_meta'
 ERROR 2025-07-02 10:36:07,139 basehttp 2496 8964 "POST /user/register/ HTTP/1.1" 500 144669
+=======
+ERROR 2025-07-02 04:44:16,125 basehttp 10492 11840 "POST /user/register HTTP/1.1" 500 76630
+INFO 2025-07-02 14:00:06,529 autoreload 20084 14792 Watching for file changes with StatReloader
+WARNING 2025-07-02 14:00:08,515 log 20084 10892 Not Found: /
+WARNING 2025-07-02 14:00:08,516 basehttp 20084 10892 "GET / HTTP/1.1" 404 4619
+WARNING 2025-07-02 14:00:08,729 log 20084 10892 Not Found: /favicon.ico
+WARNING 2025-07-02 14:00:08,730 basehttp 20084 10892 "GET /favicon.ico HTTP/1.1" 404 4670
+WARNING 2025-07-02 14:01:29,385 log 20084 15968 Not Found: /api/trips/
+WARNING 2025-07-02 14:01:29,393 basehttp 20084 15968 "GET /api/trips/?status=SCHEDULED HTTP/1.1" 404 12227
+WARNING 2025-07-02 14:01:42,641 log 20084 6740 Not Found: /api/trips/
+WARNING 2025-07-02 14:01:42,642 basehttp 20084 6740 "GET /api/trips/?status=SCHEDULED HTTP/1.1" 404 12227
+WARNING 2025-07-02 14:01:45,704 log 20084 7056 Not Found: /api/trips/
+WARNING 2025-07-02 14:01:45,706 basehttp 20084 7056 "GET /api/trips/?status=SCHEDULED HTTP/1.1" 404 12227
+WARNING 2025-07-02 14:02:04,441 log 20084 10872 Not Found: /api/trips/
+WARNING 2025-07-02 14:02:04,444 basehttp 20084 10872 "GET /api/trips/ HTTP/1.1" 404 12210
+WARNING 2025-07-02 14:02:04,633 log 20084 10872 Not Found: /favicon.ico
+WARNING 2025-07-02 14:02:04,634 basehttp 20084 10872 "GET /favicon.ico HTTP/1.1" 404 4670
+INFO 2025-07-02 14:07:28,515 autoreload 20084 14792 C:\ecoTrajet\EcoTrajet\EcoTrajet\settings.py changed, reloading.
+INFO 2025-07-02 14:07:30,266 autoreload 18368 18576 Watching for file changes with StatReloader
+INFO 2025-07-02 14:09:02,610 autoreload 18368 18576 C:\ecoTrajet\EcoTrajet\api\serializers.py changed, reloading.
+INFO 2025-07-02 14:09:04,567 autoreload 10892 15968 Watching for file changes with StatReloader
+INFO 2025-07-02 14:09:11,741 autoreload 10892 15968 C:\ecoTrajet\EcoTrajet\api\serializers.py changed, reloading.
+INFO 2025-07-02 14:09:12,700 autoreload 20344 4040 Watching for file changes with StatReloader
+INFO 2025-07-02 14:09:16,466 autoreload 20344 4040 C:\ecoTrajet\EcoTrajet\api\serializers.py changed, reloading.
+INFO 2025-07-02 14:09:17,332 autoreload 15864 20452 Watching for file changes with StatReloader
+INFO 2025-07-02 14:09:21,235 autoreload 15864 20452 C:\ecoTrajet\EcoTrajet\api\serializers.py changed, reloading.
+INFO 2025-07-02 14:09:22,065 autoreload 13164 15172 Watching for file changes with StatReloader
+INFO 2025-07-02 14:09:25,605 autoreload 13164 15172 C:\ecoTrajet\EcoTrajet\api\serializers.py changed, reloading.
+INFO 2025-07-02 14:09:26,375 autoreload 8416 14948 Watching for file changes with StatReloader
+INFO 2025-07-02 14:09:28,183 autoreload 8416 14948 C:\ecoTrajet\EcoTrajet\api\serializers.py changed, reloading.
+INFO 2025-07-02 14:09:28,935 autoreload 14976 1276 Watching for file changes with StatReloader
+ERROR 2025-07-02 14:09:53,892 log 14976 15988 Internal Server Error: /trips/
+Traceback (most recent call last):
+  File "C:\ecoTrajet\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\fields.py", line 1870, in to_representation
+    return method(value)
+  File "C:\ecoTrajet\ecoTrajet\api\serializers.py", line 105, in get_conducteur
+    'id': obj.conducteur.id,
+          ^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'id'
+ERROR 2025-07-02 14:09:53,917 basehttp 14976 15988 "GET /trips/ HTTP/1.1" 500 135832
+INFO 2025-07-02 14:15:28,231 autoreload 14976 1276 C:\ecoTrajet\EcoTrajet\api\serializers.py changed, reloading.
+INFO 2025-07-02 14:15:29,998 autoreload 22608 14516 Watching for file changes with StatReloader
+INFO 2025-07-02 14:15:40,578 autoreload 22608 14516 C:\ecoTrajet\EcoTrajet\api\serializers.py changed, reloading.
+INFO 2025-07-02 14:15:41,578 autoreload 15668 4300 Watching for file changes with StatReloader
+ERROR 2025-07-02 14:15:46,914 log 15668 21084 Internal Server Error: /trips/
+Traceback (most recent call last):
+  File "C:\ecoTrajet\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\ecoTrajet\env\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\generics.py", line 243, in get
+    return self.list(request, *args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\serializers.py", line 716, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\serializers.py", line 540, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "C:\ecoTrajet\env\Lib\site-packages\rest_framework\fields.py", line 1870, in to_representation
+    return method(value)
+  File "C:\ecoTrajet\ecoTrajet\api\serializers.py", line 106, in get_conducteur
+    'prenom': obj.conducteur.first_name,
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'first_name'
+ERROR 2025-07-02 14:15:46,924 basehttp 15668 21084 "GET /trips/ HTTP/1.1" 500 136020
+INFO 2025-07-02 14:16:03,230 autoreload 15668 4300 C:\ecoTrajet\EcoTrajet\api\serializers.py changed, reloading.
+INFO 2025-07-02 14:16:04,018 autoreload 17472 4220 Watching for file changes with StatReloader
+INFO 2025-07-02 14:16:05,716 autoreload 17472 4220 C:\ecoTrajet\EcoTrajet\api\serializers.py changed, reloading.
+INFO 2025-07-02 14:16:06,748 autoreload 23260 20404 Watching for file changes with StatReloader
+INFO 2025-07-02 14:16:08,527 autoreload 23260 20404 C:\ecoTrajet\EcoTrajet\api\serializers.py changed, reloading.
+INFO 2025-07-02 14:16:09,528 autoreload 2212 1972 Watching for file changes with StatReloader
+INFO 2025-07-02 14:16:10,958 basehttp 2212 23476 "GET /trips/ HTTP/1.1" 200 14744
+INFO 2025-07-02 14:16:11,009 basehttp 2212 23476 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2025-07-02 14:16:11,014 basehttp 2212 23476 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2025-07-02 14:16:11,017 basehttp 2212 23476 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2025-07-02 14:16:11,020 basehttp 2212 23476 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2025-07-02 14:16:11,024 basehttp 2212 23476 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2025-07-02 14:16:11,028 basehttp 2212 23476 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2025-07-02 14:16:11,031 basehttp 2212 23476 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2025-07-02 14:16:11,037 basehttp 2212 23476 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2025-07-02 14:16:11,040 basehttp 2212 18248 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2025-07-02 14:16:11,040 basehttp 2212 23476 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2025-07-02 14:16:11,044 basehttp 2212 18248 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2025-07-02 14:16:11,050 basehttp 2212 18248 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2025-07-02 14:16:11,080 basehttp 2212 18248 "GET /static/rest_framework/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 304 0
+WARNING 2025-07-02 14:16:32,042 log 2212 2280 Not Found: /api/trips/
+WARNING 2025-07-02 14:16:32,043 basehttp 2212 2280 "GET /api/trips/?status=SCHEDULED HTTP/1.1" 404 12227
+WARNING 2025-07-02 14:16:33,554 log 2212 2280 Not Found: /api/trips/
+WARNING 2025-07-02 14:16:33,555 basehttp 2212 2280 "GET /api/trips/?status=SCHEDULED HTTP/1.1" 404 12227
+WARNING 2025-07-02 14:18:05,308 log 2212 21224 Not Found: /api/trips/
+WARNING 2025-07-02 14:18:05,312 basehttp 2212 21224 "GET /api/trips/?status=SCHEDULED HTTP/1.1" 404 12227
+WARNING 2025-07-02 14:18:11,927 log 2212 21224 Not Found: /api/trips/
+WARNING 2025-07-02 14:18:11,928 basehttp 2212 21224 "GET /api/trips/?status=SCHEDULED HTTP/1.1" 404 12227
+WARNING 2025-07-02 14:18:16,236 log 2212 4768 Not Found: /api/trips/
+WARNING 2025-07-02 14:18:16,237 basehttp 2212 4768 "GET /api/trips/?status=SCHEDULED HTTP/1.1" 404 12227
+WARNING 2025-07-02 14:18:18,920 log 2212 4768 Not Found: /api/trips/
+WARNING 2025-07-02 14:18:18,921 basehttp 2212 4768 "GET /api/trips/?status=SCHEDULED HTTP/1.1" 404 12227
+WARNING 2025-07-02 14:18:21,912 log 2212 4768 Not Found: /api/trips/
+WARNING 2025-07-02 14:18:21,912 basehttp 2212 4768 "GET /api/trips/?status=SCHEDULED HTTP/1.1" 404 12227
+WARNING 2025-07-02 14:18:44,221 log 2212 12708 Not Found: /api/trips/
+WARNING 2025-07-02 14:18:44,222 basehttp 2212 12708 "GET /api/trips/?status=SCHEDULED HTTP/1.1" 404 12227
+INFO 2025-07-02 14:20:35,802 basehttp 2212 16412 "GET //trips/?status=SCHEDULED HTTP/1.1" 200 758
+INFO 2025-07-02 14:20:38,527 basehttp 2212 16412 "GET //trips/?status=SCHEDULED HTTP/1.1" 200 758
+INFO 2025-07-02 14:22:37,230 basehttp 2212 20460 "GET //trips/?status=SCHEDULED HTTP/1.1" 200 758
+INFO 2025-07-02 14:23:36,692 basehttp 2212 17796 "GET //trips/?status=SCHEDULED HTTP/1.1" 200 758
+INFO 2025-07-02 14:23:41,880 basehttp 2212 19904 "GET //trips/?status=SCHEDULED HTTP/1.1" 200 758
+INFO 2025-07-02 14:23:45,415 basehttp 2212 19904 "GET //trips/?status=SCHEDULED HTTP/1.1" 200 758
+INFO 2025-07-02 14:26:04,449 basehttp 2212 16884 "GET /trips/?status=SCHEDULED HTTP/1.1" 200 758
+INFO 2025-07-02 14:26:09,716 basehttp 2212 16884 "GET /trips/?status=SCHEDULED HTTP/1.1" 200 758
+INFO 2025-07-02 14:26:42,495 basehttp 2212 5892 "GET /trips/?status=SCHEDULED HTTP/1.1" 200 758
+INFO 2025-07-02 14:27:05,309 autoreload 2212 1972 C:\ecoTrajet\EcoTrajet\EcoTrajet\settings.py changed, reloading.
+INFO 2025-07-02 14:27:06,356 autoreload 19976 4768 Watching for file changes with StatReloader
+>>>>>>> 00b67ec617997534273aabf14dce2ce4a8cf5ed1
