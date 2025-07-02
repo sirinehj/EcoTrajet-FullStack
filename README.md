@@ -15,6 +15,9 @@ EcoTrajet est une plateforme innovante de transport collaboratif qui permet aux 
 | Hanoune Camara | Développeur Backend | • Système d'évaluation (Rating)<br>• Gestion des véhicules|
 | Yassine Ali | Développeur Backend | • Gestion des profils utilisateurs<br>• API des utilisateurs|
 
+![Diagramme de classe](./assets/diagclasse.jpeg)
+
+
 ### 📊 Répartition des Tâches
 
 #### Sirine Hjaij
