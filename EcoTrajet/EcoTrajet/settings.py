@@ -91,16 +91,11 @@ WSGI_APPLICATION = 'EcoTrajet.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.getenv("POSTGRES_DB", "ecotrajet_db"),
-        "USER": os.getenv("POSTGRES_USER", "postgres"),
-        "PASSWORD": os.getenv("POSTGRES_PASSWORD", "easycode3000"),
-        "HOST": os.getenv("POSTGRES_HOST", "localhost"),
-        "PORT": os.getenv("POSTGRES_PORT", "5432"),
-        "CONN_MAX_AGE": 60,  # Database connection pooling
-        # Remove search_path option that might cause encoding issues
-        "OPTIONS": {
-            "client_encoding": 'UTF8',
-        },
+        "NAME": "ecotrajet_db",
+        "USER": "ecotrajet_app",
+        "PASSWORD": "EcoSecure",  # HARDCODED just to test
+        "HOST": "localhost",
+        "PORT": "5432",
     }
 }
 
