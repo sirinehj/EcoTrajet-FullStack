@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from ...community.communtiyModel import Community
+from ...community.communtiyModel import Community,Membership
 from user_management.models import User
 class CommunitySerializer(serializers.ModelSerializer):
     class Meta:
@@ -12,3 +12,10 @@ class CommunitySerializer(serializers.ModelSerializer):
         community = Community.objects.create(admin=user, **validated_data)
         community.memberships.create(user=user, status='ACCEPTED', is_admin=True)
         return community
+
+class MembershipSerializer(serializers.ModelSerializer):
+    community = CommunitySerializer(read_only=True)
+    
+    class Meta:
+        model = Membership
+        fields = ['id', 'community', 'status', 'is_admin', 'date_joined']

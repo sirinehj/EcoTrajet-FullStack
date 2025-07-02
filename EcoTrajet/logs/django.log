@@ -1303,3 +1303,130 @@ INFO 2025-07-02 17:16:23,948 autoreload 30420 24736 Watching for file changes wi
 INFO 2025-07-02 17:16:44,861 autoreload 30420 24736 D:\info\web-dev\projects\EcoTrajet\EcoTrajet\api\migrations\0001_initial.py changed, reloading.
 INFO 2025-07-02 17:16:45,541 autoreload 33484 25928 Watching for file changes with StatReloader
 INFO 2025-07-02 18:49:27,126 autoreload 24684 33052 Watching for file changes with StatReloader
+INFO 2025-07-02 22:02:57,047 autoreload 1940 20504 Watching for file changes with StatReloader
+WARNING 2025-07-02 22:08:08,685 log 1940 25888 Not Found: /
+WARNING 2025-07-02 22:08:08,689 basehttp 1940 25888 "GET / HTTP/1.1" 404 4619
+WARNING 2025-07-02 22:08:08,890 log 1940 25888 Not Found: /favicon.ico
+WARNING 2025-07-02 22:08:08,891 basehttp 1940 25888 "GET /favicon.ico HTTP/1.1" 404 4670
+WARNING 2025-07-02 22:08:14,112 log 1940 30300 Not Found: /register/
+WARNING 2025-07-02 22:08:14,114 basehttp 1940 30300 "GET /register/ HTTP/1.1" 404 4664
+WARNING 2025-07-02 22:08:20,304 log 1940 30300 Not Found: /register/
+WARNING 2025-07-02 22:08:20,305 basehttp 1940 30300 "GET /register/ HTTP/1.1" 404 4664
+WARNING 2025-07-02 22:08:56,430 log 1940 31764 Not Found: /register/
+WARNING 2025-07-02 22:08:56,430 basehttp 1940 31764 "GET /register/ HTTP/1.1" 404 4664
+WARNING 2025-07-02 22:09:13,492 log 1940 30484 Not Found: /api/auth/
+WARNING 2025-07-02 22:09:13,493 basehttp 1940 30484 "GET /api/auth/ HTTP/1.1" 404 12581
+WARNING 2025-07-02 22:09:29,917 log 1940 8320 Not Found: /
+WARNING 2025-07-02 22:09:29,918 basehttp 1940 8320 "GET / HTTP/1.1" 404 4619
+WARNING 2025-07-02 22:09:47,969 log 1940 6188 Not Found: /user
+WARNING 2025-07-02 22:09:47,969 basehttp 1940 6188 "GET /user HTTP/1.1" 404 4649
+WARNING 2025-07-02 22:09:52,142 log 1940 29372 Not Found: /user/
+WARNING 2025-07-02 22:09:52,143 basehttp 1940 29372 "GET /user/ HTTP/1.1" 404 7255
+ERROR 2025-07-02 22:09:59,361 log 1940 29372 Internal Server Error: /user/register/
+Traceback (most recent call last):
+  File "C:\Users\yghom\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yghom\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\yghom\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yghom\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yghom\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\renderers.py", line 731, in render
+    context = self.get_context(data, accepted_media_type, renderer_context)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yghom\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\renderers.py", line 662, in get_context
+    raw_data_post_form = self.get_raw_data_form(data, view, 'POST', request)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yghom\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\renderers.py", line 569, in get_raw_data_form
+    data = serializer.data.copy()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\yghom\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 573, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\yghom\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 255, in data
+    self._data = self.get_initial()
+                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yghom\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 423, in get_initial
+    for field in self.fields.values()
+                 ^^^^^^^^^^^
+  File "C:\Users\yghom\AppData\Local\Programs\Python\Python312\Lib\site-packages\django\utils\functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yghom\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "C:\Users\yghom\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\serializers.py", line 1080, in get_fields
+    info = model_meta.get_field_info(model)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yghom\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\utils\model_meta.py", line 39, in get_field_info
+    forward_relations = _get_forward_relationships(opts)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yghom\AppData\Local\Programs\Python\Python312\Lib\site-packages\rest_framework\utils\model_meta.py", line 96, in _get_forward_relationships
+    not field.remote_field.through._meta.auto_created
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute '_meta'
+ERROR 2025-07-02 22:09:59,371 basehttp 1940 29372 "GET /user/register/ HTTP/1.1" 500 132107
+WARNING 2025-07-02 22:11:59,672 log 1940 29848 Not Found: /register/
+WARNING 2025-07-02 22:11:59,673 basehttp 1940 29848 "POST /register/ HTTP/1.1" 404 4665
+WARNING 2025-07-02 22:12:18,098 log 1940 29848 Unauthorized: /api/
+WARNING 2025-07-02 22:12:18,099 basehttp 1940 29848 "GET /api/ HTTP/1.1" 401 9838
+INFO 2025-07-02 22:12:18,541 basehttp 1940 15632 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-07-02 22:12:18,545 basehttp 1940 29848 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-07-02 22:12:18,547 basehttp 1940 21176 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-07-02 22:12:18,549 basehttp 1940 27504 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-07-02 22:12:18,571 basehttp 1940 30140 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-07-02 22:12:18,574 basehttp 1940 15632 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-07-02 22:12:18,577 basehttp 1940 27504 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-07-02 22:12:18,580 basehttp 1940 15632 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-07-02 22:12:18,592 basehttp 1940 30140 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-07-02 22:12:18,599 basehttp 1940 21176 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-07-02 22:12:18,602 basehttp 1940 29848 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-07-02 22:12:18,619 basehttp 1940 9600 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+WARNING 2025-07-02 23:14:10,127 log 1940 21992 Not Found: /communities/
+WARNING 2025-07-02 23:14:10,136 basehttp 1940 21992 "GET /communities/ HTTP/1.1" 404 4673
+INFO 2025-07-02 23:14:44,739 autoreload 26740 29592 Watching for file changes with StatReloader
+WARNING 2025-07-02 23:14:51,273 log 26740 26840 Not Found: /communities/
+WARNING 2025-07-02 23:14:51,273 basehttp 26740 26840 "GET /communities/ HTTP/1.1" 404 4673
+WARNING 2025-07-02 23:20:07,826 log 26740 9032 Not Found: /communities/
+WARNING 2025-07-02 23:20:07,827 basehttp 26740 9032 "POST /communities/ HTTP/1.1" 404 4674
+WARNING 2025-07-02 23:20:30,253 log 26740 9032 Not Found: /communities/
+WARNING 2025-07-02 23:20:30,253 basehttp 26740 9032 "POST /communities/ HTTP/1.1" 404 4674
+WARNING 2025-07-02 23:20:42,171 log 26740 9032 Not Found: /communities/
+WARNING 2025-07-02 23:20:42,172 basehttp 26740 9032 "GET /communities/ HTTP/1.1" 404 4673
+INFO 2025-07-02 23:26:52,004 autoreload 26740 29592 D:\info\web-dev\projects\EcoTrajet\EcoTrajet\api\urls.py changed, reloading.
+INFO 2025-07-02 23:26:52,861 autoreload 31692 4800 Watching for file changes with StatReloader
+INFO 2025-07-02 23:26:56,653 autoreload 31692 4800 D:\info\web-dev\projects\EcoTrajet\EcoTrajet\api\urls.py changed, reloading.
+INFO 2025-07-02 23:26:57,396 autoreload 27820 28628 Watching for file changes with StatReloader
+INFO 2025-07-02 23:27:01,162 autoreload 27820 28628 D:\info\web-dev\projects\EcoTrajet\EcoTrajet\api\urls.py changed, reloading.
+INFO 2025-07-02 23:27:01,875 autoreload 4900 28688 Watching for file changes with StatReloader
+INFO 2025-07-02 23:27:04,379 autoreload 4900 28688 D:\info\web-dev\projects\EcoTrajet\EcoTrajet\api\urls.py changed, reloading.
+INFO 2025-07-02 23:27:05,031 autoreload 28752 16556 Watching for file changes with StatReloader
+INFO 2025-07-02 23:27:16,054 autoreload 28752 16556 D:\info\web-dev\projects\EcoTrajet\EcoTrajet\api\urls.py changed, reloading.
+INFO 2025-07-02 23:27:16,745 autoreload 33304 31172 Watching for file changes with StatReloader
+INFO 2025-07-02 23:27:44,259 autoreload 25356 33300 Watching for file changes with StatReloader
+INFO 2025-07-02 23:27:57,630 autoreload 33552 24864 Watching for file changes with StatReloader
+INFO 2025-07-02 23:28:13,091 autoreload 17980 10516 Watching for file changes with StatReloader
+INFO 2025-07-02 23:28:37,350 autoreload 32844 27620 Watching for file changes with StatReloader
+INFO 2025-07-02 23:28:53,165 autoreload 10244 29436 Watching for file changes with StatReloader
+INFO 2025-07-02 23:29:51,528 autoreload 28868 13476 Watching for file changes with StatReloader
+INFO 2025-07-02 23:34:09,578 autoreload 12324 15548 Watching for file changes with StatReloader
+INFO 2025-07-02 23:37:54,118 autoreload 12324 15548 D:\info\web-dev\projects\EcoTrajet\EcoTrajet\api\models.py changed, reloading.
+INFO 2025-07-02 23:37:54,786 autoreload 33032 27260 Watching for file changes with StatReloader
+INFO 2025-07-02 23:38:12,807 autoreload 30320 29360 Watching for file changes with StatReloader
+INFO 2025-07-02 23:38:37,397 autoreload 30320 29360 D:\info\web-dev\projects\EcoTrajet\EcoTrajet\api\models.py changed, reloading.
+INFO 2025-07-02 23:38:38,024 autoreload 29232 23976 Watching for file changes with StatReloader
+INFO 2025-07-02 23:38:40,390 autoreload 29232 23976 D:\info\web-dev\projects\EcoTrajet\EcoTrajet\api\models.py changed, reloading.
+INFO 2025-07-02 23:38:41,027 autoreload 29352 24892 Watching for file changes with StatReloader
+INFO 2025-07-02 23:38:43,401 autoreload 29352 24892 D:\info\web-dev\projects\EcoTrajet\EcoTrajet\api\models.py changed, reloading.
+INFO 2025-07-02 23:38:43,986 autoreload 31544 32660 Watching for file changes with StatReloader
+INFO 2025-07-02 23:38:50,397 autoreload 31544 32660 D:\info\web-dev\projects\EcoTrajet\EcoTrajet\api\models.py changed, reloading.
+INFO 2025-07-02 23:38:51,053 autoreload 23820 15684 Watching for file changes with StatReloader
+INFO 2025-07-02 23:38:52,409 autoreload 23820 15684 D:\info\web-dev\projects\EcoTrajet\EcoTrajet\api\models.py changed, reloading.
+INFO 2025-07-02 23:38:53,033 autoreload 23988 15208 Watching for file changes with StatReloader
+WARNING 2025-07-02 23:38:59,448 log 23988 24460 Unauthorized: /communities/
+WARNING 2025-07-02 23:38:59,448 basehttp 23988 24460 "GET /communities/ HTTP/1.1" 401 58

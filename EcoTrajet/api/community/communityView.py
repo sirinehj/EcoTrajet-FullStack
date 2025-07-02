@@ -19,7 +19,7 @@ class CommunityListView(generics.ListAPIView):
 # Create Community
 class CommunityCreateView(generics.CreateAPIView):
     serializer_class = CommunitySerializer
-    permission_classes = [IsAuthenticated]
+    
 
     def perform_create(self, serializer):
         community = serializer.save(admin=self.request.user)
@@ -37,7 +37,7 @@ class CommunityCreateView(generics.CreateAPIView):
 class CommunityDeleteView(generics.DestroyAPIView):
     queryset = Community.objects.all()
     serializer_class = CommunitySerializer
-    permission_classes = [IsAuthenticated]
+    
 
     def get_object(self):
         community = get_object_or_404(Community, pk=self.kwargs['pk'])
@@ -50,7 +50,7 @@ class CommunityDeleteView(generics.DestroyAPIView):
 class CommunityUpdateView(generics.UpdateAPIView):
     queryset = Community.objects.all()
     serializer_class = CommunitySerializer
-    permission_classes = [IsAuthenticated]
+    
 
     def get_object(self):
         community = get_object_or_404(Community, pk=self.kwargs['pk'])
@@ -61,7 +61,7 @@ class CommunityUpdateView(generics.UpdateAPIView):
 
 #Add User to Community
 class AddUserToCommunityView(generics.GenericAPIView):
-    permission_classes = [IsAuthenticated]
+    
 
     def post(self, request, *args, **kwargs):
         community_id = kwargs.get('community_id')
@@ -115,7 +115,7 @@ class RemoveUserFromCommunityView(generics.GenericAPIView):
 
 #  Get All Users in Community
 class ListCommunityMembersView(generics.ListAPIView):
-    permission_classes = [IsAuthenticated]
+    
     serializer_class = None  # You can define a MemberSerializer if needed
 
     def get_queryset(self):

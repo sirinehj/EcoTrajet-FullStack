@@ -3,17 +3,10 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 from django.core.exceptions import ValidationError
 from user_management.models import User
 from django.urls import reverse
+from api.community.communtiyModel import Community
 import uuid
 
 
-class Community(models.Model):
-    name = models.CharField(max_length=100)
-    description = models.TextField()
-    zone_geo = models.CharField(max_length=100)
-    admin = models.ForeignKey(User, on_delete=models.CASCADE, related_name='admin_of')
-    date_creation = models.DateTimeField(auto_now_add=True)
-    is_private = models.BooleanField(default=False)
-    theme = models.CharField(max_length=50)
 
 class Trip(models.Model):
     STATUS_CHOICES = [

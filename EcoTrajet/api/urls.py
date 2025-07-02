@@ -29,6 +29,8 @@ urlpatterns = [
     path('trips/<int:trip_id>/reservations/', TripReservationsView.as_view(), name='trip-reservations'),
     path('reservations/', ReservationListView.as_view(), name='reservation-list'),
     path('reservations/<int:pk>/', ReservationDetailView.as_view(), name='reservation-detail'),
-    # Trip&Reservation
+    
+    # Community
+    path('communities/',include('api.community.communityUrls'))
 
 ]
