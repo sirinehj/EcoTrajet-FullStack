@@ -1,6 +1,6 @@
-from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
 from django.db import models
 from django.conf import settings
+from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
 from django.core.validators import MinValueValidator, MaxValueValidator
 import uuid
 from django.utils import timezone
@@ -33,6 +33,12 @@ class UserLoginAttempt(models.Model):
         ordering = ["-timestamp"]
         verbose_name = "login attempt"
         verbose_name_plural = "login attempts"
+
+    def __str__(self):
+        return f"{self.username} @ {self.timestamp}: {'Success' if self.success else 'Fail'}"
+
+    class Meta:
+        ordering = ["-timestamp"]
 
     def __str__(self):
         return f"{self.username} @ {self.timestamp}: {'Success' if self.success else 'Fail'}"

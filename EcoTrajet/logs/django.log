@@ -676,6 +676,7 @@ INFO 2025-07-01 15:03:18,893 basehttp 10472 18972 "GET /trips/ HTTP/1.1" 200 190
 INFO 2025-07-01 15:03:21,980 basehttp 10472 18972 "GET /trips/ HTTP/1.1" 200 19062
 INFO 2025-07-01 15:03:31,713 basehttp 10472 18972 "GET /reservations HTTP/1.1" 301 0
 INFO 2025-07-01 15:03:31,819 basehttp 10472 9304 "GET /reservations/ HTTP/1.1" 200 18527
+<<<<<<< HEAD
 INFO 2025-07-01 16:55:51,938 autoreload 10772 8212 Watching for file changes with StatReloader
 INFO 2025-07-01 16:58:39,918 autoreload 10772 8212 C:\Things\STAGE\RIF\temp\EcoTrajet\EcoTrajet\settings.py changed, reloading.
 INFO 2025-07-01 16:58:40,470 autoreload 21372 4384 Watching for file changes with StatReloader
@@ -765,3 +766,106 @@ WARNING 2025-07-01 18:09:56,021 log 22344 1488 Bad Request: /api/user/verify-ema
 WARNING 2025-07-01 18:09:58,092 log 22344 1488 Bad Request: /api/user/change-password/
 WARNING 2025-07-01 18:09:58,096 log 22344 1488 Unauthorized: /api/user/change-password/
 WARNING 2025-07-01 18:09:58,403 log 22344 1488 Unauthorized: /api/user/activity/
+=======
+INFO 2025-07-01 15:05:56,355 autoreload 23036 23292 Watching for file changes with StatReloader
+WARNING 2025-07-01 15:13:50,453 log 11664 20268 Bad Request: /user/token/
+WARNING 2025-07-01 15:13:50,553 log 11664 20268 Bad Request: /user/register/
+WARNING 2025-07-01 15:13:50,620 log 11664 20268 Bad Request: /user/register/
+WARNING 2025-07-01 15:13:50,691 log 11664 20268 Unauthorized: /user/profile/
+WARNING 2025-07-01 15:13:50,827 log 11664 20268 Unauthorized: /user/logout/
+WARNING 2025-07-01 15:13:50,882 log 11664 20268 Bad Request: /user/verify-email/invalid-uid/some-token/
+INFO 2025-07-01 23:32:37,551 autoreload 16072 25264 Watching for file changes with StatReloader
+INFO 2025-07-01 23:34:43,938 autoreload 16072 25264 C:\ecoTrajet\EcoTrajet\EcoTrajet\settings.py changed, reloading.
+INFO 2025-07-01 23:34:44,749 autoreload 24044 4800 Watching for file changes with StatReloader
+INFO 2025-07-01 23:35:06,915 autoreload 24044 4800 C:\ecoTrajet\EcoTrajet\EcoTrajet\settings.py changed, reloading.
+INFO 2025-07-01 23:35:07,538 autoreload 11216 9916 Watching for file changes with StatReloader
+INFO 2025-07-01 23:35:32,340 autoreload 20948 2536 Watching for file changes with StatReloader
+INFO 2025-07-01 23:36:41,205 autoreload 20948 2536 C:\ecoTrajet\EcoTrajet\EcoTrajet\settings.py changed, reloading.
+INFO 2025-07-01 23:36:42,600 autoreload 2696 5132 Watching for file changes with StatReloader
+INFO 2025-07-01 23:36:49,416 autoreload 2696 5132 C:\ecoTrajet\EcoTrajet\EcoTrajet\settings.py changed, reloading.
+INFO 2025-07-01 23:37:05,566 autoreload 6368 13540 Watching for file changes with StatReloader
+INFO 2025-07-01 23:38:34,152 autoreload 20948 9496 Watching for file changes with StatReloader
+INFO 2025-07-01 23:41:13,873 autoreload 20948 9496 C:\ecoTrajet\EcoTrajet\api\urls.py changed, reloading.
+INFO 2025-07-01 23:41:15,522 autoreload 18232 24244 Watching for file changes with StatReloader
+INFO 2025-07-01 23:41:45,531 autoreload 18232 24244 C:\ecoTrajet\EcoTrajet\api\urls.py changed, reloading.
+INFO 2025-07-01 23:41:46,505 autoreload 792 25028 Watching for file changes with StatReloader
+INFO 2025-07-01 23:41:48,102 autoreload 792 25028 C:\ecoTrajet\EcoTrajet\api\urls.py changed, reloading.
+INFO 2025-07-01 23:41:48,952 autoreload 24364 10112 Watching for file changes with StatReloader
+INFO 2025-07-01 23:42:04,436 autoreload 5980 19720 Watching for file changes with StatReloader
+INFO 2025-07-01 23:44:10,595 autoreload 5980 19720 C:\ecoTrajet\EcoTrajet\api\urls.py changed, reloading.
+INFO 2025-07-01 23:44:12,524 autoreload 16256 22520 Watching for file changes with StatReloader
+INFO 2025-07-01 23:44:14,868 autoreload 16256 22520 C:\ecoTrajet\EcoTrajet\api\urls.py changed, reloading.
+INFO 2025-07-01 23:44:15,836 autoreload 22524 23184 Watching for file changes with StatReloader
+INFO 2025-07-01 23:44:22,624 autoreload 8676 16668 Watching for file changes with StatReloader
+INFO 2025-07-01 23:45:51,088 autoreload 8676 16668 C:\ecoTrajet\EcoTrajet\user_management\models.py changed, reloading.
+INFO 2025-07-01 23:45:52,310 autoreload 24132 18088 Watching for file changes with StatReloader
+INFO 2025-07-01 23:45:54,641 autoreload 24132 18088 C:\ecoTrajet\EcoTrajet\user_management\models.py changed, reloading.
+INFO 2025-07-01 23:45:55,478 autoreload 16600 22620 Watching for file changes with StatReloader
+INFO 2025-07-01 23:46:04,718 autoreload 12408 21196 Watching for file changes with StatReloader
+WARNING 2025-07-01 23:46:09,012 log 12408 23340 Not Found: /
+WARNING 2025-07-01 23:46:09,015 basehttp 12408 23340 "GET / HTTP/1.1" 404 5129
+INFO 2025-07-01 23:46:14,682 basehttp 12408 22964 code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93\x8a\x8a\x00\x00\x00#\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06')
+ERROR 2025-07-01 23:46:14,689 basehttp 12408 22964 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-01 23:46:14,706 basehttp 12408 23684 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03w/e\x07\x04')
+ERROR 2025-07-01 23:46:14,706 basehttp 12408 23684 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-01 23:46:22,234 basehttp 12408 19772 code 400, message Bad request version ('}\x18xàL\x18ìÇÂ¼\x80àÙ8ïH¦MpMJ\x89\x84,9£ÚðDê1¨dý+õ\x81Àü§\x12(')
+ERROR 2025-07-01 23:46:22,236 basehttp 12408 19772 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-01 23:46:22,239 basehttp 12408 11280 code 400, message Bad request version ('\x01\x1aÚ')
+ERROR 2025-07-01 23:46:22,239 basehttp 12408 11280 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-01 23:46:24,592 basehttp 12408 22432 code 400, message Bad request version ('î')
+ERROR 2025-07-01 23:46:24,592 basehttp 12408 22432 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-01 23:46:24,594 basehttp 12408 4352 code 400, message Bad request version ('ë')
+ERROR 2025-07-01 23:46:24,595 basehttp 12408 4352 You're accessing the development server over HTTPS, but it only supports HTTP.
+INFO 2025-07-01 23:52:56,563 autoreload 10604 22964 Watching for file changes with StatReloader
+WARNING 2025-07-01 23:52:59,296 log 10604 3692 Not Found: /
+WARNING 2025-07-01 23:52:59,298 basehttp 10604 3692 "GET / HTTP/1.1" 404 5129
+INFO 2025-07-01 23:53:03,393 basehttp 10604 13040 "GET /trips/ HTTP/1.1" 200 18969
+INFO 2025-07-01 23:53:03,703 basehttp 10604 13040 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-07-01 23:53:03,706 basehttp 10604 13040 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-07-01 23:53:03,712 basehttp 10604 13040 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-07-01 23:53:03,731 basehttp 10604 20096 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-07-01 23:53:03,732 basehttp 10604 13040 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-07-01 23:53:03,741 basehttp 10604 20948 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-07-01 23:53:03,758 basehttp 10604 16732 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-07-01 23:53:03,759 basehttp 10604 20096 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-07-01 23:53:03,759 basehttp 10604 23928 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-07-01 23:53:03,761 basehttp 10604 13040 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-07-01 23:53:03,762 basehttp 10604 24580 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-07-01 23:53:03,782 basehttp 10604 24580 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-07-01 23:53:03,849 basehttp 10604 24580 "GET /static/rest_framework/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 18028
+INFO 2025-07-01 23:53:10,351 basehttp 10604 24580 "GET /reservations HTTP/1.1" 301 0
+INFO 2025-07-01 23:53:10,647 basehttp 10604 13040 "GET /reservations/ HTTP/1.1" 200 18434
+INFO 2025-07-01 23:56:49,554 autoreload 22040 25084 Watching for file changes with StatReloader
+WARNING 2025-07-01 23:56:51,960 log 22040 19016 Not Found: /
+WARNING 2025-07-01 23:56:51,962 basehttp 22040 19016 "GET / HTTP/1.1" 404 5129
+WARNING 2025-07-01 23:56:52,169 log 22040 19016 Not Found: /
+WARNING 2025-07-01 23:56:52,171 basehttp 22040 19016 "GET / HTTP/1.1" 404 5129
+WARNING 2025-07-01 23:56:55,789 log 22040 22708 Not Found: /
+WARNING 2025-07-01 23:56:55,790 basehttp 22040 22708 "GET / HTTP/1.1" 404 5129
+INFO 2025-07-01 23:57:01,707 basehttp 22040 22708 "GET /trips/ HTTP/1.1" 200 18969
+WARNING 2025-07-01 23:57:56,928 log 22040 22764 Bad Request: /trips/
+WARNING 2025-07-01 23:57:56,929 basehttp 22040 22764 "POST /trips/ HTTP/1.1" 400 15845
+INFO 2025-07-01 23:58:12,169 basehttp 22040 14532 "POST /trips/ HTTP/1.1" 201 16117
+INFO 2025-07-01 23:58:14,702 basehttp 22040 12928 "GET /trips/ HTTP/1.1" 200 19345
+INFO 2025-07-01 23:58:20,643 basehttp 22040 12928 "GET /reservations/ HTTP/1.1" 200 18558
+INFO 2025-07-01 23:58:30,844 basehttp 22040 25588 "POST /reservations/ HTTP/1.1" 201 15646
+INFO 2025-07-01 23:58:34,904 basehttp 22040 19748 "GET /reservations/ HTTP/1.1" 200 19168
+WARNING 2025-07-01 23:59:01,065 log 22040 2528 Not Found: /vehicules
+WARNING 2025-07-01 23:59:01,066 basehttp 22040 2528 "GET /vehicules HTTP/1.1" 404 5174
+WARNING 2025-07-01 23:59:04,353 log 22040 2528 Not Found: /vehicules
+WARNING 2025-07-01 23:59:04,354 basehttp 22040 2528 "GET /vehicules HTTP/1.1" 404 5174
+>>>>>>> 03a93ab0c1a72f0360b83f9f890a2b7165ecc6fb
+INFO 2025-07-02 09:59:10,063 autoreload 4364 15644 Watching for file changes with StatReloader
+INFO 2025-07-02 10:00:26,791 autoreload 4364 15644 C:\Things\STAGE\RIF\temp\EcoTrajet\user_management\models.py changed, reloading.
+INFO 2025-07-02 10:00:27,295 autoreload 10708 24252 Watching for file changes with StatReloader
+INFO 2025-07-02 10:00:35,419 autoreload 15320 3700 Watching for file changes with StatReloader
+INFO 2025-07-02 10:01:03,087 autoreload 15320 3700 C:\Things\STAGE\RIF\temp\EcoTrajet\user_management\models.py changed, reloading.
+INFO 2025-07-02 10:01:03,571 autoreload 1948 1060 Watching for file changes with StatReloader
+INFO 2025-07-02 10:01:32,345 autoreload 1948 1060 C:\Things\STAGE\RIF\temp\EcoTrajet\user_management\models.py changed, reloading.
+INFO 2025-07-02 10:01:32,897 autoreload 1788 11700 Watching for file changes with StatReloader
+INFO 2025-07-02 10:01:37,280 autoreload 1788 11700 C:\Things\STAGE\RIF\temp\EcoTrajet\user_management\models.py changed, reloading.
+INFO 2025-07-02 10:01:37,788 autoreload 20800 8624 Watching for file changes with StatReloader
+INFO 2025-07-02 10:06:07,548 autoreload 20800 8624 C:\Things\STAGE\RIF\temp\EcoTrajet\api\models.py changed, reloading.
+INFO 2025-07-02 10:06:08,080 autoreload 15336 14196 Watching for file changes with StatReloader
+INFO 2025-07-02 10:06:36,393 autoreload 3260 11672 Watching for file changes with StatReloader
+INFO 2025-07-02 10:09:55,137 autoreload 24452 2252 Watching for file changes with StatReloader

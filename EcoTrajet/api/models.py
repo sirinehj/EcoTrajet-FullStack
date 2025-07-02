@@ -174,6 +174,7 @@ class Reservation(models.Model):
         super().save(*args, **kwargs)
 
 
+#Modèle pour les évaluations après trajets
 class Rating(models.Model):
     """
     Rating model for user reviews after trips.
@@ -250,5 +251,64 @@ class RatingManager(models.Manager):
         """Compte le nombre d'évaluations pour un utilisateur"""
         return self.filter(rated_user=user).count()
 
-# Add the custom manager to Rating model
-Rating.objects = RatingManager()
+class Rating(models.Model):
+    """
+    Rating model for user reviews after trips.
+    """
+    idRate = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    reviewer = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        related_name='given_ratings',
+        help_text="Utilisateur qui donne la note"
+    )
+    rated_user = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        related_name='received_ratings',
+        help_text="Utilisateur qui reçoit la note"
+    )
+    trip = models.ForeignKey(
+        Trip,
+        on_delete=models.CASCADE,
+        related_name='ratings',
+        help_text="Trajet concerné par l'évaluation"
+    )
+    score = models.PositiveIntegerField(
+        validators=[MinValueValidator(1), MaxValueValidator(5)],
+        help_text="Note de 1 à 5 étoiles"
+    )
+    commentaires = models.TextField(
+        blank=True,
+        help_text="Commentaire optionnel"
+    )
+    created_at = models.DateTimeField(auto_now_add=True)
+    
+    # Add the managers properly:
+    objects = models.Manager()  # Keep the default manager
+    ratings = RatingManager()   # Add your custom manager as a second manager
+    
+    class Meta:
+        db_table = 'rating'
+        verbose_name = 'évaluation'
+        verbose_name_plural = 'évaluations'
+        # Contrainte pour éviter les doublons
+        unique_together = ['reviewer', 'rated_user', 'trip']
+        # Index pour les requêtes fréquentes
+        indexes = [
+            models.Index(fields=['rated_user', 'score']),
+            models.Index(fields=['trip']),
+        ]
+        
+    def __str__(self):
+        return f"Note {self.score}/5 - {self.reviewer} -> {self.rated_user}"
+    
+    def clean(self):
+        # Validation
+        # Un utilisateur ne peut pas se noter lui-même
+        if self.reviewer == self.rated_user:
+            raise ValidationError("Un utilisateur ne peut pas s'auto-évaluer")
+        
+    def save(self, *args, **kwargs):
+        self.clean()
+        super().save(*args, **kwargs)
