@@ -1734,3 +1734,298 @@ INFO 2025-07-02 14:26:42,495 basehttp 2212 5892 "GET /trips/?status=SCHEDULED HT
 INFO 2025-07-02 14:27:05,309 autoreload 2212 1972 C:\ecoTrajet\EcoTrajet\EcoTrajet\settings.py changed, reloading.
 INFO 2025-07-02 14:27:06,356 autoreload 19976 4768 Watching for file changes with StatReloader
 >>>>>>> 00b67ec617997534273aabf14dce2ce4a8cf5ed1
+INFO 2025-07-02 21:54:17,435 autoreload 15248 11620 Watching for file changes with StatReloader
+INFO 2025-07-02 21:57:00,123 autoreload 15248 11620 C:\Users\abens\Desktop\New folder (2)\EcoTrajet-FullStack\EcoTrajet\EcoTrajet\settings.py changed, reloading.
+INFO 2025-07-02 21:57:00,798 autoreload 9548 12368 Watching for file changes with StatReloader
+INFO 2025-07-02 21:57:08,761 autoreload 20756 21336 Watching for file changes with StatReloader
+INFO 2025-07-02 21:58:27,039 autoreload 20756 21336 C:\Users\abens\Desktop\New folder (2)\EcoTrajet-FullStack\EcoTrajet\user_management\apps.py changed, reloading.
+INFO 2025-07-02 21:58:27,655 autoreload 9548 12368 C:\Users\abens\Desktop\New folder (2)\EcoTrajet-FullStack\EcoTrajet\user_management\apps.py changed, reloading.
+INFO 2025-07-02 21:58:27,730 autoreload 6744 2340 Watching for file changes with StatReloader
+INFO 2025-07-02 21:58:28,426 autoreload 11356 17996 Watching for file changes with StatReloader
+INFO 2025-07-02 21:58:29,281 autoreload 6744 2340 C:\Users\abens\Desktop\New folder (2)\EcoTrajet-FullStack\EcoTrajet\EcoTrajet\settings.py changed, reloading.
+INFO 2025-07-02 21:58:29,958 autoreload 18120 8732 Watching for file changes with StatReloader
+INFO 2025-07-02 21:58:32,102 autoreload 11356 17996 C:\Users\abens\Desktop\New folder (2)\EcoTrajet-FullStack\EcoTrajet\user_management\urls.py changed, reloading.
+INFO 2025-07-02 21:58:32,547 autoreload 18120 8732 C:\Users\abens\Desktop\New folder (2)\EcoTrajet-FullStack\EcoTrajet\user_management\urls.py changed, reloading.
+INFO 2025-07-02 21:58:32,766 autoreload 8988 18888 Watching for file changes with StatReloader
+INFO 2025-07-02 21:58:33,257 autoreload 15672 14216 Watching for file changes with StatReloader
+INFO 2025-07-02 21:58:38,604 autoreload 8988 18888 C:\Users\abens\Desktop\New folder (2)\EcoTrajet-FullStack\EcoTrajet\manage.py changed, reloading.
+INFO 2025-07-02 21:58:39,103 autoreload 15672 14216 C:\Users\abens\Desktop\New folder (2)\EcoTrajet-FullStack\EcoTrajet\manage.py changed, reloading.
+INFO 2025-07-02 21:58:39,329 autoreload 20628 18512 Watching for file changes with StatReloader
+INFO 2025-07-02 21:58:39,804 autoreload 18320 10752 Watching for file changes with StatReloader
+INFO 2025-07-02 22:01:34,739 autoreload 20628 18512 C:\Users\abens\Desktop\New folder (2)\EcoTrajet-FullStack\EcoTrajet\EcoTrajet\settings.py changed, reloading.
+INFO 2025-07-02 22:01:35,445 autoreload 18320 10752 C:\Users\abens\Desktop\New folder (2)\EcoTrajet-FullStack\EcoTrajet\EcoTrajet\settings.py changed, reloading.
+INFO 2025-07-02 22:01:35,495 autoreload 10420 2572 Watching for file changes with StatReloader
+INFO 2025-07-02 22:01:36,196 autoreload 12668 5400 Watching for file changes with StatReloader
+INFO 2025-07-02 22:01:43,469 autoreload 10420 2572 C:\Users\abens\Desktop\New folder (2)\EcoTrajet-FullStack\EcoTrajet\EcoTrajet\settings.py changed, reloading.
+INFO 2025-07-02 22:01:44,127 autoreload 12668 5400 C:\Users\abens\Desktop\New folder (2)\EcoTrajet-FullStack\EcoTrajet\EcoTrajet\settings.py changed, reloading.
+INFO 2025-07-02 22:01:44,133 autoreload 8720 2620 Watching for file changes with StatReloader
+INFO 2025-07-02 22:01:44,813 autoreload 20512 13248 Watching for file changes with StatReloader
+INFO 2025-07-02 22:01:47,436 autoreload 20512 13248 C:\Users\abens\Desktop\New folder (2)\EcoTrajet-FullStack\EcoTrajet\EcoTrajet\settings.py changed, reloading.
+INFO 2025-07-02 22:01:47,812 autoreload 8720 2620 C:\Users\abens\Desktop\New folder (2)\EcoTrajet-FullStack\EcoTrajet\EcoTrajet\settings.py changed, reloading.
+INFO 2025-07-02 22:01:48,184 autoreload 14408 12808 Watching for file changes with StatReloader
+INFO 2025-07-02 22:01:48,600 autoreload 8164 15048 Watching for file changes with StatReloader
+WARNING 2025-07-02 22:02:03,031 log 14408 13236 Not Found: /
+WARNING 2025-07-02 22:02:03,031 basehttp 14408 13236 "GET / HTTP/1.1" 404 2459
+WARNING 2025-07-02 22:02:03,305 log 14408 13236 Not Found: /favicon.ico
+WARNING 2025-07-02 22:02:03,306 basehttp 14408 13236 "GET /favicon.ico HTTP/1.1" 404 2510
+WARNING 2025-07-02 22:02:10,158 base 14408 13236 Session data corrupted
+INFO 2025-07-02 22:02:10,171 basehttp 14408 13236 "GET /admin/ HTTP/1.1" 302 0
+WARNING 2025-07-02 22:02:10,316 base 14408 13236 Session data corrupted
+INFO 2025-07-02 22:02:10,432 basehttp 14408 13236 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4170
+INFO 2025-07-02 22:02:10,460 basehttp 14408 13236 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-07-02 22:02:10,461 basehttp 14408 7980 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-07-02 22:02:10,461 basehttp 14408 2164 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-07-02 22:02:10,462 basehttp 14408 16092 "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2025-07-02 22:02:10,463 basehttp 14408 15084 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-07-02 22:02:10,463 basehttp 14408 17368 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-07-02 22:02:10,494 basehttp 14408 17368 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+WARNING 2025-07-02 22:02:12,083 base 14408 17368 Session data corrupted
+ERROR 2025-07-02 22:02:12,356 log 14408 17368 Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: ERREUR:  la colonne user_management_user.date_joined n'existe pas
+LINE 1: ..."."is_active", "user_management_user"."is_staff", "user_mana...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\admin\sites.py", line 449, in login
+    return LoginView.as_view(**defaults)(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\views.py", line 89, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\generic\base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\generic\edit.py", line 150, in post
+    if form.is_valid():
+       ~~~~~~~~~~~~~^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\forms\forms.py", line 206, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\forms\forms.py", line 201, in errors
+    self.full_clean()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\forms\forms.py", line 338, in full_clean
+    self._clean_form()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\forms\forms.py", line 354, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\forms.py", line 366, in clean
+    self.user_cache = authenticate(
+                      ~~~~~~~~~~~~^
+        self.request, username=username, password=password
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la colonne user_management_user.date_joined n'existe pas
+LINE 1: ..."."is_active", "user_management_user"."is_staff", "user_mana...
+                                                             ^
+
+ERROR 2025-07-02 22:02:12,371 basehttp 14408 17368 "POST /admin/login/?next=/admin/ HTTP/1.1" 500 257143
+WARNING 2025-07-02 22:02:34,722 base 14408 17368 Session data corrupted
+INFO 2025-07-02 22:02:34,725 basehttp 14408 17368 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4170
+WARNING 2025-07-02 22:02:38,574 base 14408 17368 Session data corrupted
+ERROR 2025-07-02 22:02:38,621 log 14408 17368 Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: ERREUR:  la colonne user_management_user.date_joined n'existe pas
+LINE 1: ..."."is_active", "user_management_user"."is_staff", "user_mana...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\admin\sites.py", line 449, in login
+    return LoginView.as_view(**defaults)(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\debug.py", line 143, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\views.py", line 89, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\generic\base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\generic\edit.py", line 150, in post
+    if form.is_valid():
+       ~~~~~~~~~~~~~^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\forms\forms.py", line 206, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\forms\forms.py", line 201, in errors
+    self.full_clean()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\forms\forms.py", line 338, in full_clean
+    self._clean_form()
+    ~~~~~~~~~~~~~~~~^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\forms\forms.py", line 354, in _clean_form
+    cleaned_data = self.clean()
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\forms.py", line 366, in clean
+    self.user_cache = authenticate(
+                      ~~~~~~~~~~~~^
+        self.request, username=username, password=password
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\views\decorators\debug.py", line 75, in sensitive_variables_wrapper
+    return func(*func_args, **func_kwargs)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\__init__.py", line 114, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\backends.py", line 65, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\contrib\auth\base_user.py", line 37, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\abens\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: ERREUR:  la colonne user_management_user.date_joined n'existe pas
+LINE 1: ..."."is_active", "user_management_user"."is_staff", "user_mana...
+                                                             ^
+
+ERROR 2025-07-02 22:02:38,631 basehttp 14408 17368 "POST /admin/login/?next=/admin/ HTTP/1.1" 500 257143
