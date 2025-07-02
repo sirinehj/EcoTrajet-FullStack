@@ -8,7 +8,6 @@ from django.contrib.auth.tokens import default_token_generator
 from django.conf import settings
 from django.core.mail import send_mail
 import re
-
 from user_management.models import UserLoginAttempt
 
 
