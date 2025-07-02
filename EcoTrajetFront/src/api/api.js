@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:8000/api'; // Port par défaut de Django
+const API_BASE_URL = 'http://localhost:8000';
 
 export const fetchData = async () => {
     try {
