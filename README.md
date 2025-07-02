@@ -99,7 +99,6 @@ Notre équipe suit une méthodologie de développement collaborative :
 
 ## 🏗 Architecture du Projet
 
-### Structure des Dossiers
 ```
 EcoTrajet/
 ├── backend/ (Django + DRF)
