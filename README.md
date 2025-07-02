@@ -146,6 +146,9 @@ EcoTrajet/
 - React.js
 - Tailwindcss
 - Vite.js
+- Lucide React for icons
+- axios
+- react router dom 
 
 ### Outils & Infrastructure
 - GitHub Actions (CI/CD)
@@ -200,8 +203,26 @@ python manage.py runserver
 
 # Frontend
 cd ../frontend
+:: Install dependencies
 npm install
-npm start
+
+:: Install Tailwind CSS
+npm install -D tailwindcss@^3 postcss autoprefixer
+
+:: Install Lucide React for icons
+npm install lucide-react
+
+:: Initialize Tailwind
+npx tailwindcss init -p
+
+::install axios
+npm install axios
+
+::install react router fom 
+npm install react-router-dom
+
+npm run dev
+
 ```
 
 5. **Accéder à l'application**
