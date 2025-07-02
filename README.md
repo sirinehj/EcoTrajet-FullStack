@@ -22,6 +22,9 @@ EcoTrajet est une plateforme innovante de transport collaboratif qui permet aux 
 - [x] Système de gestion des trajets
 - [x] Système de gestion des reservations
 - [x] Documentation technique
+- [x] Intégration frontend-backend
+  - Connexion des interfaces aux API (Axios/Fetch)
+  - Liaison des composants React avec le backend
 
 #### Hayder Chakroun
 - [x] Mise en place de la base de données PostgreSQL
@@ -99,7 +102,6 @@ Notre équipe suit une méthodologie de développement collaborative :
 
 ## 🏗 Architecture du Projet
 
-### Structure des Dossiers
 ```
 EcoTrajet/
 ├── backend/ (Django + DRF)
@@ -142,7 +144,8 @@ EcoTrajet/
 
 ### Frontend
 - React.js
-- Material-UI
+- Tailwindcss
+- Vite.js
 
 ### Outils & Infrastructure
 - GitHub Actions (CI/CD)
@@ -202,7 +205,7 @@ npm start
 ```
 
 5. **Accéder à l'application**
-- Frontend: http://localhost:3000
+- Frontend: http://localhost:5173
 - API Backend: http://localhost:8000
 - Administration: http://localhost:8000/admin
 
