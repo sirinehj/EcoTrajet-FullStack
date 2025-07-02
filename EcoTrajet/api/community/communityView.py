@@ -4,7 +4,7 @@ from rest_framework.permissions import IsAuthenticated
 from django.shortcuts import get_object_or_404
 from django.core.exceptions import PermissionDenied
 from api.community.communtiyModel import Community, Membership
-from apps.users.models import User
+from user_management.models import User
 from api.community.serializers.communitySerializer import CommunitySerializer
 
 

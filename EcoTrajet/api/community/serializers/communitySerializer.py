@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from ...community.communtiyModel import Community
-from apps.users.models import User
+from user_management.models import User
 class CommunitySerializer(serializers.ModelSerializer):
     class Meta:
         model = Community
