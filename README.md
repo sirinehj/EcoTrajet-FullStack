@@ -142,7 +142,8 @@ EcoTrajet/
 
 ### Frontend
 - React.js
-- Material-UI
+- Tailwindcss
+- Vite.js
 
 ### Outils & Infrastructure
 - GitHub Actions (CI/CD)
@@ -202,7 +203,7 @@ npm start
 ```
 
 5. **Accéder à l'application**
-- Frontend: http://localhost:3000
+- Frontend: http://localhost:5173
 - API Backend: http://localhost:8000
 - Administration: http://localhost:8000/admin
 
