@@ -3,7 +3,6 @@ from rest_framework.routers import DefaultRouter
 from .views import VehiculeViewSet, RatingViewSet
 from django.urls import include, path
 from rest_framework.authtoken.views import obtain_auth_token
-
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 from rest_framework.routers import DefaultRouter
