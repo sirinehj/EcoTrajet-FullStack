@@ -215,10 +215,10 @@ npm install lucide-react
 :: Initialize Tailwind
 npx tailwindcss init -p
 
-::install axios
+:: Install axios
 npm install axios
 
-::install react router fom 
+:: Install react router fom 
 npm install react-router-dom
 
 npm run dev
