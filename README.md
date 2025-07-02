@@ -22,6 +22,9 @@ EcoTrajet est une plateforme innovante de transport collaboratif qui permet aux 
 - [x] Système de gestion des trajets
 - [x] Système de gestion des reservations
 - [x] Documentation technique
+- [x] Intégration frontend-backend
+  - Connexion des interfaces aux API (Axios/Fetch)
+  - Liaison des composants React avec le backend
 
 #### Hayder Chakroun
 - [x] Mise en place de la base de données PostgreSQL
