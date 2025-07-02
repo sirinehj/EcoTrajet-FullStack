@@ -44,27 +44,27 @@ WARNING 2025-06-30 21:33:39,203 log 15036 8808 Not Found: /
 WARNING 2025-06-30 21:33:39,204 basehttp 15036 8808 "GET / HTTP/1.1" 404 4381
 INFO 2025-06-30 21:33:46,897 basehttp 15036 8692 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06')
 ERROR 2025-06-30 21:33:46,898 basehttp 15036 8692 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:33:46,900 basehttp 15036 19472 code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sjj\x00\x00\x00+\x00\x07\x06**\x03\x04\x03\x03\x00')
+INFO 2025-06-30 21:33:46,900 basehttp 15036 19472 code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03ï¿½+ï¿½/ï¿½,ï¿½0Ì©Ì¨ï¿½\x13ï¿½\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sjj\x00\x00\x00+\x00\x07\x06**\x03\x04\x03\x03\x00')
 ERROR 2025-06-30 21:33:46,902 basehttp 15036 19472 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:33:54,397 basehttp 15036 5892 code 400, message Bad request version ('a¦@t\x94~x')
+INFO 2025-06-30 21:33:54,397 basehttp 15036 5892 code 400, message Bad request version ('aï¿½@t\x94~x')
 ERROR 2025-06-30 21:33:54,399 basehttp 15036 5892 You're accessing the development server over HTTPS, but it only supports HTTP.
 INFO 2025-06-30 21:33:54,401 basehttp 15036 14972 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06')
 ERROR 2025-06-30 21:33:54,401 basehttp 15036 14972 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:33:58,065 basehttp 15036 10692 code 400, message Bad request version ('ä_Ü#¼\x94É\x97')
+INFO 2025-06-30 21:33:58,065 basehttp 15036 10692 code 400, message Bad request version ('ï¿½_ï¿½#ï¿½\x94ï¿½\x97')
 ERROR 2025-06-30 21:33:58,080 basehttp 15036 10692 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:33:58,082 basehttp 15036 8660 code 400, message Bad request version ('9dX\x10Ë@')
+INFO 2025-06-30 21:33:58,082 basehttp 15036 8660 code 400, message Bad request version ('9dX\x10ï¿½@')
 ERROR 2025-06-30 21:33:58,082 basehttp 15036 8660 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:34:04,786 basehttp 15036 9208 code 400, message Bad request syntax ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03oú]P¹êÌïÞúOfÉ#DÐ\x8e')
+INFO 2025-06-30 21:34:04,786 basehttp 15036 9208 code 400, message Bad request syntax ('\x16\x03\x01\x07\x00\x01\x00\x06ï¿½\x03\x03oï¿½]Pï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ofï¿½#Dï¿½\x8e')
 ERROR 2025-06-30 21:34:04,786 basehttp 15036 9208 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:34:04,789 basehttp 15036 21204 code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S\x8a\x8a\x00\x00\x00')
+INFO 2025-06-30 21:34:04,789 basehttp 15036 21204 code 400, message Bad request version ('zz\x13\x01\x13\x02\x13\x03ï¿½+ï¿½/ï¿½,ï¿½0Ì©Ì¨ï¿½\x13ï¿½\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S\x8a\x8a\x00\x00\x00')
 ERROR 2025-06-30 21:34:04,789 basehttp 15036 21204 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:34:06,901 basehttp 15036 18252 code 400, message Bad request version ('ªª\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06SÊÊ\x00\x00\x00')
+INFO 2025-06-30 21:34:06,901 basehttp 15036 18252 code 400, message Bad request version ('ï¿½ï¿½\x13\x01\x13\x02\x13\x03ï¿½+ï¿½/ï¿½,ï¿½0Ì©Ì¨ï¿½\x13ï¿½\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06Sï¿½ï¿½\x00\x00\x00')
 ERROR 2025-06-30 21:34:06,901 basehttp 15036 18252 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:34:06,903 basehttp 15036 7724 code 400, message Bad request syntax ('\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03Q}\x92s\x03ÂÇðjlà\x8d')
+INFO 2025-06-30 21:34:06,903 basehttp 15036 7724 code 400, message Bad request syntax ('\x16\x03\x01\x06ï¿½\x01\x00\x06ï¿½\x03\x03Q}\x92s\x03ï¿½ï¿½ï¿½jlï¿½\x8d')
 ERROR 2025-06-30 21:34:06,903 basehttp 15036 7724 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:34:08,562 basehttp 15036 5148 code 400, message Bad request version ('Ü\x87«\x86´¬¯¤bs5#é')
+INFO 2025-06-30 21:34:08,562 basehttp 15036 5148 code 400, message Bad request version ('ï¿½\x87ï¿½\x86ï¿½ï¿½ï¿½ï¿½bs5#ï¿½')
 ERROR 2025-06-30 21:34:08,563 basehttp 15036 5148 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:34:08,565 basehttp 15036 14276 code 400, message Bad request version ('¾')
+INFO 2025-06-30 21:34:08,565 basehttp 15036 14276 code 400, message Bad request version ('ï¿½')
 ERROR 2025-06-30 21:34:08,565 basehttp 15036 14276 You're accessing the development server over HTTPS, but it only supports HTTP.
 INFO 2025-06-30 21:34:17,743 basehttp 15036 2996 "GET /admin/ HTTP/1.1" 302 0
 INFO 2025-06-30 21:34:17,893 basehttp 15036 2996 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4170
@@ -116,9 +116,9 @@ INFO 2025-06-30 21:40:58,521 autoreload 15648 17232 C:\ecoTrajet\EcoTrajet\api\u
 INFO 2025-06-30 21:40:59,299 autoreload 19216 13956 Watching for file changes with StatReloader
 WARNING 2025-06-30 21:41:20,168 log 19216 18084 Not Found: /api/auth/token/
 WARNING 2025-06-30 21:41:20,169 basehttp 19216 18084 "GET /api/auth/token/ HTTP/1.1" 404 6878
-INFO 2025-06-30 21:41:28,681 basehttp 19216 20184 code 400, message Bad request version ('\x9aÌ~úçáº.PîÙ<DôäíZV\x9abj´')
+INFO 2025-06-30 21:41:28,681 basehttp 19216 20184 code 400, message Bad request version ('\x9aï¿½~ï¿½ï¿½ï¿½.Pï¿½ï¿½<Dï¿½ï¿½ï¿½ZV\x9abjï¿½')
 ERROR 2025-06-30 21:41:28,683 basehttp 19216 20184 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:41:28,685 basehttp 19216 21008 code 400, message Bad request version ('Ø¶%-Æ¾=\x9a/ÒD')
+INFO 2025-06-30 21:41:28,685 basehttp 19216 21008 code 400, message Bad request version ('Ø¶%-Æ¾=\x9a/ï¿½D')
 ERROR 2025-06-30 21:41:28,685 basehttp 19216 21008 You're accessing the development server over HTTPS, but it only supports HTTP.
 WARNING 2025-06-30 21:41:33,175 log 19216 12268 Not Found: /
 WARNING 2025-06-30 21:41:33,176 basehttp 19216 12268 "GET / HTTP/1.1" 404 3847
@@ -131,13 +131,13 @@ INFO 2025-06-30 21:42:46,210 autoreload 18520 17556 C:\ecoTrajet\EcoTrajet\EcoTr
 INFO 2025-06-30 21:42:46,846 autoreload 3784 20712 Watching for file changes with StatReloader
 WARNING 2025-06-30 21:42:48,962 log 3784 19668 Not Found: /
 WARNING 2025-06-30 21:42:48,963 basehttp 3784 19668 "GET / HTTP/1.1" 404 3847
-INFO 2025-06-30 21:42:54,826 basehttp 3784 19812 code 400, message Bad request syntax ('\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03£²áx½UDÕ')
+INFO 2025-06-30 21:42:54,826 basehttp 3784 19812 code 400, message Bad request syntax ('\x16\x03\x01\x07\x00\x01\x00\x06ï¿½\x03\x03ï¿½ï¿½ï¿½xï¿½UDï¿½')
 ERROR 2025-06-30 21:42:54,828 basehttp 3784 19812 You're accessing the development server over HTTPS, but it only supports HTTP.
 INFO 2025-06-30 21:42:54,830 basehttp 3784 13464 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06')
 ERROR 2025-06-30 21:42:54,831 basehttp 3784 13464 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:42:56,534 basehttp 3784 4660 code 400, message Bad request version ('êê\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sÊÊ\x00\x00\x00-\x00\x02\x01\x01\x00\x1b\x00\x03\x02\x00\x02DÍ\x00\x05\x00\x03\x02h2\x00')
+INFO 2025-06-30 21:42:56,534 basehttp 3784 4660 code 400, message Bad request version ('ï¿½ï¿½\x13\x01\x13\x02\x13\x03ï¿½+ï¿½/ï¿½,ï¿½0Ì©Ì¨ï¿½\x13ï¿½\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06sï¿½ï¿½\x00\x00\x00-\x00\x02\x01\x01\x00\x1b\x00\x03\x02\x00\x02Dï¿½\x00\x05\x00\x03\x02h2\x00')
 ERROR 2025-06-30 21:42:56,534 basehttp 3784 4660 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 21:42:56,537 basehttp 3784 3176 code 400, message Bad request version ('0Ö\x94óÖ\x9f\x7fVP\x0fw\x9e`!EA')
+INFO 2025-06-30 21:42:56,537 basehttp 3784 3176 code 400, message Bad request version ('0ï¿½\x94ï¿½ï¿½\x9f\x7fVP\x0fw\x9e`!EA')
 ERROR 2025-06-30 21:42:56,537 basehttp 3784 3176 You're accessing the development server over HTTPS, but it only supports HTTP.
 WARNING 2025-06-30 21:43:11,880 log 3784 20880 Method Not Allowed: /api/auth/token/
 WARNING 2025-06-30 21:43:11,892 basehttp 3784 20880 "GET /api/auth/token/ HTTP/1.1" 405 40
@@ -182,7 +182,7 @@ Traceback (most recent call last):
            ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\ecoTrajet\env\Lib\site-packages\django_redis\client\default.py", line 224, in set
     raise ConnectionInterrupted(connection=client) from e
-django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to 127.0.0.1:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 10061 connecting to 127.0.0.1:6379. Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e.
 
 During handling of the above exception, another exception occurred:
 
@@ -240,7 +240,7 @@ Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
   File "C:\ecoTrajet\env\Lib\site-packages\redis\connection.py", line 391, in connect_check_health
     raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée.
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. Aucune connexion nï¿½a pu ï¿½tre ï¿½tablie car lï¿½ordinateur cible lï¿½a expressï¿½ment refusï¿½e.
 ERROR 2025-06-30 21:56:17,128 basehttp 18004 13672 "POST /api/auth/token/ HTTP/1.1" 500 178675
 INFO 2025-06-30 21:56:17,129 basehttp 18004 13672 - Broken pipe from ('127.0.0.1', 51650)
 INFO 2025-06-30 22:11:48,317 autoreload 8744 4184 Watching for file changes with StatReloader
@@ -287,15 +287,15 @@ WARNING 2025-06-30 23:28:15,383 log 7468 15476 Not Found: /regiter
 WARNING 2025-06-30 23:28:15,386 basehttp 7468 15476 "GET /regiter HTTP/1.1" 404 3886
 INFO 2025-06-30 23:28:18,379 basehttp 7468 11300 code 400, message Bad request version ('\x00\x02\x01\x00\x00-\x00\x02\x01\x01\x00')
 ERROR 2025-06-30 23:28:18,380 basehttp 7468 11300 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 23:28:18,382 basehttp 7468 11112 code 400, message Bad request version ('ÚÚ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93**\x00\x00ÿ\x01\x00\x01\x00\x00\x12\x00\x00\x00')
+INFO 2025-06-30 23:28:18,382 basehttp 7468 11112 code 400, message Bad request version ('ï¿½ï¿½\x13\x01\x13\x02\x13\x03ï¿½+ï¿½/ï¿½,ï¿½0Ì©Ì¨ï¿½\x13ï¿½\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93**\x00\x00ï¿½\x01\x00\x01\x00\x00\x12\x00\x00\x00')
 ERROR 2025-06-30 23:28:18,383 basehttp 7468 11112 You're accessing the development server over HTTPS, but it only supports HTTP.
 INFO 2025-06-30 23:28:24,931 basehttp 7468 11424 code 400, message Bad request version ('Q\x06Ce')
 ERROR 2025-06-30 23:28:24,931 basehttp 7468 11424 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 23:28:24,933 basehttp 7468 20352 code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x1b\x00\x03\x02\x00\x02\x00-\x00\x02\x01\x01\x00#\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00')
+INFO 2025-06-30 23:28:24,933 basehttp 7468 20352 code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x1b\x00\x03\x02\x00\x02\x00-\x00\x02\x01\x01\x00#\x00\x00\x00\x17\x00\x00ï¿½\x01\x00\x01\x00\x00')
 ERROR 2025-06-30 23:28:24,933 basehttp 7468 20352 You're accessing the development server over HTTPS, but it only supports HTTP.
 INFO 2025-06-30 23:28:28,212 basehttp 7468 13644 code 400, message Bad request version ('\x00\x02\x01\x00\x00')
 ERROR 2025-06-30 23:28:28,213 basehttp 7468 13644 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-06-30 23:28:28,214 basehttp 7468 18680 code 400, message Bad request version ('\\¹\x12õ«\xadôK\x98<¡\x86\x1bB²Eá?~þçÍ)ü]r!')
+INFO 2025-06-30 23:28:28,214 basehttp 7468 18680 code 400, message Bad request version ('\\ï¿½\x12ï¿½ï¿½\xadï¿½K\x98<ï¿½\x86\x1bBï¿½Eï¿½?~ï¿½ï¿½ï¿½)ï¿½]r!')
 ERROR 2025-06-30 23:28:28,215 basehttp 7468 18680 You're accessing the development server over HTTPS, but it only supports HTTP.
 WARNING 2025-06-30 23:28:44,780 log 7468 17048 Not Found: /
 WARNING 2025-06-30 23:28:44,781 basehttp 7468 17048 "GET / HTTP/1.1" 404 3847
@@ -539,7 +539,7 @@ Traceback (most recent call last):
 psycopg2.errors.UndefinedColumn: ERREUR:  la colonne api_reservation.status n'existe pas
 LINE 1: ...ion"."trip_id", "api_reservation"."place_reserv", "api_reser...
                                                              ^
-HINT:  Peut-être que vous souhaitiez référencer la colonne « api_reservation.statut ».
+HINT:  Peut-ï¿½tre que vous souhaitiez rï¿½fï¿½rencer la colonne ï¿½ api_reservation.statut ï¿½.
 
 
 The above exception was the direct cause of the following exception:
@@ -640,7 +640,7 @@ Traceback (most recent call last):
 django.db.utils.ProgrammingError: ERREUR:  la colonne api_reservation.status n'existe pas
 LINE 1: ...ion"."trip_id", "api_reservation"."place_reserv", "api_reser...
                                                              ^
-HINT:  Peut-être que vous souhaitiez référencer la colonne « api_reservation.statut ».
+HINT:  Peut-ï¿½tre que vous souhaitiez rï¿½fï¿½rencer la colonne ï¿½ api_reservation.statut ï¿½.
 
 ERROR 2025-07-01 14:54:20,274 basehttp 22788 18348 "GET /trips/ HTTP/1.1" 500 203920
 INFO 2025-07-01 14:54:42,267 autoreload 22788 23344 C:\ecoTrajet\EcoTrajet\api\models.py changed, reloading.
@@ -713,17 +713,17 @@ INFO 2025-07-01 23:45:55,478 autoreload 16600 22620 Watching for file changes wi
 INFO 2025-07-01 23:46:04,718 autoreload 12408 21196 Watching for file changes with StatReloader
 WARNING 2025-07-01 23:46:09,012 log 12408 23340 Not Found: /
 WARNING 2025-07-01 23:46:09,015 basehttp 12408 23340 "GET / HTTP/1.1" 404 5129
-INFO 2025-07-01 23:46:14,682 basehttp 12408 22964 code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93\x8a\x8a\x00\x00\x00#\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06')
+INFO 2025-07-01 23:46:14,682 basehttp 12408 22964 code 400, message Bad request version ('ï¿½ï¿½\x13\x01\x13\x02\x13\x03ï¿½+ï¿½/ï¿½,ï¿½0Ì©Ì¨ï¿½\x13ï¿½\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93\x8a\x8a\x00\x00\x00#\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00+\x00\x07\x06')
 ERROR 2025-07-01 23:46:14,689 basehttp 12408 22964 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-07-01 23:46:14,706 basehttp 12408 23684 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03w/e\x07\x04')
+INFO 2025-07-01 23:46:14,706 basehttp 12408 23684 code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x06ï¿½\x01\x00\x06ï¿½\x03\x03w/e\x07\x04')
 ERROR 2025-07-01 23:46:14,706 basehttp 12408 23684 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-07-01 23:46:22,234 basehttp 12408 19772 code 400, message Bad request version ('}\x18xàL\x18ìÇÂ¼\x80àÙ8ïH¦MpMJ\x89\x84,9£ÚðDê1¨dý+õ\x81Àü§\x12(')
+INFO 2025-07-01 23:46:22,234 basehttp 12408 19772 code 400, message Bad request version ('}\x18xï¿½L\x18ï¿½ï¿½Â¼\x80ï¿½ï¿½8ï¿½Hï¿½MpMJ\x89\x84,9ï¿½ï¿½ï¿½Dï¿½1ï¿½dï¿½+ï¿½\x81ï¿½ï¿½ï¿½\x12(')
 ERROR 2025-07-01 23:46:22,236 basehttp 12408 19772 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-07-01 23:46:22,239 basehttp 12408 11280 code 400, message Bad request version ('\x01\x1aÚ')
+INFO 2025-07-01 23:46:22,239 basehttp 12408 11280 code 400, message Bad request version ('\x01\x1aï¿½')
 ERROR 2025-07-01 23:46:22,239 basehttp 12408 11280 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-07-01 23:46:24,592 basehttp 12408 22432 code 400, message Bad request version ('î')
+INFO 2025-07-01 23:46:24,592 basehttp 12408 22432 code 400, message Bad request version ('ï¿½')
 ERROR 2025-07-01 23:46:24,592 basehttp 12408 22432 You're accessing the development server over HTTPS, but it only supports HTTP.
-INFO 2025-07-01 23:46:24,594 basehttp 12408 4352 code 400, message Bad request version ('ë')
+INFO 2025-07-01 23:46:24,594 basehttp 12408 4352 code 400, message Bad request version ('ï¿½')
 ERROR 2025-07-01 23:46:24,595 basehttp 12408 4352 You're accessing the development server over HTTPS, but it only supports HTTP.
 INFO 2025-07-01 23:52:56,563 autoreload 10604 22964 Watching for file changes with StatReloader
 WARNING 2025-07-01 23:52:59,296 log 10604 3692 Not Found: /
