@@ -23,10 +23,10 @@ const TransportCoNavbar = () => {
 
           {/* Navigation Links */}
       <div className="flex items-center space-x-6">
-  <Link to="/HomePage" className="text-blue-600 font-medium transition-colors hover:text-blue-600">
+  <Link to="/accueil" className="text-blue-600 font-medium transition-colors hover:text-blue-600">
     Tableau de bord
   </Link>
-  <Link to="/communities" className="text-gray-700 font-medium transition-colors hover:text-blue-600">
+  <Link to="/communautes" className="text-gray-700 font-medium transition-colors hover:text-blue-600">
     Communautés
   </Link>
   <Link to="/trajets" className="text-gray-700 font-medium transition-colors hover:text-blue-600">
